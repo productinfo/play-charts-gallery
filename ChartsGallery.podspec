@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage         = "http://www.shinobicontrols.com"
   s.license          = 'Apache License, Version 2.0'
   s.author           = { "Alison Clarke" => "aclarke@shinobicontrols.com" }
-  s.source           = { :git => "git@bitbucket.org:shinobicontrols/play-<repo-name>.git", 
+  s.source           = { :git => "git@bitbucket.org:shinobicontrols/play-charts-gallery.git", 
                          :tag => s.version.to_s,
                          :submodules => true 
                        }
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'ChartsGallery/ChartsGallery/**/*.{h,m}'
   s.dependency 'ShinobiPlayUtils'
-  s.resources = ['ChartsGallery/**/*.plist', 'ChartsGallery/**/*.storyboard', 'ChartsGallery/**/*.xib', 'ChartsGallery/**/*.xcassets']
-  s.frameworks = 'QuartzCore', 'Shinobi<Charts/Grids/Essentials/Gauges/Forms>'
+  s.resources = ['ChartsGallery/**/ChartsGallery*data.plist', 'ChartsGallery/**/*.storyboard', 'ChartsGallery/**/*.xib', 'ChartsGallery/**/*.xcassets']
+  s.frameworks = 'QuartzCore', 'ShinobiCharts'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(DEVELOPER_FRAMEWORKS_DIR)" "$(PROJECT_DIR)/../"' }
 end
