@@ -1,6 +1,6 @@
 //
-//  MyPlayProjectAppDelegate.m
-//  MyPlayProject
+//  ChartsGalleryAppDelegate.m
+//  ChartsGallery
 //
 //  Created by Alison Clarke on 27/08/2014.
 //
@@ -19,9 +19,9 @@
 //  limitations under the License.
 //
 
-#import "MyPlayProjectAppDelegate.h"
+#import "ChartsGalleryAppDelegate.h"
 
-@implementation MyPlayProjectAppDelegate
+@implementation ChartsGalleryAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

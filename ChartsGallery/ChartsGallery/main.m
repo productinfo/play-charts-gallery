@@ -1,6 +1,6 @@
 //
-//  MyPlayProjectViewController.h
-//  MyPlayProject
+//  main.m
+//  ChartsGallery
 //
 //  Created by Alison Clarke on 27/08/2014.
 //
@@ -19,9 +19,13 @@
 //  limitations under the License.
 //
 
-@import UIKit;
-#import "ShinobiPlayUtils/SPUGalleryManagedViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface MyPlayProjectViewController : SPUGalleryManagedViewController
+#import "ChartsGalleryAppDelegate.h"
 
-@end
+int main(int argc, char * argv[])
+{
+  @autoreleasepool {
+      return UIApplicationMain(argc, argv, nil, NSStringFromClass([ChartsGalleryAppDelegate class]));
+  }
+}

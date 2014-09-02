@@ -1,6 +1,6 @@
 //
-//  MyPlayProjectViewController.m
-//  MyPlayProject
+//  ChartsGalleryViewController.m
+//  ChartsGallery
 //
 //  Created by Alison Clarke on 27/08/2014.
 //
@@ -19,13 +19,13 @@
 //  limitations under the License.
 //
 
-#import "MyPlayProjectViewController.h"
+#import "ChartsGalleryViewController.h"
 
-@interface MyPlayProjectViewController ()
+@interface ChartsGalleryViewController ()
 
 @end
 
-@implementation MyPlayProjectViewController
+@implementation ChartsGalleryViewController
 
 - (void)viewDidLoad
 {

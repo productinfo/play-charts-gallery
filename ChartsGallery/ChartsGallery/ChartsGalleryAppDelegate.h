@@ -1,6 +1,6 @@
 //
-//  MyPlayProjectAppDelegate.h
-//  MyPlayProject
+//  ChartsGalleryAppDelegate.h
+//  ChartsGallery
 //
 //  Created by Alison Clarke on 27/08/2014.
 //
@@ -21,7 +21,7 @@
 
 @import UIKit;
 
-@interface MyPlayProjectAppDelegate : UIResponder <UIApplicationDelegate>
+@interface ChartsGalleryAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
