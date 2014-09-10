@@ -10,6 +10,6 @@
 
 @interface ChartsGalleryMultitypeDataSource : ChartsGalleryCommonDataSource
 
-- (SChartDateRange *)getDateRange;
+- (SChartDateRange *)getInitialDateRange;
 
 @end

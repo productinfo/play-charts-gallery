@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 ScottLogic. All rights reserved.
 //
 
-#import "ShinobiPlayUtils/SPUGalleryManagedViewController.h"
+#import "ChartsGalleryCommonViewController.h"
 
-@interface ChartsGalleryMultitypeViewController: SPUGalleryManagedViewController
+@interface ChartsGalleryMultitypeViewController: ChartsGalleryCommonViewController
 
 @end

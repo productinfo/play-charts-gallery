@@ -1,5 +1,5 @@
 //
-//  StackedLineChartView.h
+//  BarChartView.h
 //  ShinobiLibrary
 //
 //  Created by Sam Davies on 27/11/2012.
@@ -8,6 +8,6 @@
 
 #import "ChartsGalleryCommonViewController.h"
 
-@interface ChartsGalleryStackedLineViewController : ChartsGalleryCommonViewController
+@interface ChartsGalleryBarViewController : ChartsGalleryCommonViewController
 
 @end

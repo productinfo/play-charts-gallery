@@ -31,9 +31,10 @@
   return self;
 }
 
-- (SChartDateRange *)getDateRange {
+// Show about a third of the data in the initial range
+- (SChartDateRange *)getInitialDateRange {
   return [[SChartDateRange alloc] initWithDateMinimum:[self convertIndexToDate:0]
-                                       andDateMaximum:[self convertIndexToDate:(self.dataCollection.count-1)]];
+                                       andDateMaximum:[self convertIndexToDate:(self.dataCollection.count/3)]];
 }
 
 - (SChartAxis *)sChart:(ShinobiChart *)chart yAxisForSeriesAtIndex:(NSInteger)index {

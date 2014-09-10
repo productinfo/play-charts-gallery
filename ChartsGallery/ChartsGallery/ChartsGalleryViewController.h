@@ -20,8 +20,7 @@
 //
 
 @import UIKit;
-#import "ShinobiPlayUtils/SPUGalleryManagedViewController.h"
 
-@interface ChartsGalleryViewController : SPUGalleryManagedViewController
+@interface ChartsGalleryViewController : UIViewController
 
 @end

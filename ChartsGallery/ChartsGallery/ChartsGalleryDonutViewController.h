@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Alison Clarke. All rights reserved.
 //
 
-#import "ShinobiPlayUtils/SPUGalleryManagedViewController.h"
+#import "ChartsGalleryCommonViewController.h"
 
-@interface ChartsGalleryDonutViewController : SPUGalleryManagedViewController
+@interface ChartsGalleryDonutViewController : ChartsGalleryCommonViewController
 
 @end
