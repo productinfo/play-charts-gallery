@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="I9F-tU-t0x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="I9F-tU-t0x">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -8,15 +8,11 @@
         <scene sceneID="1Zu-p4-EoM">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryPieViewController" id="Uib-DK-u78" customClass="ChartsGalleryPieViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KAl-MR-pSa"/>
-                        <viewControllerLayoutGuide type="bottom" id="Iik-xA-eR1"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="abr-cV-zRP">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ISt-ix-Soh" customClass="ShinobiChart">
+                            <view contentMode="scaleToFill" id="ISt-ix-Soh" customClass="ShinobiChart">
                                 <rect key="frame" x="50" y="80" width="924" height="608"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -33,21 +29,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0Y-FQ-NVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="3489"/>
+            <point key="canvasLocation" x="1472" y="6601"/>
         </scene>
         <!--Charts Gallery Line View Controller - Line-->
         <scene sceneID="R8L-3v-gyL">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryLineViewController" id="FRc-rX-MTk" customClass="ChartsGalleryLineViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dvv-Fm-Bgd"/>
-                        <viewControllerLayoutGuide type="bottom" id="aOh-TP-RG6"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iOQ-mJ-J5b">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cGI-K3-eOY" customClass="ShinobiChart">
+                            <view contentMode="scaleToFill" id="cGI-K3-eOY" customClass="ShinobiChart">
                                 <rect key="frame" x="50" y="80" width="924" height="608"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -85,6 +77,9 @@
                         <segue destination="14E-OK-JnC" kind="relationship" relationship="viewControllers" id="lw4-Qr-IRc"/>
                         <segue destination="FiG-XR-eXk" kind="relationship" relationship="viewControllers" id="7iR-Ro-0Dg"/>
                         <segue destination="A1N-2r-nUQ" kind="relationship" relationship="viewControllers" id="Gcs-tJ-1eD"/>
+                        <segue destination="NOS-xH-FH1" kind="relationship" relationship="viewControllers" id="mdV-QN-Hdg"/>
+                        <segue destination="Ina-S6-eFt" kind="relationship" relationship="viewControllers" id="OwE-1H-hci"/>
+                        <segue destination="UMQ-Og-NDY" kind="relationship" relationship="viewControllers" id="UPH-bi-HpB"/>
                         <segue destination="mdY-8Q-Jit" kind="relationship" relationship="viewControllers" id="2Yf-K1-ER5"/>
                         <segue destination="Uib-DK-u78" kind="relationship" relationship="viewControllers" id="0mm-MO-Tfi"/>
                         <segue destination="4aO-9z-7Jb" kind="relationship" relationship="viewControllers" id="iGe-Ky-jQm"/>
@@ -92,21 +87,17 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NK6-Ya-Huh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-173" y="871"/>
+            <point key="canvasLocation" x="-187" y="865"/>
         </scene>
         <!--Charts Gallery Multitype View Controller - Multitype-->
         <scene sceneID="Rg4-o3-kn5">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryMultitypeViewController" id="mdY-8Q-Jit" customClass="ChartsGalleryMultitypeViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eWH-ic-YJC"/>
-                        <viewControllerLayoutGuide type="bottom" id="1hg-dX-l2o"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R3s-ws-Ods">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TG2-ed-3vU" customClass="ShinobiChart">
+                            <view contentMode="scaleToFill" id="TG2-ed-3vU" customClass="ShinobiChart">
                                 <rect key="frame" x="50" y="80" width="924" height="608"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -123,21 +114,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqA-yc-52A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1436" y="5408"/>
+            <point key="canvasLocation" x="1448" y="8520"/>
         </scene>
         <!--Charts Gallery Donut View Controller - Donut-->
         <scene sceneID="f7U-TR-jeB">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryDonutViewController" id="4aO-9z-7Jb" customClass="ChartsGalleryDonutViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YVd-2o-zij"/>
-                        <viewControllerLayoutGuide type="bottom" id="dCc-PS-7L0"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gff-81-GWo">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uq4-My-8c0" customClass="ShinobiChart">
+                            <view contentMode="scaleToFill" id="Uq4-My-8c0" customClass="ShinobiChart">
                                 <rect key="frame" x="50" y="80" width="924" height="608"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -154,21 +141,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUE-S1-8oN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476" y="4461"/>
+            <point key="canvasLocation" x="1488" y="7573"/>
         </scene>
         <!--Charts Gallery Alternate Line View Controller - Alternate Line-->
         <scene sceneID="hF5-pT-N06">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryAlternateLineViewController" id="7yL-8V-ooA" customClass="ChartsGalleryAlternateLineViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CKn-AJ-NW7"/>
-                        <viewControllerLayoutGuide type="bottom" id="qsd-Cs-cae"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GIU-2y-Dcj">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9C-Er-X9R" customClass="ShinobiChart">
+                            <view contentMode="scaleToFill" id="v9C-Er-X9R" customClass="ShinobiChart">
                                 <rect key="frame" x="50" y="80" width="924" height="608"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -191,15 +174,11 @@
         <scene sceneID="3zJ-p6-Nii">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryAreaViewController" id="0Jc-vb-BgR" customClass="ChartsGalleryAreaViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SH8-e5-LB3"/>
-                        <viewControllerLayoutGuide type="bottom" id="ARl-zg-zYK"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Z8-C9-CQW">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oXd-6U-mQx" customClass="ShinobiChart">
+                            <view contentMode="scaleToFill" id="oXd-6U-mQx" customClass="ShinobiChart">
                                 <rect key="frame" x="50" y="80" width="924" height="608"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -222,15 +201,11 @@
         <scene sceneID="Oy7-Eu-VMJ">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryStackedLineViewController" id="mmj-KV-BRQ" customClass="ChartsGalleryStackedLineViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jTi-bP-zw6"/>
-                        <viewControllerLayoutGuide type="bottom" id="rNc-p2-wlY"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9CS-LW-YKb">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5on-N3-8Yz" customClass="ShinobiChart">
+                            <view contentMode="scaleToFill" id="5on-N3-8Yz" customClass="ShinobiChart">
                                 <rect key="frame" x="50" y="80" width="924" height="608"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -253,15 +228,11 @@
         <scene sceneID="fcP-vx-QfQ">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryStackedAreaViewController" id="14E-OK-JnC" customClass="ChartsGalleryStackedAreaViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uTN-yO-lGu"/>
-                        <viewControllerLayoutGuide type="bottom" id="yTv-Fv-2NA"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="M9i-EL-btT">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mSV-mQ-Fsa" customClass="ShinobiChart">
+                            <view contentMode="scaleToFill" id="mSV-mQ-Fsa" customClass="ShinobiChart">
                                 <rect key="frame" x="50" y="80" width="924" height="608"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -284,15 +255,11 @@
         <scene sceneID="X2E-Ip-zQF">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryBarViewController" id="FiG-XR-eXk" customClass="ChartsGalleryBarViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OLE-bc-naX"/>
-                        <viewControllerLayoutGuide type="bottom" id="cYl-Un-dDg"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7da-Qo-dwY">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MBz-PQ-Zgi" customClass="ShinobiChart">
+                            <view contentMode="scaleToFill" id="MBz-PQ-Zgi" customClass="ShinobiChart">
                                 <rect key="frame" x="50" y="80" width="924" height="608"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -315,15 +282,11 @@
         <scene sceneID="MGX-KT-3O2">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryColumnViewController" id="A1N-2r-nUQ" customClass="ChartsGalleryColumnViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ajd-Jx-YqL"/>
-                        <viewControllerLayoutGuide type="bottom" id="2Dp-lt-qTM"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NmH-eH-xht">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJY-iB-3tn" customClass="ShinobiChart">
+                            <view contentMode="scaleToFill" id="eJY-iB-3tn" customClass="ShinobiChart">
                                 <rect key="frame" x="50" y="80" width="924" height="608"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -342,6 +305,87 @@
             </objects>
             <point key="canvasLocation" x="1452" y="2173"/>
         </scene>
+        <!--Charts Gallery Histogram View Controller - Histogram-->
+        <scene sceneID="3dS-rW-kpr">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryHistogramViewController" id="NOS-xH-FH1" customClass="ChartsGalleryHistogramViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8fh-gL-HFC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="41T-8a-HrR" customClass="ShinobiChart">
+                                <rect key="frame" x="50" y="80" width="924" height="608"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Histogram" image="Histogram" id="euL-I1-3Vs"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="41T-8a-HrR" id="mkF-F6-emU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6T7-fZ-qLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="3089"/>
+        </scene>
+        <!--Charts Gallery Stacked Bar View Controller - Stacked Bar-->
+        <scene sceneID="fbw-TX-8Kg">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryStackedBarViewController" id="Ina-S6-eFt" customClass="ChartsGalleryStackedBarViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wYc-JU-H0m">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="NFG-mw-1Tw" customClass="ShinobiChart">
+                                <rect key="frame" x="50" y="80" width="924" height="608"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Stacked Bar" image="StackedBarChart" id="1iA-mi-XGu"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="NFG-mw-1Tw" id="fa7-XM-nUH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bla-vc-Q1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="3965"/>
+        </scene>
+        <!--Charts Gallery Stacked Column View Controller - Stacked Column-->
+        <scene sceneID="aLo-ho-eca">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryStackedColumnViewController" id="UMQ-Og-NDY" customClass="ChartsGalleryStackedColumnViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jan-ia-Efh">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="ivs-Yx-wTC" customClass="ShinobiChart">
+                                <rect key="frame" x="50" y="80" width="924" height="608"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Stacked Column" image="StackedColumnChart" id="yNy-gP-Yby"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="ivs-Yx-wTC" id="3zI-bk-SrY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1rO-ke-cAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1448" y="4869"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AlternateLineChart" width="30" height="30"/>
@@ -349,9 +393,12 @@
         <image name="BarChart" width="30" height="30"/>
         <image name="ColumnChart" width="30" height="30"/>
         <image name="DonutChart" width="30" height="30"/>
+        <image name="Histogram" width="30" height="30"/>
         <image name="LineChart" width="30" height="30"/>
         <image name="MultitypeChart" width="30" height="30"/>
         <image name="PieChart" width="30" height="30"/>
+        <image name="StackedBarChart" width="30" height="30"/>
+        <image name="StackedColumnChart" width="30" height="30"/>
         <image name="StackedLineChart" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

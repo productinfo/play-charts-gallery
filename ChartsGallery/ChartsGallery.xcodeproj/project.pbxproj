@@ -18,6 +18,12 @@
 		68171BF919ADDBC5000AFEEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68171BF819ADDBC5000AFEEB /* Images.xcassets */; };
 		68171C1619ADDC04000AFEEB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68171C1519ADDC04000AFEEB /* QuartzCore.framework */; };
 		68171C2219ADDCD6000AFEEB /* libShinobiPlayUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68171C1D19ADDC45000AFEEB /* libShinobiPlayUtils.a */; };
+		681815EA19C6E4AB00D10022 /* ChartsGalleryHistogramSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 681815E919C6E4AB00D10022 /* ChartsGalleryHistogramSeries.m */; };
+		681815F119C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 681815EE19C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.m */; };
+		681815F219C6F14C00D10022 /* ChartsGalleryStackedBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681815F019C6F14C00D10022 /* ChartsGalleryStackedBarViewController.m */; };
+		681815F619C6F88B00D10022 /* ChartsGalleryStackedColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681815F519C6F88B00D10022 /* ChartsGalleryStackedColumnViewController.m */; };
+		681815F919C6F8C400D10022 /* ChartsGalleryStackedColumnDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 681815F819C6F8C400D10022 /* ChartsGalleryStackedColumnDataSource.m */; };
+		681815FB19C6F8F300D10022 /* ChartsGallery-stackedColumn-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 681815FA19C6F8F300D10022 /* ChartsGallery-stackedColumn-data.plist */; };
 		68229E9619BDA7E7004B5A17 /* ChartsGalleryLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68229E9219BDA7E7004B5A17 /* ChartsGalleryLineViewController.m */; };
 		68229E9719BDA7E7004B5A17 /* ChartsGalleryLineDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 68229E9419BDA7E7004B5A17 /* ChartsGalleryLineDataSource.m */; };
 		68229E9819BDA7E7004B5A17 /* ChartsGallery-line-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68229E9519BDA7E7004B5A17 /* ChartsGallery-line-data.plist */; };
@@ -51,6 +57,9 @@
 		68D4709419BF2140001B1D0D /* ChartsGallery-bar-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68D4709319BF2140001B1D0D /* ChartsGallery-bar-data.plist */; };
 		68D4709819BF40DC001B1D0D /* ChartsGalleryCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D4709719BF40DC001B1D0D /* ChartsGalleryCommonViewController.m */; };
 		68D4709A19BF537F001B1D0D /* ChartsGallery-multitype-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68D4709919BF537F001B1D0D /* ChartsGallery-multitype-data.plist */; };
+		68D470A019C0355C001B1D0D /* ChartsGalleryHistogramDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D4709D19C0355C001B1D0D /* ChartsGalleryHistogramDataSource.m */; };
+		68D470A119C0355C001B1D0D /* ChartsGalleryHistogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D4709F19C0355C001B1D0D /* ChartsGalleryHistogramViewController.m */; };
+		68D470A319C0369A001B1D0D /* ChartsGallery-histogram-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68D470A219C0369A001B1D0D /* ChartsGallery-histogram-data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +104,17 @@
 		68171BFF19ADDBC5000AFEEB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		68171C1519ADDC04000AFEEB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		68171C1719ADDC45000AFEEB /* ShinobiPlayUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShinobiPlayUtils.xcodeproj; path = ShinobiPlayUtils/ShinobiPlayUtils/ShinobiPlayUtils.xcodeproj; sourceTree = "<group>"; };
+		681815E819C6E4AB00D10022 /* ChartsGalleryHistogramSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryHistogramSeries.h; sourceTree = "<group>"; };
+		681815E919C6E4AB00D10022 /* ChartsGalleryHistogramSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryHistogramSeries.m; sourceTree = "<group>"; };
+		681815ED19C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryStackedBarDataSource.h; sourceTree = "<group>"; };
+		681815EE19C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryStackedBarDataSource.m; sourceTree = "<group>"; };
+		681815EF19C6F14C00D10022 /* ChartsGalleryStackedBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryStackedBarViewController.h; sourceTree = "<group>"; };
+		681815F019C6F14C00D10022 /* ChartsGalleryStackedBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryStackedBarViewController.m; sourceTree = "<group>"; };
+		681815F419C6F87000D10022 /* ChartsGalleryStackedColumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryStackedColumnViewController.h; sourceTree = "<group>"; };
+		681815F519C6F88B00D10022 /* ChartsGalleryStackedColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryStackedColumnViewController.m; sourceTree = "<group>"; };
+		681815F719C6F8BA00D10022 /* ChartsGalleryStackedColumnDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryStackedColumnDataSource.h; sourceTree = "<group>"; };
+		681815F819C6F8C400D10022 /* ChartsGalleryStackedColumnDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryStackedColumnDataSource.m; sourceTree = "<group>"; };
+		681815FA19C6F8F300D10022 /* ChartsGallery-stackedColumn-data.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ChartsGallery-stackedColumn-data.plist"; sourceTree = "<group>"; };
 		68229E9119BDA7E7004B5A17 /* ChartsGalleryLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryLineViewController.h; sourceTree = "<group>"; };
 		68229E9219BDA7E7004B5A17 /* ChartsGalleryLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryLineViewController.m; sourceTree = "<group>"; };
 		68229E9319BDA7E7004B5A17 /* ChartsGalleryLineDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryLineDataSource.h; sourceTree = "<group>"; };
@@ -152,6 +172,11 @@
 		68D4709619BF40DC001B1D0D /* ChartsGalleryCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryCommonViewController.h; sourceTree = "<group>"; };
 		68D4709719BF40DC001B1D0D /* ChartsGalleryCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryCommonViewController.m; sourceTree = "<group>"; };
 		68D4709919BF537F001B1D0D /* ChartsGallery-multitype-data.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ChartsGallery-multitype-data.plist"; sourceTree = "<group>"; };
+		68D4709C19C0355C001B1D0D /* ChartsGalleryHistogramDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryHistogramDataSource.h; sourceTree = "<group>"; };
+		68D4709D19C0355C001B1D0D /* ChartsGalleryHistogramDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryHistogramDataSource.m; sourceTree = "<group>"; };
+		68D4709E19C0355C001B1D0D /* ChartsGalleryHistogramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryHistogramViewController.h; sourceTree = "<group>"; };
+		68D4709F19C0355C001B1D0D /* ChartsGalleryHistogramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryHistogramViewController.m; sourceTree = "<group>"; };
+		68D470A219C0369A001B1D0D /* ChartsGallery-histogram-data.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ChartsGallery-histogram-data.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,9 +239,12 @@
 				68229EB919BDD850004B5A17 /* StackedAreaChart */,
 				68229EC619BEF0C0004B5A17 /* BarChart */,
 				68D4708919BF1E62001B1D0D /* ColumnChart */,
+				68D4709B19C0350B001B1D0D /* Histogram */,
+				681815EC19C6F13100D10022 /* StackedBarChart */,
+				681815F319C6F74500D10022 /* StackedColumnChart */,
 				6853D95519B5EB0F00735962 /* MultiChart */,
-				68C6319E19B5B573009BFDC0 /* DonutChart */,
 				68C6319019B5AAF5009BFDC0 /* PieChart */,
+				68C6319E19B5B573009BFDC0 /* DonutChart */,
 				68C6319719B5AE23009BFDC0 /* Data */,
 				68171BEF19ADDBC5000AFEEB /* ChartsGalleryAppDelegate.h */,
 				68171BF019ADDBC5000AFEEB /* ChartsGalleryAppDelegate.m */,
@@ -249,6 +277,29 @@
 				68171C1F19ADDC45000AFEEB /* ShinobiPlayUtilsTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		681815EC19C6F13100D10022 /* StackedBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				681815ED19C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.h */,
+				681815EE19C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.m */,
+				681815EF19C6F14C00D10022 /* ChartsGalleryStackedBarViewController.h */,
+				681815F019C6F14C00D10022 /* ChartsGalleryStackedBarViewController.m */,
+			);
+			name = StackedBarChart;
+			sourceTree = "<group>";
+		};
+		681815F319C6F74500D10022 /* StackedColumnChart */ = {
+			isa = PBXGroup;
+			children = (
+				681815FA19C6F8F300D10022 /* ChartsGallery-stackedColumn-data.plist */,
+				681815F419C6F87000D10022 /* ChartsGalleryStackedColumnViewController.h */,
+				681815F519C6F88B00D10022 /* ChartsGalleryStackedColumnViewController.m */,
+				681815F719C6F8BA00D10022 /* ChartsGalleryStackedColumnDataSource.h */,
+				681815F819C6F8C400D10022 /* ChartsGalleryStackedColumnDataSource.m */,
+			);
+			name = StackedColumnChart;
 			sourceTree = "<group>";
 		};
 		68229E8F19BDA7C1004B5A17 /* LineChart */ = {
@@ -381,6 +432,20 @@
 			name = ColumnChart;
 			sourceTree = "<group>";
 		};
+		68D4709B19C0350B001B1D0D /* Histogram */ = {
+			isa = PBXGroup;
+			children = (
+				68D470A219C0369A001B1D0D /* ChartsGallery-histogram-data.plist */,
+				68D4709C19C0355C001B1D0D /* ChartsGalleryHistogramDataSource.h */,
+				68D4709D19C0355C001B1D0D /* ChartsGalleryHistogramDataSource.m */,
+				68D4709E19C0355C001B1D0D /* ChartsGalleryHistogramViewController.h */,
+				68D4709F19C0355C001B1D0D /* ChartsGalleryHistogramViewController.m */,
+				681815E819C6E4AB00D10022 /* ChartsGalleryHistogramSeries.h */,
+				681815E919C6E4AB00D10022 /* ChartsGalleryHistogramSeries.m */,
+			);
+			name = Histogram;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -467,6 +532,8 @@
 				68D4709219BF1E96001B1D0D /* ChartsGallery-column-data.plist in Resources */,
 				68171BEB19ADDBC5000AFEEB /* InfoPlist.strings in Resources */,
 				68229E9819BDA7E7004B5A17 /* ChartsGallery-line-data.plist in Resources */,
+				681815FB19C6F8F300D10022 /* ChartsGallery-stackedColumn-data.plist in Resources */,
+				68D470A319C0369A001B1D0D /* ChartsGallery-histogram-data.plist in Resources */,
 				68171BF419ADDBC5000AFEEB /* ChartsGallery.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +545,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				681815EA19C6E4AB00D10022 /* ChartsGalleryHistogramSeries.m in Sources */,
+				681815F119C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.m in Sources */,
 				68C6319319B5AB44009BFDC0 /* ChartsGalleryPieViewController.m in Sources */,
 				6853D95B19B5EB2400735962 /* ChartsGalleryMultitypeViewController.m in Sources */,
 				68229E9619BDA7E7004B5A17 /* ChartsGalleryLineViewController.m in Sources */,
@@ -486,11 +555,14 @@
 				68229ECD19BEF0DD004B5A17 /* ChartsGalleryBarDataSource.m in Sources */,
 				68229EB519BDD35E004B5A17 /* ChartsGalleryStackedLineDataSource.m in Sources */,
 				68C6319D19B5AE30009BFDC0 /* ChartsGalleryProportionDataSource.m in Sources */,
+				681815F919C6F8C400D10022 /* ChartsGalleryStackedColumnDataSource.m in Sources */,
 				68229E9E19BDB234004B5A17 /* ChartsGalleryAlternateLineViewController.m in Sources */,
 				68229EB619BDD35E004B5A17 /* ChartsGalleryStackedLineViewController.m in Sources */,
 				68C6319619B5AD8F009BFDC0 /* ChartsGalleryPieDataSource.m in Sources */,
+				681815F219C6F14C00D10022 /* ChartsGalleryStackedBarViewController.m in Sources */,
 				68229EBE19BDD864004B5A17 /* ChartsGalleryStackedAreaViewController.m in Sources */,
 				68229ECC19BEF0DD004B5A17 /* ChartsGalleryBarViewController.m in Sources */,
+				68D470A019C0355C001B1D0D /* ChartsGalleryHistogramDataSource.m in Sources */,
 				68171BF119ADDBC5000AFEEB /* ChartsGalleryAppDelegate.m in Sources */,
 				68229E9F19BDB234004B5A17 /* ChartsGalleryAlternateLineDataSource.m in Sources */,
 				68D4709019BF1E83001B1D0D /* ChartsGalleryColumnDataSource.m in Sources */,
@@ -498,6 +570,7 @@
 				68229EAB19BDCDA7004B5A17 /* ChartsGalleryAreaDataSource.m in Sources */,
 				68C6319C19B5AE30009BFDC0 /* ChartsGalleryCommonDataSource.m in Sources */,
 				68229EBF19BDD864004B5A17 /* ChartsGalleryStackedAreaDataSource.m in Sources */,
+				68D470A119C0355C001B1D0D /* ChartsGalleryHistogramViewController.m in Sources */,
 				68229EAA19BDCDA7004B5A17 /* ChartsGalleryAreaViewController.m in Sources */,
 				68171BF719ADDBC5000AFEEB /* ChartsGalleryViewController.m in Sources */,
 				68D4709819BF40DC001B1D0D /* ChartsGalleryCommonViewController.m in Sources */,
@@ -505,6 +578,7 @@
 				68D4708F19BF1E83001B1D0D /* ChartsGalleryColumnViewController.m in Sources */,
 				6853D95C19B5EB2400735962 /* ChartsGalleryMultitypeDataSource.m in Sources */,
 				68229EC219BDEFAF004B5A17 /* ChartsGalleryCommonDateDataSource.m in Sources */,
+				681815F619C6F88B00D10022 /* ChartsGalleryStackedColumnViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
