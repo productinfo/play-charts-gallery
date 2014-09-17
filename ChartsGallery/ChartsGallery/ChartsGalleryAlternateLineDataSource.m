@@ -10,7 +10,7 @@
 
 @implementation ChartsGalleryAlternateLineDataSource
 
-- (id)init {
+- (instancetype)init {
   self = [super initWithDataFromFile:@"ChartsGallery-alternateLine-data"];
   if (self) {
     self.seriesNames = @[@"John", @"Paul", @"George", @"Ringo"];

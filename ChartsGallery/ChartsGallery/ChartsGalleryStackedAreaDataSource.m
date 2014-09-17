@@ -8,15 +8,6 @@
 
 #import "ChartsGalleryStackedAreaDataSource.h"
 
-@interface ChartsGalleryStackedAreaDataSource()
-
-@property (nonatomic,strong) NSArray *seriesNames;
-@property (nonatomic,strong) NSArray *dataCollection;
-@property (strong, nonatomic) NSDateComponents *dateComponents;
-@property (strong, nonatomic) NSCalendar *calendar;
-
-@end
-
 @implementation ChartsGalleryStackedAreaDataSource
 
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {

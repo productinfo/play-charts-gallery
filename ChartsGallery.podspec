@@ -6,10 +6,10 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ChartsGallery"
-  s.version          = '0.1.0'
-  s.summary          = "<Summary>"
+  s.version          = '0.1.1'
+  s.summary          = "A gallery of Shinobi charts"
   s.description      = <<-DESC
-                       <Description>
+                       An app demonstrating many of the chart types it's possible to create with ShinobiCharts.
                        DESC
   s.homepage         = "http://www.shinobicontrols.com"
   s.license          = 'Apache License, Version 2.0'

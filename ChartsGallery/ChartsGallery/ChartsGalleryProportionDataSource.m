@@ -15,7 +15,7 @@
 @end
 
 @implementation ChartsGalleryProportionDataSource
-- (id)init {
+- (instancetype)init {
   self = [super init];
   if (self) {
     NSArray *data = @[@22, @32, @14, @6, @19, @7];

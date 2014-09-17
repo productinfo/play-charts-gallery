@@ -29,7 +29,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0Y-FQ-NVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1472" y="6601"/>
+            <point key="canvasLocation" x="700" y="4137"/>
         </scene>
         <!--Charts Gallery Line View Controller - Line-->
         <scene sceneID="R8L-3v-gyL">
@@ -56,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MFQ-he-fVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="-3346"/>
+            <point key="canvasLocation" x="-396" y="-2642"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rtU-9g-IKl">
@@ -80,14 +80,20 @@
                         <segue destination="NOS-xH-FH1" kind="relationship" relationship="viewControllers" id="mdV-QN-Hdg"/>
                         <segue destination="Ina-S6-eFt" kind="relationship" relationship="viewControllers" id="OwE-1H-hci"/>
                         <segue destination="UMQ-Og-NDY" kind="relationship" relationship="viewControllers" id="UPH-bi-HpB"/>
+                        <segue destination="ISp-tt-BTv" kind="relationship" relationship="viewControllers" id="Y1j-A8-8Xq"/>
+                        <segue destination="qXL-eg-32z" kind="relationship" relationship="viewControllers" id="s29-lX-Wlx"/>
+                        <segue destination="v4v-TS-hog" kind="relationship" relationship="viewControllers" id="r8z-Vd-kfn"/>
+                        <segue destination="f4r-vo-QzV" kind="relationship" relationship="viewControllers" id="DXc-xq-cXB"/>
                         <segue destination="mdY-8Q-Jit" kind="relationship" relationship="viewControllers" id="2Yf-K1-ER5"/>
                         <segue destination="Uib-DK-u78" kind="relationship" relationship="viewControllers" id="0mm-MO-Tfi"/>
                         <segue destination="4aO-9z-7Jb" kind="relationship" relationship="viewControllers" id="iGe-Ky-jQm"/>
+                        <segue destination="HgR-hK-jB4" kind="relationship" relationship="viewControllers" id="qOR-wP-fX0"/>
+                        <segue destination="RLn-hE-zJf" kind="relationship" relationship="viewControllers" id="cd4-2f-0dQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NK6-Ya-Huh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-187" y="865"/>
+            <point key="canvasLocation" x="-1811" y="369"/>
         </scene>
         <!--Charts Gallery Multitype View Controller - Multitype-->
         <scene sceneID="Rg4-o3-kn5">
@@ -114,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqA-yc-52A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1448" y="8520"/>
+            <point key="canvasLocation" x="-388" y="3744"/>
         </scene>
         <!--Charts Gallery Donut View Controller - Donut-->
         <scene sceneID="f7U-TR-jeB">
@@ -141,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUE-S1-8oN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1488" y="7573"/>
+            <point key="canvasLocation" x="-388" y="4649"/>
         </scene>
         <!--Charts Gallery Alternate Line View Controller - Alternate Line-->
         <scene sceneID="hF5-pT-N06">
@@ -168,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="547-ZR-tte" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1468" y="-2435"/>
+            <point key="canvasLocation" x="692" y="-2187"/>
         </scene>
         <!--Charts Gallery Area View Controller - Area-->
         <scene sceneID="3zJ-p6-Nii">
@@ -195,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Tg-rw-97u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1460" y="-1467"/>
+            <point key="canvasLocation" x="-396" y="-1707"/>
         </scene>
         <!--Charts Gallery Stacked Line View Controller - Stacked Line-->
         <scene sceneID="Oy7-Eu-VMJ">
@@ -222,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hjd-hI-Rby" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="-575"/>
+            <point key="canvasLocation" x="-404" y="-791"/>
         </scene>
         <!--Charts Gallery Stacked Area View Controller - Stacked Area-->
         <scene sceneID="fcP-vx-QfQ">
@@ -249,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mbe-x8-zot" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="361"/>
+            <point key="canvasLocation" x="684" y="-1255"/>
         </scene>
         <!--Charts Gallery Bar View Controller - Bar-->
         <scene sceneID="X2E-Ip-zQF">
@@ -276,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i7e-ys-w7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="1257"/>
+            <point key="canvasLocation" x="692" y="-351"/>
         </scene>
         <!--Charts Gallery Column View Controller - Column-->
         <scene sceneID="MGX-KT-3O2">
@@ -303,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zzm-Gu-Qhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="2173"/>
+            <point key="canvasLocation" x="-396" y="133"/>
         </scene>
         <!--Charts Gallery Histogram View Controller - Histogram-->
         <scene sceneID="3dS-rW-kpr">
@@ -330,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6T7-fZ-qLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="3089"/>
+            <point key="canvasLocation" x="700" y="553"/>
         </scene>
         <!--Charts Gallery Stacked Bar View Controller - Stacked Bar-->
         <scene sceneID="fbw-TX-8Kg">
@@ -357,7 +363,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bla-vc-Q1s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="3965"/>
+            <point key="canvasLocation" x="-388" y="1029"/>
         </scene>
         <!--Charts Gallery Stacked Column View Controller - Stacked Column-->
         <scene sceneID="aLo-ho-eca">
@@ -384,22 +390,190 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rO-ke-cAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1448" y="4869"/>
+            <point key="canvasLocation" x="700" y="1453"/>
+        </scene>
+        <!--Charts Gallery Step View Controller - Step-->
+        <scene sceneID="pAd-Sg-2tk">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryStepViewController" id="ISp-tt-BTv" customClass="ChartsGalleryStepViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oFJ-ko-Y92">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="RDf-i9-mWC" customClass="ShinobiChart">
+                                <rect key="frame" x="50" y="80" width="924" height="608"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Step" image="StepChart" id="F5f-Rs-oTE"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="RDf-i9-mWC" id="e1I-px-Awh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACi-NU-D9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-388" y="1925"/>
+        </scene>
+        <!--Charts Gallery Candlestick View Controller - Candlestick-->
+        <scene sceneID="PKU-vj-XqK">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryCandlestickViewController" id="qXL-eg-32z" customClass="ChartsGalleryCandlestickViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hV1-Cf-v6w">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="2gS-ci-w1S" customClass="ShinobiChart">
+                                <rect key="frame" x="50" y="80" width="924" height="608"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Candlestick" image="CandlestickChart" id="AnM-5j-dHX"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="2gS-ci-w1S" id="HB7-WP-0SN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMe-5X-ic9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="2341"/>
+        </scene>
+        <!--Charts GalleryOHLC View Controller - OHLC-->
+        <scene sceneID="0Sj-ua-TEF">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryOHLCViewController" id="v4v-TS-hog" customClass="ChartsGalleryOHLCViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rOh-7c-HV9">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="OXx-L2-Nz2" customClass="ShinobiChart">
+                                <rect key="frame" x="50" y="80" width="924" height="608"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="OHLC" image="OhlcChart" id="ks3-iM-hG4"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="OXx-L2-Nz2" id="ySy-EY-q4u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u2v-ey-Ei7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-380" y="2845"/>
+        </scene>
+        <!--Charts Gallery Band View Controller - Band-->
+        <scene sceneID="h1k-Gm-z3r">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryBandViewController" id="f4r-vo-QzV" customClass="ChartsGalleryBandViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CeJ-6h-XqR">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="707-lo-eKT" customClass="ShinobiChart">
+                                <rect key="frame" x="50" y="80" width="924" height="608"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Band" image="BandChart" id="jEC-xE-Qfs"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="707-lo-eKT" id="6gG-ym-zOo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="see-16-H29" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="3237"/>
+        </scene>
+        <!--Charts Gallery Scatter View Controller - Scatter-->
+        <scene sceneID="W9t-KI-6rU">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryScatterViewController" id="HgR-hK-jB4" customClass="ChartsGalleryScatterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="za8-0H-hwz">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Dg4-8X-u7G" customClass="ShinobiChart">
+                                <rect key="frame" x="50" y="80" width="924" height="608"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scatter" image="ScatterChart" id="jea-uP-YN5"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="Dg4-8X-u7G" id="Srh-Tb-3sj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wSY-I6-1rU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="5041"/>
+        </scene>
+        <!--Charts Gallery Bubble View Controller - Bubble-->
+        <scene sceneID="zQd-xV-0ML">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryBubbleViewController" id="RLn-hE-zJf" customClass="ChartsGalleryBubbleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bCI-9W-z23">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="aXx-7n-jPC" customClass="ShinobiChart">
+                                <rect key="frame" x="50" y="80" width="924" height="608"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bubble" image="BubbleChart" id="2xK-am-Y61"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="aXx-7n-jPC" id="lq0-Vo-Yl9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5g-Xg-t7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-396" y="5569"/>
         </scene>
     </scenes>
     <resources>
         <image name="AlternateLineChart" width="30" height="30"/>
         <image name="AreaChart" width="30" height="30"/>
+        <image name="BandChart" width="30" height="30"/>
         <image name="BarChart" width="30" height="30"/>
+        <image name="BubbleChart" width="30" height="30"/>
+        <image name="CandlestickChart" width="30" height="30"/>
         <image name="ColumnChart" width="30" height="30"/>
         <image name="DonutChart" width="30" height="30"/>
         <image name="Histogram" width="30" height="30"/>
         <image name="LineChart" width="30" height="30"/>
         <image name="MultitypeChart" width="30" height="30"/>
+        <image name="OhlcChart" width="30" height="30"/>
         <image name="PieChart" width="30" height="30"/>
+        <image name="ScatterChart" width="30" height="30"/>
         <image name="StackedBarChart" width="30" height="30"/>
         <image name="StackedColumnChart" width="30" height="30"/>
         <image name="StackedLineChart" width="30" height="30"/>
+        <image name="StepChart" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

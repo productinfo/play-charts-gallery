@@ -18,7 +18,7 @@
 
 @implementation ChartsGalleryMultitypeDataSource
 
-- (id)init {
+- (instancetype)init {
   self = [super initWithDataFromFile:@"ChartsGallery-multitype-data"];
   if (self) {
     self.seriesNames = @[@"mm_rain", @"max_temp", @"min_temp"];

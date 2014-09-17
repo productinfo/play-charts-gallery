@@ -17,5 +17,6 @@
 
 - (instancetype)initWithDataFromFile:(NSString *)filename;
 - (id)xValueAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex;
+- (id)yValueAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation ChartsGalleryAreaDataSource
 
-- (id)init {
+- (instancetype)init {
   self = [super initWithDataFromFile:@"ChartsGallery-area-data"];
   if (self) {
     self.seriesNames = @[@"north", @"east", @"south", @"west"];

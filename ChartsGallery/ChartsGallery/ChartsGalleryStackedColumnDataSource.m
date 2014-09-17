@@ -16,7 +16,7 @@
 
 @implementation ChartsGalleryStackedColumnDataSource
 
-- (id)init {
+- (instancetype)init {
   self = [super initWithDataFromFile:@"ChartsGallery-stackedColumn-data"];
   if (self) {
     self.seriesNames = @[@"q1", @"q2", @"q3", @"q4"];
@@ -35,10 +35,13 @@
   return series;
 }
 
-- (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
-    SChartDataPoint *dp = [[SChartDataPoint alloc] init];
-    dp.yValue = @([self.dataCollection[dataIndex][self.seriesNames[seriesIndex]] floatValue] / 1000000.f);
-    dp.xValue = self.categories[dataIndex];
-    return dp;
+- (id)xValueAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+  return self.categories[dataIndex];
 }
+
+- (id)yValueAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+  // We want to display data in millions
+  return @([self.dataCollection[dataIndex][self.seriesNames[seriesIndex]] floatValue] / 1000000.f);
+}
+
 @end

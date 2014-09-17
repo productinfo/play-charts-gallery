@@ -16,7 +16,7 @@
 
 @implementation ChartsGalleryLineDataSource
 
-- (id)init {
+- (instancetype)init {
   self = [super initWithDataFromFile:@"ChartsGallery-line-data"];
   if (self) {
     self.seriesNames = @[@"la", @"boston", @"seattle", @"miami",];

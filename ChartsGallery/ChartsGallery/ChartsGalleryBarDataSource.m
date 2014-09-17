@@ -17,7 +17,7 @@
 
 @implementation ChartsGalleryBarDataSource
 
-- (id)init {
+- (instancetype)init {
   self = [super initWithDataFromFile:@"ChartsGallery-bar-data"];
   if (self) {
     self.seriesNames = @[@"under_34",@"3544",@"4554", @"55"];
@@ -37,12 +37,14 @@
   return series;
 }
 
-- (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
-  // This is a bar chart, so the category is the y-value and the actual data is the x-value
-  SChartDataPoint *dp = [[SChartDataPoint alloc] init];
-  dp.xValue = self.dataCollection[dataIndex][self.seriesNames[seriesIndex]];
-  dp.yValue = self.categories[dataIndex];
-  return dp;
+- (id)xValueAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+  // This is a bar chart, so the x-value is the actual data
+  return self.dataCollection[dataIndex][self.seriesNames[seriesIndex]];
+}
+
+- (id)yValueAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+  // This is a bar chart, so the y-value is the category
+  return self.categories[dataIndex];
 }
 
 @end

@@ -17,7 +17,7 @@
 
 @implementation ChartsGalleryStackedLineDataSource
 
-- (id)init {
+- (instancetype)init {
   self = [super initWithDataFromFile:@"ChartsGallery-stackedLine-data"];
   if (self) {
     self.seriesNames = [[NSArray alloc] initWithObjects:@"food", @"nonfood", @"online", @"other", nil];

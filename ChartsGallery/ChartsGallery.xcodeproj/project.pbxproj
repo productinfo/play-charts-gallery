@@ -24,6 +24,25 @@
 		681815F619C6F88B00D10022 /* ChartsGalleryStackedColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681815F519C6F88B00D10022 /* ChartsGalleryStackedColumnViewController.m */; };
 		681815F919C6F8C400D10022 /* ChartsGalleryStackedColumnDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 681815F819C6F8C400D10022 /* ChartsGalleryStackedColumnDataSource.m */; };
 		681815FB19C6F8F300D10022 /* ChartsGallery-stackedColumn-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 681815FA19C6F8F300D10022 /* ChartsGallery-stackedColumn-data.plist */; };
+		681815FF19C707CB00D10022 /* ChartsGalleryStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681815FE19C707CB00D10022 /* ChartsGalleryStepViewController.m */; };
+		6818160219C707EC00D10022 /* ChartsGalleryStepDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818160119C707EC00D10022 /* ChartsGalleryStepDataSource.m */; };
+		6818160419C7084C00D10022 /* ChartsGallery-step-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6818160319C7084C00D10022 /* ChartsGallery-step-data.plist */; };
+		6818160A19C70F6400D10022 /* ChartsGalleryCandlestickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818160719C70F6400D10022 /* ChartsGalleryCandlestickViewController.m */; };
+		6818160B19C70F6400D10022 /* ChartsGalleryCandlestickDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818160919C70F6400D10022 /* ChartsGalleryCandlestickDataSource.m */; };
+		6818162719C713D000D10022 /* ChartsGallery-ohlc-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6818162619C713D000D10022 /* ChartsGallery-ohlc-data.plist */; };
+		6818162B19C740AD00D10022 /* ChartsGalleryOHLCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818162A19C740AD00D10022 /* ChartsGalleryOHLCViewController.m */; };
+		6818162E19C740C700D10022 /* ChartsGalleryOHLCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818162D19C740C700D10022 /* ChartsGalleryOHLCDataSource.m */; };
+		6818163419C81FD900D10022 /* ChartsGalleryBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818163319C81FD900D10022 /* ChartsGalleryBandViewController.m */; };
+		6818163719C81FF200D10022 /* ChartsGalleryBandDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818163619C81FF200D10022 /* ChartsGalleryBandDataSource.m */; };
+		6818163B19C82C4B00D10022 /* ChartsGallery-band-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6818163A19C82C4B00D10022 /* ChartsGallery-band-data.plist */; };
+		6818163E19C83A3F00D10022 /* ChartsGalleryMultiYDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818163D19C83A3F00D10022 /* ChartsGalleryMultiYDataSource.m */; };
+		6818164419C84F3300D10022 /* ChartsGallery-scatter-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6818164319C84F3300D10022 /* ChartsGallery-scatter-data.plist */; };
+		6818164719C84F7600D10022 /* ChartsGalleryScatterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818164619C84F7600D10022 /* ChartsGalleryScatterDataSource.m */; };
+		6818164A19C84F9400D10022 /* ChartsGalleryScatterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818164919C84F9400D10022 /* ChartsGalleryScatterViewController.m */; };
+		6818164D19C862E600D10022 /* ChartsGalleryBubbleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818164C19C862E600D10022 /* ChartsGalleryBubbleViewController.m */; };
+		6818165019C862FA00D10022 /* ChartsGalleryBubbleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818164F19C862FA00D10022 /* ChartsGalleryBubbleDataSource.m */; };
+		6818165619C8642A00D10022 /* ChartsGalleryBubbleSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 6818165519C8642A00D10022 /* ChartsGalleryBubbleSeries.m */; };
+		6818165819C8835700D10022 /* ChartsGallery-bubble-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6818165719C8835700D10022 /* ChartsGallery-bubble-data.plist */; };
 		68229E9619BDA7E7004B5A17 /* ChartsGalleryLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68229E9219BDA7E7004B5A17 /* ChartsGalleryLineViewController.m */; };
 		68229E9719BDA7E7004B5A17 /* ChartsGalleryLineDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 68229E9419BDA7E7004B5A17 /* ChartsGalleryLineDataSource.m */; };
 		68229E9819BDA7E7004B5A17 /* ChartsGallery-line-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68229E9519BDA7E7004B5A17 /* ChartsGallery-line-data.plist */; };
@@ -115,6 +134,39 @@
 		681815F719C6F8BA00D10022 /* ChartsGalleryStackedColumnDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryStackedColumnDataSource.h; sourceTree = "<group>"; };
 		681815F819C6F8C400D10022 /* ChartsGalleryStackedColumnDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryStackedColumnDataSource.m; sourceTree = "<group>"; };
 		681815FA19C6F8F300D10022 /* ChartsGallery-stackedColumn-data.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ChartsGallery-stackedColumn-data.plist"; sourceTree = "<group>"; };
+		681815FC19C7079900D10022 /* ChartsGalleryStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryStepViewController.h; sourceTree = "<group>"; };
+		681815FE19C707CB00D10022 /* ChartsGalleryStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryStepViewController.m; sourceTree = "<group>"; };
+		6818160019C707D600D10022 /* ChartsGalleryStepDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryStepDataSource.h; sourceTree = "<group>"; };
+		6818160119C707EC00D10022 /* ChartsGalleryStepDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryStepDataSource.m; sourceTree = "<group>"; };
+		6818160319C7084C00D10022 /* ChartsGallery-step-data.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ChartsGallery-step-data.plist"; sourceTree = "<group>"; };
+		6818160619C70F6400D10022 /* ChartsGalleryCandlestickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryCandlestickViewController.h; sourceTree = "<group>"; };
+		6818160719C70F6400D10022 /* ChartsGalleryCandlestickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryCandlestickViewController.m; sourceTree = "<group>"; };
+		6818160819C70F6400D10022 /* ChartsGalleryCandlestickDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryCandlestickDataSource.h; sourceTree = "<group>"; };
+		6818160919C70F6400D10022 /* ChartsGalleryCandlestickDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryCandlestickDataSource.m; sourceTree = "<group>"; };
+		6818162619C713D000D10022 /* ChartsGallery-ohlc-data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ChartsGallery-ohlc-data.plist"; sourceTree = "<group>"; };
+		6818162919C740A200D10022 /* ChartsGalleryOHLCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChartsGalleryOHLCViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		6818162A19C740AD00D10022 /* ChartsGalleryOHLCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryOHLCViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6818162C19C740B800D10022 /* ChartsGalleryOHLCDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChartsGalleryOHLCDataSource.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		6818162D19C740C700D10022 /* ChartsGalleryOHLCDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryOHLCDataSource.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6818163219C81FCC00D10022 /* ChartsGalleryBandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryBandViewController.h; sourceTree = "<group>"; };
+		6818163319C81FD900D10022 /* ChartsGalleryBandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryBandViewController.m; sourceTree = "<group>"; };
+		6818163519C81FE400D10022 /* ChartsGalleryBandDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryBandDataSource.h; sourceTree = "<group>"; };
+		6818163619C81FF200D10022 /* ChartsGalleryBandDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryBandDataSource.m; sourceTree = "<group>"; };
+		6818163A19C82C4B00D10022 /* ChartsGallery-band-data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ChartsGallery-band-data.plist"; sourceTree = "<group>"; };
+		6818163C19C83A3F00D10022 /* ChartsGalleryMultiYDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryMultiYDataSource.h; sourceTree = "<group>"; };
+		6818163D19C83A3F00D10022 /* ChartsGalleryMultiYDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryMultiYDataSource.m; sourceTree = "<group>"; };
+		6818164319C84F3300D10022 /* ChartsGallery-scatter-data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ChartsGallery-scatter-data.plist"; sourceTree = "<group>"; };
+		6818164519C84F6900D10022 /* ChartsGalleryScatterDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChartsGalleryScatterDataSource.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		6818164619C84F7600D10022 /* ChartsGalleryScatterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryScatterDataSource.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6818164819C84F8100D10022 /* ChartsGalleryScatterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChartsGalleryScatterViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		6818164919C84F9400D10022 /* ChartsGalleryScatterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryScatterViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6818164B19C862DD00D10022 /* ChartsGalleryBubbleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryBubbleViewController.h; sourceTree = "<group>"; };
+		6818164C19C862E600D10022 /* ChartsGalleryBubbleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryBubbleViewController.m; sourceTree = "<group>"; };
+		6818164E19C862F000D10022 /* ChartsGalleryBubbleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryBubbleDataSource.h; sourceTree = "<group>"; };
+		6818164F19C862FA00D10022 /* ChartsGalleryBubbleDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryBubbleDataSource.m; sourceTree = "<group>"; };
+		6818165419C8642A00D10022 /* ChartsGalleryBubbleSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryBubbleSeries.h; sourceTree = "<group>"; };
+		6818165519C8642A00D10022 /* ChartsGalleryBubbleSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryBubbleSeries.m; sourceTree = "<group>"; };
+		6818165719C8835700D10022 /* ChartsGallery-bubble-data.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ChartsGallery-bubble-data.plist"; sourceTree = "<group>"; };
 		68229E9119BDA7E7004B5A17 /* ChartsGalleryLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryLineViewController.h; sourceTree = "<group>"; };
 		68229E9219BDA7E7004B5A17 /* ChartsGalleryLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryLineViewController.m; sourceTree = "<group>"; };
 		68229E9319BDA7E7004B5A17 /* ChartsGalleryLineDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryLineDataSource.h; sourceTree = "<group>"; };
@@ -242,10 +294,16 @@
 				68D4709B19C0350B001B1D0D /* Histogram */,
 				681815EC19C6F13100D10022 /* StackedBarChart */,
 				681815F319C6F74500D10022 /* StackedColumnChart */,
+				681815FD19C7079E00D10022 /* StepChart */,
+				6818160519C70F1400D10022 /* Candlestick */,
+				6818162819C7407F00D10022 /* OHLCChart */,
+				6818162F19C81FA700D10022 /* BandChart */,
 				6853D95519B5EB0F00735962 /* MultiChart */,
 				68C6319019B5AAF5009BFDC0 /* PieChart */,
 				68C6319E19B5B573009BFDC0 /* DonutChart */,
-				68C6319719B5AE23009BFDC0 /* Data */,
+				6818163F19C83BF500D10022 /* ScatterChart */,
+				6818165119C8630100D10022 /* BubbleChart */,
+				68C6319719B5AE23009BFDC0 /* DataSources */,
 				68171BEF19ADDBC5000AFEEB /* ChartsGalleryAppDelegate.h */,
 				68171BF019ADDBC5000AFEEB /* ChartsGalleryAppDelegate.m */,
 				68171BF219ADDBC5000AFEEB /* ChartsGallery.storyboard */,
@@ -300,6 +358,79 @@
 				681815F819C6F8C400D10022 /* ChartsGalleryStackedColumnDataSource.m */,
 			);
 			name = StackedColumnChart;
+			sourceTree = "<group>";
+		};
+		681815FD19C7079E00D10022 /* StepChart */ = {
+			isa = PBXGroup;
+			children = (
+				6818160319C7084C00D10022 /* ChartsGallery-step-data.plist */,
+				681815FC19C7079900D10022 /* ChartsGalleryStepViewController.h */,
+				681815FE19C707CB00D10022 /* ChartsGalleryStepViewController.m */,
+				6818160019C707D600D10022 /* ChartsGalleryStepDataSource.h */,
+				6818160119C707EC00D10022 /* ChartsGalleryStepDataSource.m */,
+			);
+			name = StepChart;
+			sourceTree = "<group>";
+		};
+		6818160519C70F1400D10022 /* Candlestick */ = {
+			isa = PBXGroup;
+			children = (
+				6818160619C70F6400D10022 /* ChartsGalleryCandlestickViewController.h */,
+				6818160719C70F6400D10022 /* ChartsGalleryCandlestickViewController.m */,
+				6818160819C70F6400D10022 /* ChartsGalleryCandlestickDataSource.h */,
+				6818160919C70F6400D10022 /* ChartsGalleryCandlestickDataSource.m */,
+			);
+			name = Candlestick;
+			sourceTree = "<group>";
+		};
+		6818162819C7407F00D10022 /* OHLCChart */ = {
+			isa = PBXGroup;
+			children = (
+				6818162619C713D000D10022 /* ChartsGallery-ohlc-data.plist */,
+				6818162919C740A200D10022 /* ChartsGalleryOHLCViewController.h */,
+				6818162A19C740AD00D10022 /* ChartsGalleryOHLCViewController.m */,
+				6818162C19C740B800D10022 /* ChartsGalleryOHLCDataSource.h */,
+				6818162D19C740C700D10022 /* ChartsGalleryOHLCDataSource.m */,
+			);
+			name = OHLCChart;
+			sourceTree = "<group>";
+		};
+		6818162F19C81FA700D10022 /* BandChart */ = {
+			isa = PBXGroup;
+			children = (
+				6818163A19C82C4B00D10022 /* ChartsGallery-band-data.plist */,
+				6818163219C81FCC00D10022 /* ChartsGalleryBandViewController.h */,
+				6818163319C81FD900D10022 /* ChartsGalleryBandViewController.m */,
+				6818163519C81FE400D10022 /* ChartsGalleryBandDataSource.h */,
+				6818163619C81FF200D10022 /* ChartsGalleryBandDataSource.m */,
+			);
+			name = BandChart;
+			sourceTree = "<group>";
+		};
+		6818163F19C83BF500D10022 /* ScatterChart */ = {
+			isa = PBXGroup;
+			children = (
+				6818164519C84F6900D10022 /* ChartsGalleryScatterDataSource.h */,
+				6818164619C84F7600D10022 /* ChartsGalleryScatterDataSource.m */,
+				6818164819C84F8100D10022 /* ChartsGalleryScatterViewController.h */,
+				6818164919C84F9400D10022 /* ChartsGalleryScatterViewController.m */,
+				6818164319C84F3300D10022 /* ChartsGallery-scatter-data.plist */,
+			);
+			name = ScatterChart;
+			sourceTree = "<group>";
+		};
+		6818165119C8630100D10022 /* BubbleChart */ = {
+			isa = PBXGroup;
+			children = (
+				6818165719C8835700D10022 /* ChartsGallery-bubble-data.plist */,
+				6818164B19C862DD00D10022 /* ChartsGalleryBubbleViewController.h */,
+				6818164C19C862E600D10022 /* ChartsGalleryBubbleViewController.m */,
+				6818164E19C862F000D10022 /* ChartsGalleryBubbleDataSource.h */,
+				6818164F19C862FA00D10022 /* ChartsGalleryBubbleDataSource.m */,
+				6818165419C8642A00D10022 /* ChartsGalleryBubbleSeries.h */,
+				6818165519C8642A00D10022 /* ChartsGalleryBubbleSeries.m */,
+			);
+			name = BubbleChart;
 			sourceTree = "<group>";
 		};
 		68229E8F19BDA7C1004B5A17 /* LineChart */ = {
@@ -396,7 +527,7 @@
 			name = PieChart;
 			sourceTree = "<group>";
 		};
-		68C6319719B5AE23009BFDC0 /* Data */ = {
+		68C6319719B5AE23009BFDC0 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
 				68C6319819B5AE30009BFDC0 /* ChartsGalleryCommonDataSource.h */,
@@ -405,8 +536,10 @@
 				68C6319B19B5AE30009BFDC0 /* ChartsGalleryProportionDataSource.m */,
 				68229EC019BDEFAF004B5A17 /* ChartsGalleryCommonDateDataSource.h */,
 				68229EC119BDEFAF004B5A17 /* ChartsGalleryCommonDateDataSource.m */,
+				6818163C19C83A3F00D10022 /* ChartsGalleryMultiYDataSource.h */,
+				6818163D19C83A3F00D10022 /* ChartsGalleryMultiYDataSource.m */,
 			);
-			name = Data;
+			name = DataSources;
 			sourceTree = "<group>";
 		};
 		68C6319E19B5B573009BFDC0 /* DonutChart */ = {
@@ -523,6 +656,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6818160419C7084C00D10022 /* ChartsGallery-step-data.plist in Resources */,
 				68229EAD19BDCF56004B5A17 /* ChartsGallery-area-data.plist in Resources */,
 				68229EC419BDF693004B5A17 /* ChartsGallery-alternateLine-data.plist in Resources */,
 				68D4709419BF2140001B1D0D /* ChartsGallery-bar-data.plist in Resources */,
@@ -532,7 +666,11 @@
 				68D4709219BF1E96001B1D0D /* ChartsGallery-column-data.plist in Resources */,
 				68171BEB19ADDBC5000AFEEB /* InfoPlist.strings in Resources */,
 				68229E9819BDA7E7004B5A17 /* ChartsGallery-line-data.plist in Resources */,
+				6818163B19C82C4B00D10022 /* ChartsGallery-band-data.plist in Resources */,
+				6818162719C713D000D10022 /* ChartsGallery-ohlc-data.plist in Resources */,
+				6818164419C84F3300D10022 /* ChartsGallery-scatter-data.plist in Resources */,
 				681815FB19C6F8F300D10022 /* ChartsGallery-stackedColumn-data.plist in Resources */,
+				6818165819C8835700D10022 /* ChartsGallery-bubble-data.plist in Resources */,
 				68D470A319C0369A001B1D0D /* ChartsGallery-histogram-data.plist in Resources */,
 				68171BF419ADDBC5000AFEEB /* ChartsGallery.storyboard in Resources */,
 			);
@@ -545,20 +683,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6818160219C707EC00D10022 /* ChartsGalleryStepDataSource.m in Sources */,
 				681815EA19C6E4AB00D10022 /* ChartsGalleryHistogramSeries.m in Sources */,
+				6818165619C8642A00D10022 /* ChartsGalleryBubbleSeries.m in Sources */,
 				681815F119C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.m in Sources */,
+				6818160B19C70F6400D10022 /* ChartsGalleryCandlestickDataSource.m in Sources */,
 				68C6319319B5AB44009BFDC0 /* ChartsGalleryPieViewController.m in Sources */,
 				6853D95B19B5EB2400735962 /* ChartsGalleryMultitypeViewController.m in Sources */,
 				68229E9619BDA7E7004B5A17 /* ChartsGalleryLineViewController.m in Sources */,
+				6818165019C862FA00D10022 /* ChartsGalleryBubbleDataSource.m in Sources */,
 				68229E9719BDA7E7004B5A17 /* ChartsGalleryLineDataSource.m in Sources */,
 				68C631A419B5B639009BFDC0 /* ChartsGalleryDonutDataSource.m in Sources */,
 				68229ECD19BEF0DD004B5A17 /* ChartsGalleryBarDataSource.m in Sources */,
+				6818164A19C84F9400D10022 /* ChartsGalleryScatterViewController.m in Sources */,
+				6818163419C81FD900D10022 /* ChartsGalleryBandViewController.m in Sources */,
 				68229EB519BDD35E004B5A17 /* ChartsGalleryStackedLineDataSource.m in Sources */,
 				68C6319D19B5AE30009BFDC0 /* ChartsGalleryProportionDataSource.m in Sources */,
+				6818163E19C83A3F00D10022 /* ChartsGalleryMultiYDataSource.m in Sources */,
+				6818164719C84F7600D10022 /* ChartsGalleryScatterDataSource.m in Sources */,
 				681815F919C6F8C400D10022 /* ChartsGalleryStackedColumnDataSource.m in Sources */,
 				68229E9E19BDB234004B5A17 /* ChartsGalleryAlternateLineViewController.m in Sources */,
+				6818164D19C862E600D10022 /* ChartsGalleryBubbleViewController.m in Sources */,
 				68229EB619BDD35E004B5A17 /* ChartsGalleryStackedLineViewController.m in Sources */,
 				68C6319619B5AD8F009BFDC0 /* ChartsGalleryPieDataSource.m in Sources */,
+				6818160A19C70F6400D10022 /* ChartsGalleryCandlestickViewController.m in Sources */,
 				681815F219C6F14C00D10022 /* ChartsGalleryStackedBarViewController.m in Sources */,
 				68229EBE19BDD864004B5A17 /* ChartsGalleryStackedAreaViewController.m in Sources */,
 				68229ECC19BEF0DD004B5A17 /* ChartsGalleryBarViewController.m in Sources */,
@@ -566,6 +714,7 @@
 				68171BF119ADDBC5000AFEEB /* ChartsGalleryAppDelegate.m in Sources */,
 				68229E9F19BDB234004B5A17 /* ChartsGalleryAlternateLineDataSource.m in Sources */,
 				68D4709019BF1E83001B1D0D /* ChartsGalleryColumnDataSource.m in Sources */,
+				6818163719C81FF200D10022 /* ChartsGalleryBandDataSource.m in Sources */,
 				68171BED19ADDBC5000AFEEB /* main.m in Sources */,
 				68229EAB19BDCDA7004B5A17 /* ChartsGalleryAreaDataSource.m in Sources */,
 				68C6319C19B5AE30009BFDC0 /* ChartsGalleryCommonDataSource.m in Sources */,
@@ -575,9 +724,12 @@
 				68171BF719ADDBC5000AFEEB /* ChartsGalleryViewController.m in Sources */,
 				68D4709819BF40DC001B1D0D /* ChartsGalleryCommonViewController.m in Sources */,
 				68C631A119B5B5DA009BFDC0 /* ChartsGalleryDonutViewController.m in Sources */,
+				6818162B19C740AD00D10022 /* ChartsGalleryOHLCViewController.m in Sources */,
 				68D4708F19BF1E83001B1D0D /* ChartsGalleryColumnViewController.m in Sources */,
+				681815FF19C707CB00D10022 /* ChartsGalleryStepViewController.m in Sources */,
 				6853D95C19B5EB2400735962 /* ChartsGalleryMultitypeDataSource.m in Sources */,
 				68229EC219BDEFAF004B5A17 /* ChartsGalleryCommonDateDataSource.m in Sources */,
+				6818162E19C740C700D10022 /* ChartsGalleryOHLCDataSource.m in Sources */,
 				681815F619C6F88B00D10022 /* ChartsGalleryStackedColumnViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 ScottLogic. All rights reserved.
 //
 
-#import <ShinobiCharts/ShinobiCharts.h>
+#import "ChartsGalleryCommonDataSource.h"
 
-@interface ChartsGalleryHistogramDataSource : NSObject<SChartDatasource>
+@interface ChartsGalleryHistogramDataSource : ChartsGalleryCommonDataSource
 
 @end

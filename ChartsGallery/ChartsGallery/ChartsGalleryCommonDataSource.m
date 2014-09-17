@@ -27,16 +27,29 @@
   return nil;
 }
 
+- (id)yValueAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+  if (self.seriesNames != nil) {
+    return self.dataCollection[dataIndex][self.seriesNames[seriesIndex]];
+  } else {
+    // Should be implemented in subclass
+    return nil;
+  }
+}
+
 #pragma mark - SChartDatasource methods
 - (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
   SChartDataPoint *dp = [SChartDataPoint new];
   dp.xValue = [self xValueAtIndex:dataIndex forSeriesAtIndex:seriesIndex];
-  dp.yValue = self.dataCollection[dataIndex][self.seriesNames[seriesIndex]];
+  dp.yValue = [self yValueAtIndex:dataIndex forSeriesAtIndex:seriesIndex];
   return dp;
 }
 
 - (NSInteger)numberOfSeriesInSChart:(ShinobiChart *)chart {
-  return self.seriesNames.count;
+  if (self.seriesNames == nil) {
+    return 1;
+  } else {
+    return self.seriesNames.count;
+  }
 }
 
 - (NSInteger)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(NSInteger)seriesIndex {
