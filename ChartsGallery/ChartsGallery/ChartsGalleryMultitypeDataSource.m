@@ -26,7 +26,7 @@
     
     self.dateComponents = [NSDateComponents new];
     [self.dateComponents setDay:1];
-    self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
   }
   return self;
 }

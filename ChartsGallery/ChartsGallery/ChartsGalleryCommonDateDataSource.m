@@ -14,7 +14,7 @@
   self = [super initWithDataFromFile:filename];
   if (self) {
     self.dateComponents = [NSDateComponents new];
-    self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
   }
   return self;
 }
