@@ -28,7 +28,6 @@
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
   SChartColumnSeries *series = [SChartColumnSeries new];
   series.title = [self.seriesNames[index] capitalizedString];
-  series.animationEnabled = YES;
   series.baseline = @0;
   return series;
 }

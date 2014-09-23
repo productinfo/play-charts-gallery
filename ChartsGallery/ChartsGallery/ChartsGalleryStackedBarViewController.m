@@ -29,23 +29,4 @@
   [self setupChart];
 }
 
-/*- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-        dataSource = [ChartsGalleryStackedBarDataSource new];
-        chart.datasource = dataSource;
-        chart.yAxis = [SChartCategoryAxis new];
-        //Need to reload settings on changes to the axes
-        [self reload];
-        chart.yAxis.rangePaddingLow = @0;
-        chart.yAxis.rangePaddingHigh = @0;
-        chart.xAxis.title = @"SAT Score";
-        chart.yAxis.title = @"School";
-        chart.title = @"SAT scores for schools";
-    }
-    return self;
-}*/
-
 @end
