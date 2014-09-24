@@ -11,9 +11,9 @@
 @implementation ChartsGalleryStackedAreaDataSource
 
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
-    SChartLineSeries *series = (SChartLineSeries *)[super sChart:chart seriesAtIndex:index];
-    series.stackIndex = @1;
-    return series;
+  SChartLineSeries *series = (SChartLineSeries *)[super sChart:chart seriesAtIndex:index];
+  series.stackIndex = @1;
+  return series;
 }
 
 @end
