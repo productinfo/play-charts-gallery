@@ -11,11 +11,11 @@
 
 @implementation ChartsGalleryOHLCViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryOHLCDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryOHLCDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartDateTimeAxis new];
   self.chart.xAxis.title = @"";
   
@@ -25,7 +25,7 @@
   
   self.chart.title = @"FTSE 100 values 2012";
   
-  [self setupChart];
+  [super setupChart];
   
   self.chart.legend.hidden = YES;
 }

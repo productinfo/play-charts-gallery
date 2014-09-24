@@ -11,11 +11,11 @@
 
 @implementation ChartsGalleryStackedBarViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryStackedBarDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryStackedBarDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartNumberAxis new];
   self.chart.xAxis.title = @"SAT Score";
   self.chart.xAxis.animationEdgeBouncing = NO;
@@ -26,7 +26,7 @@
   
   self.chart.title = @"SAT scores for schools";
   
-  [self setupChart];
+  [super setupChart];
 }
 
 @end

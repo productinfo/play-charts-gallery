@@ -11,11 +11,11 @@
 
 @implementation ChartsGalleryStackedLineViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryStackedLineDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryStackedLineDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartDateTimeAxis new];
   self.chart.xAxis.title = @"Date";
   self.chart.xAxis.labelFormatString = @"MMM yyyy";
@@ -25,7 +25,7 @@
   
   self.chart.title = @"UK monthly retail sales";
   
-  [self setupChart];
+  [super setupChart];
 }
 
 @end

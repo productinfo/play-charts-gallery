@@ -11,11 +11,11 @@
 
 @implementation ChartsGalleryCandlestickViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryCandlestickDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryCandlestickDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartDateTimeAxis new];
   self.chart.xAxis.title = @"";
   
@@ -25,7 +25,7 @@
   
   self.chart.title = @"FTSE 100 values 2012";
   
-  [self setupChart];
+  [super setupChart];
   
   self.chart.legend.hidden = YES;
 }

@@ -11,11 +11,11 @@
 
 @implementation ChartsGalleryScatterViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryScatterDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryScatterDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartNumberAxis new];
   self.chart.xAxis.title = @"Average Weight (lbs)";
   self.chart.xAxis.rangePaddingLow = @1;
@@ -28,7 +28,7 @@
   
   self.chart.title = @"Height vs Average weight";
   
-  [self setupChart];
+  [super setupChart];
 }
 
 @end

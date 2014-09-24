@@ -8,10 +8,14 @@
 
 #import "ChartsGalleryCommonViewController.h"
 
+@interface ChartsGalleryCommonViewController()
+
+@end
+
 @implementation ChartsGalleryCommonViewController
 
 - (void)setupChart {
-  self.chart.datasource = self.dataSource;
+  self.chart.delegate = self;
   self.chart.legend.hidden = NO;
   self.chart.backgroundColor = [UIColor whiteColor];
   
@@ -20,6 +24,19 @@
     axis.enableGestureZooming = YES;
     axis.enableMomentumPanning = YES;
     axis.enableMomentumZooming = YES;
+  }
+}
+
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  [self setupChart];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+  BOOL chartNeedsSetup = !self.chart;
+  [super viewWillAppear:animated];
+  if (chartNeedsSetup) {
+    [self setupChart];
   }
 }
 

@@ -11,11 +11,11 @@
 
 @implementation ChartsGalleryColumnViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryColumnDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryColumnDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartCategoryAxis new];
   self.chart.xAxis.title = @"School";
   self.chart.xAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@2.5 andMaximum:@5.5];
@@ -27,7 +27,7 @@
   
   self.chart.title = @"SAT scores for schools";
   
-  [self setupChart];
+  [super setupChart];
 }
 
 @end

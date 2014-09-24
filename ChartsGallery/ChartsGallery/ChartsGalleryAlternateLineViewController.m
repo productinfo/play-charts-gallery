@@ -11,11 +11,11 @@
 
 @implementation ChartsGalleryAlternateLineViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryAlternateLineDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryAlternateLineDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartDateTimeAxis new];
   self.chart.xAxis.rangePaddingHigh = [SChartDateFrequency dateFrequencyWithDay:1];
   self.chart.xAxis.title = @"Date in February";
@@ -26,7 +26,7 @@
   
   self.chart.title = @"Names of boys born in Liverpool during February 1964";
   
-  [self setupChart];
+  [super setupChart];
 }
 
 @end

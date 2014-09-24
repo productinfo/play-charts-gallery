@@ -12,11 +12,11 @@
 
 @implementation ChartsGalleryBarViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryBarDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryBarDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartNumberAxis new];
   self.chart.xAxis.title = @"% purchased an item";
   self.chart.xAxis.animationEdgeBouncing = NO;
@@ -28,7 +28,7 @@
   
   self.chart.title = @"Items purchased online by age in 2011";
   
-  [self setupChart];
+  [super setupChart];
 }
 
 @end

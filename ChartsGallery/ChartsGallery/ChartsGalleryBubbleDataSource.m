@@ -38,9 +38,11 @@
 
 - (void)sChart:(ShinobiChart *)chart alterDataPointLabel:(SChartDataPointLabel *)label
   forDataPoint:(SChartDataPoint *)dataPoint inSeries:(SChartSeries *)series {
+  CGPoint center = label.center;
   label.text = [self.dataCollection[dataPoint.index][@"country"] capitalizedString];
   label.font = [UIFont systemFontOfSize:10];
   [label sizeToFit];
+  label.center = center;
 }
 
 @end

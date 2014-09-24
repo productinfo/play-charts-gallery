@@ -11,11 +11,11 @@
 
 @implementation ChartsGalleryLineViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryLineDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryLineDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartDateTimeAxis new];
   self.chart.xAxis.title = @"Date";
   self.chart.xAxis.labelFormatString = @"MMM yyyy";
@@ -25,7 +25,7 @@
   
   self.chart.title = @"City temperatures during 2011";
   
-  [self setupChart];
+  [super setupChart];
 }
 
 @end

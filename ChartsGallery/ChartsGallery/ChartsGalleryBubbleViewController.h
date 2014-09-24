@@ -8,6 +8,6 @@
 
 #import "ChartsGalleryCommonViewController.h"
 
-@interface ChartsGalleryBubbleViewController : ChartsGalleryCommonViewController<SChartDelegate>
+@interface ChartsGalleryBubbleViewController : ChartsGalleryCommonViewController
 
 @end

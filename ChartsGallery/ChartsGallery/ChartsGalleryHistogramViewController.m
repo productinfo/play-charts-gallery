@@ -11,11 +11,11 @@
 
 @implementation ChartsGalleryHistogramViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryHistogramDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryHistogramDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartNumberAxis new];
   self.chart.xAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@0 andMaximum:@80];
   self.chart.xAxis.animationEdgeBouncing = NO;
@@ -31,7 +31,7 @@
   
   self.chart.title = @"Age distribution of event participants";
   
-  [self setupChart];
+  [super setupChart];
   self.chart.legend.hidden = YES;
 }
 

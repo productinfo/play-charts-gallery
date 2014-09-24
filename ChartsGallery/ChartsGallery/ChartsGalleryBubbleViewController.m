@@ -12,12 +12,11 @@
 
 @implementation ChartsGalleryBubbleViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryBubbleDataSource new];
-  self.chart.delegate = (ChartsGalleryBubbleDataSource*)self.dataSource;
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryBubbleDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartNumberAxis new];
   self.chart.xAxis.title = @"Longitude";
   self.chart.xAxis.rangePaddingLow = @20;
@@ -30,9 +29,18 @@
 
   self.chart.title = @"Populations by latitude and longitude";
   
-  [self setupChart];
+  [super setupChart];
   
   self.chart.legend.hidden = YES;
+}
+
+// Pass delegate method through to data source
+- (void)sChart:(ShinobiChart *)chart alterDataPointLabel:(SChartDataPointLabel *)label
+  forDataPoint:(SChartDataPoint *)dataPoint inSeries:(SChartSeries *)series {
+  return [(ChartsGalleryBubbleDataSource*)self.chart.datasource sChart:chart
+                                                   alterDataPointLabel:label
+                                                          forDataPoint:dataPoint
+                                                              inSeries:series];
 }
 
 @end

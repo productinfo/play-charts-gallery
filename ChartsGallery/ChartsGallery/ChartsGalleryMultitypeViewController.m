@@ -11,13 +11,13 @@
 
 @implementation ChartsGalleryMultitypeViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryMultitypeDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryMultitypeDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartDateTimeAxis new];
-  self.chart.xAxis.defaultRange = [(ChartsGalleryMultitypeDataSource *)self.dataSource getInitialDateRange];
+  self.chart.xAxis.defaultRange = [(ChartsGalleryMultitypeDataSource *)self.chart.datasource getInitialDateRange];
   self.chart.xAxis.title = @"Date";
   self.chart.xAxis.labelFormatString = @"MMM yyyy";
   
@@ -35,7 +35,7 @@
   
   self.chart.title = @"Historic monthly weather data for Heathrow Airport";
   
-  [self setupChart];
+  [super setupChart];
 }
 
 @end

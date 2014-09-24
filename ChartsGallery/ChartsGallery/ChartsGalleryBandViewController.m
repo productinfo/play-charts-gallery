@@ -11,11 +11,11 @@
 
 @implementation ChartsGalleryBandViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryBandDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryBandDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartDateTimeAxis new];
   self.chart.xAxis.title = @"";
   
@@ -24,7 +24,7 @@
   
   self.chart.title = @"Historical crude oil prices";
   
-  [self setupChart];
+  [super setupChart];
   
   self.chart.legend.hidden = YES;
 }

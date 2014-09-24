@@ -11,11 +11,11 @@
 
 @implementation ChartsGalleryStackedColumnViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryStackedColumnDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryStackedColumnDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartCategoryAxis new];
   self.chart.xAxis.title = @"";
   self.chart.xAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@-0.5 andMaximum:@6.5];
@@ -27,7 +27,7 @@
   
   self.chart.title = @"Value of retail trade";
   
-  [self setupChart];
+  [super setupChart];
 }
 
 @end

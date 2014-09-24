@@ -12,11 +12,11 @@
 
 @implementation ChartsGalleryAreaViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryAreaDataSource new];
-  
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryAreaDataSource new];
+}
+
+- (void)setupChart {
   self.chart.xAxis = [SChartDateTimeAxis new];
   self.chart.xAxis.title = @"Date";
   self.chart.xAxis.majorTickFrequency = [SChartDateFrequency dateFrequencyWithDay:1];
@@ -26,7 +26,7 @@
 
   self.chart.title = @"Unit sales by region in 2011";
   
-  [self setupChart];
+  [super setupChart];
 }
 
 @end

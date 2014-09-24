@@ -19,12 +19,13 @@
 
 @implementation ChartsGalleryPieViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryPieDataSource new];
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryPieDataSource new];
+}
+
+- (void)setupChart {
   self.chart.title = @"Favourite types of movie";
-  [self setupChart];
+  [super setupChart];
   self.chart.legend.position = SChartLegendPositionMiddleRight;
 }
 

@@ -19,12 +19,13 @@
 
 @implementation ChartsGalleryDonutViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  
-  self.dataSource = [ChartsGalleryDonutDataSource new];
+- (id<SChartDatasource>)createDataSource {
+  return [ChartsGalleryDonutDataSource new];
+}
+
+- (void)setupChart {
   self.chart.title = @"Favourite types of movie";
-  [self setupChart];
+  [super setupChart];
   self.chart.legend.position = SChartLegendPositionMiddleRight;  
 }
 
