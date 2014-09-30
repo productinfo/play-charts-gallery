@@ -11,8 +11,8 @@
 
 @implementation ChartsGalleryCandlestickViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryCandlestickDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryCandlestickDataSource new];
 }
 
 - (void)setupChart {

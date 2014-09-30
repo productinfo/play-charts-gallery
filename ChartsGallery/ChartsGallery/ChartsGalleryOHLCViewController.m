@@ -11,8 +11,8 @@
 
 @implementation ChartsGalleryOHLCViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryOHLCDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryOHLCDataSource new];
 }
 
 - (void)setupChart {

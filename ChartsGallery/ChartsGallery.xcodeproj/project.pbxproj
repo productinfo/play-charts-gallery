@@ -168,7 +168,7 @@
 		6818165519C8642A00D10022 /* ChartsGalleryBubbleSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryBubbleSeries.m; sourceTree = "<group>"; };
 		6818165719C8835700D10022 /* ChartsGallery-bubble-data.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ChartsGallery-bubble-data.plist"; sourceTree = "<group>"; };
 		68229E9119BDA7E7004B5A17 /* ChartsGalleryLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryLineViewController.h; sourceTree = "<group>"; };
-		68229E9219BDA7E7004B5A17 /* ChartsGalleryLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryLineViewController.m; sourceTree = "<group>"; };
+		68229E9219BDA7E7004B5A17 /* ChartsGalleryLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryLineViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		68229E9319BDA7E7004B5A17 /* ChartsGalleryLineDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryLineDataSource.h; sourceTree = "<group>"; };
 		68229E9419BDA7E7004B5A17 /* ChartsGalleryLineDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryLineDataSource.m; sourceTree = "<group>"; };
 		68229E9519BDA7E7004B5A17 /* ChartsGallery-line-data.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ChartsGallery-line-data.plist"; sourceTree = "<group>"; };

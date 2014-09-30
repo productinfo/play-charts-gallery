@@ -11,8 +11,8 @@
 
 @implementation ChartsGalleryScatterViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryScatterDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryScatterDataSource new];
 }
 
 - (void)setupChart {

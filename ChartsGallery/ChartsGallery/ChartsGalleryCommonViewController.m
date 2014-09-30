@@ -27,17 +27,4 @@
   }
 }
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  [self setupChart];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-  BOOL chartNeedsSetup = !self.chart;
-  [super viewWillAppear:animated];
-  if (chartNeedsSetup) {
-    [self setupChart];
-  }
-}
-
 @end

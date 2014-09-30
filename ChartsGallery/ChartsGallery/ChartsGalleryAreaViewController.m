@@ -12,8 +12,8 @@
 
 @implementation ChartsGalleryAreaViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryAreaDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryAreaDataSource new];
 }
 
 - (void)setupChart {

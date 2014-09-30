@@ -19,8 +19,8 @@
 
 @implementation ChartsGalleryPieViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryPieDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryPieDataSource new];
 }
 
 - (void)setupChart {

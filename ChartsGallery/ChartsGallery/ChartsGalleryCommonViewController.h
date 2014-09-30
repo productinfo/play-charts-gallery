@@ -11,6 +11,4 @@
 
 @interface ChartsGalleryCommonViewController : SPUGalleryManagedChartViewController<SChartDelegate>
 
-- (void)setupChart;
-
 @end

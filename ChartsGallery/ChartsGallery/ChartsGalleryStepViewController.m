@@ -11,8 +11,8 @@
 
 @implementation ChartsGalleryStepViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryStepDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryStepDataSource new];
 }
 
 - (void)setupChart {

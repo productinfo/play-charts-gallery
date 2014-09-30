@@ -11,8 +11,8 @@
 
 @implementation ChartsGalleryColumnViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryColumnDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryColumnDataSource new];
 }
 
 - (void)setupChart {

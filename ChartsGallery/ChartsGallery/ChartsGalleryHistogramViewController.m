@@ -11,8 +11,8 @@
 
 @implementation ChartsGalleryHistogramViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryHistogramDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryHistogramDataSource new];
 }
 
 - (void)setupChart {

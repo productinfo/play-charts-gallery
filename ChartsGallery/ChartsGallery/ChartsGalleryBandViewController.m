@@ -11,8 +11,8 @@
 
 @implementation ChartsGalleryBandViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryBandDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryBandDataSource new];
 }
 
 - (void)setupChart {

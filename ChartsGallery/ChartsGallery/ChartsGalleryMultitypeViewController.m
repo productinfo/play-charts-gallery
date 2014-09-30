@@ -11,8 +11,8 @@
 
 @implementation ChartsGalleryMultitypeViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryMultitypeDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryMultitypeDataSource new];
 }
 
 - (void)setupChart {

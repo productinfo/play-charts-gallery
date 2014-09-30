@@ -11,8 +11,8 @@
 
 @implementation ChartsGalleryStackedLineViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryStackedLineDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryStackedLineDataSource new];
 }
 
 - (void)setupChart {

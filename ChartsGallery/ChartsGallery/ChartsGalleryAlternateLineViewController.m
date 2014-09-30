@@ -11,8 +11,8 @@
 
 @implementation ChartsGalleryAlternateLineViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryAlternateLineDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryAlternateLineDataSource new];
 }
 
 - (void)setupChart {

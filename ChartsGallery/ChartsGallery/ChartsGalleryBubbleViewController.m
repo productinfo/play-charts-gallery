@@ -12,8 +12,8 @@
 
 @implementation ChartsGalleryBubbleViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryBubbleDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryBubbleDataSource new];
 }
 
 - (void)setupChart {

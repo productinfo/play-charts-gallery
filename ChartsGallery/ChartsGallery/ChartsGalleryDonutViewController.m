@@ -19,8 +19,8 @@
 
 @implementation ChartsGalleryDonutViewController
 
-- (id<SChartDatasource>)createDataSource {
-  return [ChartsGalleryDonutDataSource new];
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryDonutDataSource new];
 }
 
 - (void)setupChart {
