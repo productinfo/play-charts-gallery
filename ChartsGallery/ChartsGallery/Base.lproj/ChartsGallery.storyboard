@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="I9F-tU-t0x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="I9F-tU-t0x">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Charts Gallery Pie View Controller - Pie-->
@@ -89,6 +90,8 @@
                         <segue destination="4aO-9z-7Jb" kind="relationship" relationship="viewControllers" id="iGe-Ky-jQm"/>
                         <segue destination="HgR-hK-jB4" kind="relationship" relationship="viewControllers" id="qOR-wP-fX0"/>
                         <segue destination="RLn-hE-zJf" kind="relationship" relationship="viewControllers" id="cd4-2f-0dQ"/>
+                        <segue destination="Mca-Ew-hct" kind="relationship" relationship="viewControllers" id="ySF-xs-E2S"/>
+                        <segue destination="NrU-ux-bma" kind="relationship" relationship="viewControllers" id="jYF-DD-95y"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NK6-Ya-Huh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -554,6 +557,58 @@
             </objects>
             <point key="canvasLocation" x="-396" y="5569"/>
         </scene>
+        <!--Radar-->
+        <scene sceneID="fIi-c6-8Tb">
+            <objects>
+                <viewController id="Mca-Ew-hct" userLabel="Radar" customClass="ChartsGalleryRadarChartViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RxY-gM-1tX">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="zUC-5K-zhW" customClass="ShinobiChart">
+                                <rect key="frame" x="50" y="80" width="924" height="608"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Radar" image="RadarChart" id="JZn-FJ-kl6"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="zUC-5K-zhW" id="SBm-DM-o9q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QFy-Uu-uED" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="5948"/>
+        </scene>
+        <!--Polar-->
+        <scene sceneID="bwf-yR-MJL">
+            <objects>
+                <viewController id="NrU-ux-bma" userLabel="Polar" customClass="ChartsGalleryPolarChartViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sxp-Z6-BOq">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="QHz-Ej-KXj" customClass="ShinobiChart">
+                                <rect key="frame" x="50" y="80" width="924" height="608"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Polar" image="PolarChart" id="I35-r6-QJH"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="QHz-Ej-KXj" id="gYk-Am-3ZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DuQ-YW-MiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-396" y="6475"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AlternateLineChart" width="30" height="30"/>
@@ -569,6 +624,8 @@
         <image name="MultitypeChart" width="30" height="30"/>
         <image name="OhlcChart" width="30" height="30"/>
         <image name="PieChart" width="30" height="30"/>
+        <image name="PolarChart" width="25" height="25"/>
+        <image name="RadarChart" width="25" height="25"/>
         <image name="ScatterChart" width="30" height="30"/>
         <image name="StackedBarChart" width="30" height="30"/>
         <image name="StackedColumnChart" width="30" height="30"/>
