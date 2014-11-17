@@ -26,9 +26,10 @@
 - (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
   SChartDataPoint *dp = [SChartDataPoint new];
   dp.xValue = [NSNumber numberWithInteger:dataIndex];
-  dp.yValue = self.data[self.seriesTitles[seriesIndex]][self.categories[dataIndex]];
+  dp.yValue = self.dataCollection[dataIndex][self.seriesNames[seriesIndex]];
   return dp;
 }
+
 
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
   SChartRadialLineSeries *radialSeries = [SChartRadialLineSeries new];

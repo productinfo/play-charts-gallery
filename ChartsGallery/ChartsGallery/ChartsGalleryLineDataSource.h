@@ -10,4 +10,6 @@
 
 @interface ChartsGalleryLineDataSource : ChartsGalleryCommonDateDataSource
 
+@property (nonatomic,strong) NSArray *seriesTitles;
+
 @end

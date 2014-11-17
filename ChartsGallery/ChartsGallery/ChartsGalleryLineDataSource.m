@@ -10,8 +10,6 @@
 
 @interface ChartsGalleryLineDataSource()
 
-@property (nonatomic,strong) NSArray *seriesTitles;
-
 @end
 
 @implementation ChartsGalleryLineDataSource

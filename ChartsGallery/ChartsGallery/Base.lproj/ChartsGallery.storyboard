@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Charts Gallery Pie View Controller - Pie-->
+        <!--Pie-->
         <scene sceneID="1Zu-p4-EoM">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryPieViewController" id="Uib-DK-u78" customClass="ChartsGalleryPieViewController" sceneMemberID="viewController">
@@ -20,7 +20,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pie" image="PieChart" id="iVy-bj-hod"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -32,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="700" y="4137"/>
         </scene>
-        <!--Charts Gallery Line View Controller - Line-->
+        <!--Line-->
         <scene sceneID="R8L-3v-gyL">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryLineViewController" id="FRc-rX-MTk" customClass="ChartsGalleryLineViewController" sceneMemberID="viewController">
@@ -47,7 +46,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Line" image="LineChart" id="Ubm-cF-ZGP"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -98,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="-1811" y="369"/>
         </scene>
-        <!--Charts Gallery Multitype View Controller - Multitype-->
+        <!--Multitype-->
         <scene sceneID="Rg4-o3-kn5">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryMultitypeViewController" id="mdY-8Q-Jit" customClass="ChartsGalleryMultitypeViewController" sceneMemberID="viewController">
@@ -113,7 +111,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Multitype" image="MultitypeChart" id="Odv-YB-tgS"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -125,7 +122,7 @@
             </objects>
             <point key="canvasLocation" x="-388" y="3744"/>
         </scene>
-        <!--Charts Gallery Donut View Controller - Donut-->
+        <!--Donut-->
         <scene sceneID="f7U-TR-jeB">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryDonutViewController" id="4aO-9z-7Jb" customClass="ChartsGalleryDonutViewController" sceneMemberID="viewController">
@@ -140,7 +137,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Donut" image="DonutChart" id="tPg-5e-Msj"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -152,7 +148,7 @@
             </objects>
             <point key="canvasLocation" x="-388" y="4649"/>
         </scene>
-        <!--Charts Gallery Alternate Line View Controller - Alternate Line-->
+        <!--Alternate Line-->
         <scene sceneID="hF5-pT-N06">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryAlternateLineViewController" id="7yL-8V-ooA" customClass="ChartsGalleryAlternateLineViewController" sceneMemberID="viewController">
@@ -167,7 +163,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Alternate Line" image="AlternateLineChart" id="d2d-oy-xXF"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -179,7 +174,7 @@
             </objects>
             <point key="canvasLocation" x="692" y="-2187"/>
         </scene>
-        <!--Charts Gallery Area View Controller - Area-->
+        <!--Area-->
         <scene sceneID="3zJ-p6-Nii">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryAreaViewController" id="0Jc-vb-BgR" customClass="ChartsGalleryAreaViewController" sceneMemberID="viewController">
@@ -194,7 +189,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Area" image="AreaChart" id="8JB-WY-2fD"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -206,7 +200,7 @@
             </objects>
             <point key="canvasLocation" x="-396" y="-1707"/>
         </scene>
-        <!--Charts Gallery Stacked Line View Controller - Stacked Line-->
+        <!--Stacked Line-->
         <scene sceneID="Oy7-Eu-VMJ">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryStackedLineViewController" id="mmj-KV-BRQ" customClass="ChartsGalleryStackedLineViewController" sceneMemberID="viewController">
@@ -221,7 +215,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Stacked Line" image="StackedLineChart" id="kMn-QL-PNi"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -233,7 +226,7 @@
             </objects>
             <point key="canvasLocation" x="-404" y="-791"/>
         </scene>
-        <!--Charts Gallery Stacked Area View Controller - Stacked Area-->
+        <!--Stacked Area-->
         <scene sceneID="fcP-vx-QfQ">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryStackedAreaViewController" id="14E-OK-JnC" customClass="ChartsGalleryStackedAreaViewController" sceneMemberID="viewController">
@@ -248,7 +241,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Stacked Area" image="AreaChart" id="Abt-f7-01t"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -260,7 +252,7 @@
             </objects>
             <point key="canvasLocation" x="684" y="-1255"/>
         </scene>
-        <!--Charts Gallery Bar View Controller - Bar-->
+        <!--Bar-->
         <scene sceneID="X2E-Ip-zQF">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryBarViewController" id="FiG-XR-eXk" customClass="ChartsGalleryBarViewController" sceneMemberID="viewController">
@@ -275,7 +267,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bar" image="BarChart" id="Xq7-X0-p6J"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -287,7 +278,7 @@
             </objects>
             <point key="canvasLocation" x="692" y="-351"/>
         </scene>
-        <!--Charts Gallery Column View Controller - Column-->
+        <!--Column-->
         <scene sceneID="MGX-KT-3O2">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryColumnViewController" id="A1N-2r-nUQ" customClass="ChartsGalleryColumnViewController" sceneMemberID="viewController">
@@ -302,7 +293,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Column" image="ColumnChart" id="j5a-uc-jCx"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -314,7 +304,7 @@
             </objects>
             <point key="canvasLocation" x="-396" y="133"/>
         </scene>
-        <!--Charts Gallery Histogram View Controller - Histogram-->
+        <!--Histogram-->
         <scene sceneID="3dS-rW-kpr">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryHistogramViewController" id="NOS-xH-FH1" customClass="ChartsGalleryHistogramViewController" sceneMemberID="viewController">
@@ -329,7 +319,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Histogram" image="Histogram" id="euL-I1-3Vs"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -341,7 +330,7 @@
             </objects>
             <point key="canvasLocation" x="700" y="553"/>
         </scene>
-        <!--Charts Gallery Stacked Bar View Controller - Stacked Bar-->
+        <!--Stacked Bar-->
         <scene sceneID="fbw-TX-8Kg">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryStackedBarViewController" id="Ina-S6-eFt" customClass="ChartsGalleryStackedBarViewController" sceneMemberID="viewController">
@@ -356,7 +345,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Stacked Bar" image="StackedBarChart" id="1iA-mi-XGu"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -368,7 +356,7 @@
             </objects>
             <point key="canvasLocation" x="-388" y="1029"/>
         </scene>
-        <!--Charts Gallery Stacked Column View Controller - Stacked Column-->
+        <!--Stacked Column-->
         <scene sceneID="aLo-ho-eca">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryStackedColumnViewController" id="UMQ-Og-NDY" customClass="ChartsGalleryStackedColumnViewController" sceneMemberID="viewController">
@@ -383,7 +371,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Stacked Column" image="StackedColumnChart" id="yNy-gP-Yby"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -395,7 +382,7 @@
             </objects>
             <point key="canvasLocation" x="700" y="1453"/>
         </scene>
-        <!--Charts Gallery Step View Controller - Step-->
+        <!--Step-->
         <scene sceneID="pAd-Sg-2tk">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryStepViewController" id="ISp-tt-BTv" customClass="ChartsGalleryStepViewController" sceneMemberID="viewController">
@@ -410,7 +397,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Step" image="StepChart" id="F5f-Rs-oTE"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -422,7 +408,7 @@
             </objects>
             <point key="canvasLocation" x="-388" y="1925"/>
         </scene>
-        <!--Charts Gallery Candlestick View Controller - Candlestick-->
+        <!--Candlestick-->
         <scene sceneID="PKU-vj-XqK">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryCandlestickViewController" id="qXL-eg-32z" customClass="ChartsGalleryCandlestickViewController" sceneMemberID="viewController">
@@ -437,7 +423,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Candlestick" image="CandlestickChart" id="AnM-5j-dHX"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -449,7 +434,7 @@
             </objects>
             <point key="canvasLocation" x="700" y="2341"/>
         </scene>
-        <!--Charts GalleryOHLC View Controller - OHLC-->
+        <!--OHLC-->
         <scene sceneID="0Sj-ua-TEF">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryOHLCViewController" id="v4v-TS-hog" customClass="ChartsGalleryOHLCViewController" sceneMemberID="viewController">
@@ -464,7 +449,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="OHLC" image="OhlcChart" id="ks3-iM-hG4"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -476,7 +460,7 @@
             </objects>
             <point key="canvasLocation" x="-380" y="2845"/>
         </scene>
-        <!--Charts Gallery Band View Controller - Band-->
+        <!--Band-->
         <scene sceneID="h1k-Gm-z3r">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryBandViewController" id="f4r-vo-QzV" customClass="ChartsGalleryBandViewController" sceneMemberID="viewController">
@@ -491,7 +475,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Band" image="BandChart" id="jEC-xE-Qfs"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -503,7 +486,7 @@
             </objects>
             <point key="canvasLocation" x="700" y="3237"/>
         </scene>
-        <!--Charts Gallery Scatter View Controller - Scatter-->
+        <!--Scatter-->
         <scene sceneID="W9t-KI-6rU">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryScatterViewController" id="HgR-hK-jB4" customClass="ChartsGalleryScatterViewController" sceneMemberID="viewController">
@@ -518,7 +501,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Scatter" image="ScatterChart" id="jea-uP-YN5"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -530,7 +512,7 @@
             </objects>
             <point key="canvasLocation" x="700" y="5041"/>
         </scene>
-        <!--Charts Gallery Bubble View Controller - Bubble-->
+        <!--Bubble-->
         <scene sceneID="zQd-xV-0ML">
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryBubbleViewController" id="RLn-hE-zJf" customClass="ChartsGalleryBubbleViewController" sceneMemberID="viewController">
@@ -545,7 +527,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bubble" image="BubbleChart" id="2xK-am-Y61"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -560,7 +541,7 @@
         <!--Radar-->
         <scene sceneID="fIi-c6-8Tb">
             <objects>
-                <viewController id="Mca-Ew-hct" userLabel="Radar" customClass="ChartsGalleryRadarChartViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChartsGalleryRadarChartViewController" id="Mca-Ew-hct" userLabel="Radar" customClass="ChartsGalleryRadarChartViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RxY-gM-1tX">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -586,7 +567,7 @@
         <!--Polar-->
         <scene sceneID="bwf-yR-MJL">
             <objects>
-                <viewController id="NrU-ux-bma" userLabel="Polar" customClass="ChartsGalleryPolarChartViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChartsGalleryPolarChartViewController" id="NrU-ux-bma" userLabel="Polar" customClass="ChartsGalleryPolarChartViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sxp-Z6-BOq">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
