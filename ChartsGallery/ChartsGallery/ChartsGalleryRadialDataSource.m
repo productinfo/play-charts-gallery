@@ -19,40 +19,26 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryMultivariateDataSource.h"
+#import "ChartsGalleryRadialDataSource.h"
 
-@implementation ChartsGalleryMultivariateDataSource
-
-- (instancetype)init {
-  self = [super init];
-  if (self) {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"ChartsGallery-radar-data" ofType:@"plist"];
-    
-    if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-      self.data = [[NSDictionary alloc] initWithContentsOfFile:path];
-      self.seriesTitles = [self.data allKeys];
-      self.categories = @[@"January", @"February", @"March", @"April", @"May", @"June", @"July", @"August", @"September", @"October", @"November", @"December"];
-    }
-  }
-  return self;
-}
+@implementation ChartsGalleryRadialDataSource
 
 #pragma mark - SChartDataSource methods
 
 - (NSInteger)numberOfSeriesInSChart:(ShinobiChart *)chart {
-  return self.data.count;
+  return self.seriesNames.count;
 }
 
 - (NSInteger)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(NSInteger)seriesIndex {
-  return self.categories.count;
+  return self.dataCollection.count;
 }
 
-- (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+- (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
   // Should be implemented in subclass
   return nil;
 }
 
-- (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
+- (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
   // Should be implemented in subclass
   return nil;
 }

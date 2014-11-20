@@ -23,19 +23,40 @@
 
 @implementation ChartsGalleryPolarChartDataSource
 
-- (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
-  SChartDataPoint *dp = [SChartDataPoint new];
-  dp.xValue = [NSNumber numberWithInteger:dataIndex];
-  dp.yValue = self.dataCollection[dataIndex][self.seriesNames[seriesIndex]];
-  return dp;
-}
+const int step = 5;
 
+- (instancetype)init {
+  self = [super init];
+  if (self) {
+    self.seriesNames = @[@"Archimedean", @"Logarithmic"];
+    self.dataCollection = [NSMutableArray new];
+    
+    for(int i = 0; i < 216; ++i){
+      int j = i * step;
+      
+      // Archimedean  equation
+      NSNumber *archimedeanSpiralYValue = [NSNumber numberWithFloat:1 + (1 * j)];
+      
+      // Logarithmic  equation
+      NSNumber *logarithmicSpiralYValue = [NSNumber numberWithFloat:1 * (exp(0.0065 * j))];
+      
+      self.dataCollection[i] = @{@"Archimedean" : archimedeanSpiralYValue, @"Logarithmic" : logarithmicSpiralYValue};
+    }
+  }
+  return self;
+}
 
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
   SChartRadialLineSeries *radialSeries = [SChartRadialLineSeries new];
-  radialSeries.title = self.seriesTitles[index];
-  radialSeries.pointsWrapAround = YES;
+  radialSeries.title = self.seriesNames[index];
   return radialSeries;
+}
+
+- (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+  SChartDataPoint *dataPoint = [SChartDataPoint new];
+  dataPoint.xValue = [NSNumber numberWithFloat:fmod((dataIndex * step), 360)];
+  dataPoint.yValue = self.dataCollection[dataIndex][self.seriesNames[seriesIndex]];
+  return dataPoint;
 }
 
 @end

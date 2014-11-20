@@ -21,20 +21,44 @@
 
 #import "ChartsGalleryRadarChartDataSource.h"
 
+@interface ChartsGalleryRadarChartDataSource ()
+
+@property (nonatomic, strong) NSArray *categories;
+
+@end
+
 @implementation ChartsGalleryRadarChartDataSource
 
-- (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
-  SChartDataPoint *dp = [SChartDataPoint new];
-  dp.xValue = self.categories[dataIndex];
-  dp.yValue = self.data[self.seriesTitles[seriesIndex]][dp.xValue];
-  return dp;
+- (instancetype)init {
+  self = [super init];
+  if (self) {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"ChartsGallery-radar-data" ofType:@"plist"];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+      self.dataCollection = [[NSMutableArray alloc] initWithContentsOfFile:path];;
+      self.seriesNames = @[@"England", @"Scotland", @"Wales",
+                           @"Northern Ireland"];
+      self.categories = @[@"January", @"February", @"March",
+                          @"April", @"May", @"June",
+                          @"July", @"August", @"September",
+                          @"October", @"November", @"December"];
+    }
+  }
+  return self;
 }
 
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
   SChartRadialLineSeries *radialSeries = [SChartRadialLineSeries new];
-  radialSeries.title = self.seriesTitles[index];
+  radialSeries.title = self.seriesNames[index];
   radialSeries.pointsWrapAround = YES;
   return radialSeries;
+}
+
+- (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+  SChartDataPoint *dataPoint = [SChartDataPoint new];
+  dataPoint.xValue = self.categories[dataIndex];
+  dataPoint.yValue = self.dataCollection[dataIndex][self.seriesNames[seriesIndex]];
+  return dataPoint;
 }
 
 @end

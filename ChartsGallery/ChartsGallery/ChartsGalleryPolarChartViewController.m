@@ -29,11 +29,10 @@
 }
 
 - (void)setupChart {
-  //self.chart.xAxis = [SChartNumberAxis new];
-  self.chart.xAxis.majorTickFrequency = [NSNumber numberWithInt:25];
+  self.chart.xAxis = [SChartNumberAxis new];
   self.chart.yAxis = [SChartNumberAxis new];
   
-  self.chart.title = @"Average rainfall per month 2014 (mm)";
+  self.chart.title = @"Spirals";
   
   [super setupChart];
 }

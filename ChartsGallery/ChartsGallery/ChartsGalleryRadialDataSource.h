@@ -1,5 +1,5 @@
 //
-//  ChartsGalleryMultivariateDataSource.h
+//  ChartsGalleryRadialDataSource.h
 //  ChartsGallery
 //
 //  Created by Daniel Allsop on 13/11/2014.
@@ -21,10 +21,9 @@
 
 #import <ShinobiCharts/ShinobiChart.h>
 
-@interface ChartsGalleryMultivariateDataSource : NSObject <SChartDatasource>
+@interface ChartsGalleryRadialDataSource : NSObject <SChartDatasource>
 
-@property (nonatomic, strong) NSArray *categories;
-@property (nonatomic,strong) NSArray* seriesTitles;
-@property (nonatomic, strong) NSDictionary *data;
+@property (nonatomic,strong) NSArray* seriesNames;
+@property (nonatomic, strong) NSMutableArray *dataCollection;
 
 @end

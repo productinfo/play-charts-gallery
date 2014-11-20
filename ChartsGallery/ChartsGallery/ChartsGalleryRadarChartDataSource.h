@@ -19,8 +19,8 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryMultivariateDataSource.h"
+#import "ChartsGalleryRadialDataSource.h"
 
-@interface ChartsGalleryRadarChartDataSource : ChartsGalleryMultivariateDataSource
+@interface ChartsGalleryRadarChartDataSource : ChartsGalleryRadialDataSource
 
 @end
