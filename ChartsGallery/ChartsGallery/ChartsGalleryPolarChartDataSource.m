@@ -23,39 +23,63 @@
 
 @implementation ChartsGalleryPolarChartDataSource
 
-const int step = 5;
-
 - (instancetype)init {
   self = [super init];
   if (self) {
-    self.seriesNames = @[@"Archimedean", @"Logarithmic"];
+    self.seriesNames = @[@"Archimedean", @"Logarithmic", @"Hyperbolic"];
     self.dataCollection = [NSMutableArray new];
-    
-    for(int i = 0; i < 216; ++i){
-      int j = i * step;
-      
-      // Archimedean  equation
-      NSNumber *archimedeanSpiralYValue = [NSNumber numberWithFloat:1 + (1 * j)];
-      
-      // Logarithmic  equation
-      NSNumber *logarithmicSpiralYValue = [NSNumber numberWithFloat:1 * (exp(0.0065 * j))];
-      
-      self.dataCollection[i] = @{@"Archimedean" : archimedeanSpiralYValue, @"Logarithmic" : logarithmicSpiralYValue};
-    }
   }
   return self;
+}
+
+- (NSInteger)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(NSInteger)seriesIndex {
+  if (seriesIndex == 2) {
+    return 75;
+  }
+  else{
+    return 217;
+  }
 }
 
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
   SChartRadialLineSeries *radialSeries = [SChartRadialLineSeries new];
   radialSeries.title = self.seriesNames[index];
+  radialSeries.style.lineWidth = @2;
   return radialSeries;
 }
 
 - (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+  
+  const CGFloat regularStep = 5;
+  const CGFloat hyperbolicStep = 18;
+  const CGFloat totalDegreesInCircle = 360;
+  const CGFloat logarithmicSpiralMaxYValue = 1100;
+  const CGFloat logarithmicSpiralScale = 0.0065;
+  
   SChartDataPoint *dataPoint = [SChartDataPoint new];
-  dataPoint.xValue = [NSNumber numberWithFloat:fmod((dataIndex * step), 360)];
-  dataPoint.yValue = self.dataCollection[dataIndex][self.seriesNames[seriesIndex]];
+  if ((seriesIndex == 0) || (seriesIndex == 1)) {
+    // X values are mod totalDegreesInCircle to make the spiral does several full rotations.
+    dataPoint.xValue = [NSNumber numberWithFloat:fmod((dataIndex * regularStep), totalDegreesInCircle)];
+  
+    if (seriesIndex == 0) {
+      // Archimedean spiral equation: r = a + (b * theta)
+      dataPoint.yValue = [NSNumber numberWithFloat:1 + (dataIndex * regularStep)];
+    } else {
+      // X values are mod totalDegreesInCircle to make the spiral does several full rotations.
+      dataPoint.xValue = [NSNumber numberWithFloat:fmod((dataIndex * regularStep), totalDegreesInCircle)];
+    
+      // Logarithmic spiral equation: r = a \ theta
+      dataPoint.yValue = [NSNumber numberWithFloat:1 + (exp(logarithmicSpiralScale * dataIndex * regularStep))];
+    }
+  } else {
+    // X values are mod totalDegreesInCircle to make the spiral does several full rotations.
+    // X values are reversed so direction of logarithmic spiral matches archimedean and hyperbolic spirals
+    dataPoint.xValue = [NSNumber numberWithFloat:totalDegreesInCircle - fmod((dataIndex * hyperbolicStep), totalDegreesInCircle)];
+    
+    // Hyperbolic spiral equation: r = a * (e ^ (b * theta)),
+    dataPoint.yValue = [NSNumber numberWithFloat:logarithmicSpiralMaxYValue / (dataIndex + 1.0)];
+    
+  }
   return dataPoint;
 }
 

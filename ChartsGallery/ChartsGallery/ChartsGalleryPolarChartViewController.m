@@ -29,9 +29,19 @@
 }
 
 - (void)setupChart {
-  self.chart.xAxis = [SChartNumberAxis new];
   self.chart.yAxis = [SChartNumberAxis new];
+  self.chart.yAxis.majorTickFrequency = @250;
+  self.chart.yAxis.style.majorTickStyle.tickGap = @-50;
   
+  self.chart.xAxis = [SChartNumberAxis new];
+  NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+  [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+  [numberFormatter setPositiveFormat:@"0°"];
+  [numberFormatter setNegativeFormat:@"0°"];
+  SChartTickLabelFormatter *labelFormatter = [SChartTickLabelFormatter new];
+  labelFormatter.formatter = numberFormatter;
+  self.chart.xAxis.labelFormatter = labelFormatter;
+
   self.chart.title = @"Spirals";
   
   [super setupChart];

@@ -30,19 +30,14 @@
 @implementation ChartsGalleryRadarChartDataSource
 
 - (instancetype)init {
-  self = [super init];
+  self = [super initWithDataFromFile:@"ChartsGallery-radar-data"];
   if (self) {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"ChartsGallery-radar-data" ofType:@"plist"];
-    
-    if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
-      self.dataCollection = [[NSMutableArray alloc] initWithContentsOfFile:path];;
       self.seriesNames = @[@"England", @"Scotland", @"Wales",
                            @"Northern Ireland"];
       self.categories = @[@"January", @"February", @"March",
                           @"April", @"May", @"June",
                           @"July", @"August", @"September",
                           @"October", @"November", @"December"];
-    }
   }
   return self;
 }
