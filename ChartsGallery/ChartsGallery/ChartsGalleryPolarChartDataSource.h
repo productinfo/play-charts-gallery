@@ -19,8 +19,9 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryRadialDataSource.h"
 
-@interface ChartsGalleryPolarChartDataSource : ChartsGalleryRadialDataSource
+#import <ShinobiCharts/ShinobiChart.h>
+
+@interface ChartsGalleryPolarChartDataSource : NSObject <SChartDatasource>
 
 @end

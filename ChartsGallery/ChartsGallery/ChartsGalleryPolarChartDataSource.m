@@ -21,6 +21,15 @@
 
 #import "ChartsGalleryPolarChartDataSource.h"
 
+@interface ChartsGalleryPolarChartDataSource ()
+
+@property (strong, nonatomic) NSArray *seriesNames;
+@property (strong, nonatomic) NSMutableArray *dataCollection;
+@property (strong, nonatomic) NSArray *numberOfRotations;
+@property (strong, nonatomic) NSArray *degreeStep;
+
+@end
+
 @implementation ChartsGalleryPolarChartDataSource
 
 - (instancetype)init {
@@ -28,20 +37,10 @@
   if (self) {
     self.seriesNames = @[@"Archimedean", @"Logarithmic", @"Hyperbolic"];
     self.dataCollection = [NSMutableArray new];
+    self.numberOfRotations = @[@3, @3, @5];
+    self.degreeStep = @[@5, @5, @10];
   }
   return self;
-}
-
-- (NSInteger)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(NSInteger)seriesIndex {
-  if (seriesIndex == 2) {
-    // We draw fewer points for the hyperbolic spiral as its radius grows fast than the
-    // other two spirals.
-    return 75;
-  } else {
-    // Since we scale the logarithmic to match the scale used by the archimedean spiral
-    // we draw the same number of points for both.
-    return 217;
-  }
 }
 
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
@@ -51,34 +50,44 @@
   return radialSeries;
 }
 
+- (NSInteger)numberOfSeriesInSChart:(ShinobiChart *)chart {
+  return self.seriesNames.count;
+}
+
+- (NSInteger)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(NSInteger)seriesIndex {
+  // Draw the correct number of points to depending on how fast the spirals radius grows
+  // relative to the other two spirals and ensure several complete rotations are visible.
+  return [self.numberOfRotations[seriesIndex] intValue] * 360 / [self.degreeStep[seriesIndex] intValue] + 1;
+}
+
 - (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
   
-  const CGFloat regularStep = 5;
-  const CGFloat hyperbolicStep = 18;
-  const CGFloat totalDegreesInCircle = 360;
-  const CGFloat logarithmicSpiralMaxYValue = 1100;
-  const CGFloat logarithmicSpiralScale = 0.0065;
-  
   SChartDataPoint *dataPoint = [SChartDataPoint new];
+  
   if ((seriesIndex == 0) || (seriesIndex == 1)) {
-    // X values are mod totalDegreesInCircle to make the spiral do several full rotations.
-    dataPoint.xValue = [NSNumber numberWithFloat:fmod((dataIndex * regularStep), totalDegreesInCircle)];
+    // X (theta) values are mod totalDegreesInCircle to make the spiral does several full rotations.
+    NSInteger theta = dataIndex * [self.degreeStep[seriesIndex] integerValue];
+    dataPoint.xValue = @(fmod(theta, 360));
+    
     if (seriesIndex == 0) {
       // Archimedean spiral equation: r = a + (b * theta)
-      dataPoint.yValue = @(1 + (dataIndex * regularStep));
+      // a = b = 1
+      dataPoint.yValue = @(1 + theta);
     } else {
-      // X values are mod totalDegreesInCircle to make the spiral do several full rotations.
-      dataPoint.xValue = @(fmod((dataIndex * regularStep), totalDegreesInCircle));
-    
-      // Logarithmic spiral equation: r = a \ theta
-      dataPoint.yValue = @(1 + (exp(logarithmicSpiralScale * dataIndex * regularStep)));
+      // Logarithmic spiral equation: r = a * (e ^ (b * theta))
+      // a = 1, b = 0.0065
+      dataPoint.yValue = @(1 + exp(0.0065 * theta));
     }
   } else {
+    // X (theta) values are mod totalDegreesInCircle to make the spiral does several full rotations.
     // X values are reversed so direction of logarithmic spiral matches archimedean and hyperbolic spirals
-    dataPoint.xValue = [NSNumber numberWithFloat:totalDegreesInCircle - fmod((dataIndex * hyperbolicStep), totalDegreesInCircle)];
+    // Need to start with |theta| > 0 so we're not trying to plot infinity
+    NSInteger theta = dataIndex * [self.degreeStep[seriesIndex] integerValue] + 45;
+    dataPoint.xValue = @(360 - fmod(theta, 360));
     
-    // Hyperbolic spiral equation: r = a * (e ^ (b * theta)),
-    dataPoint.yValue = [NSNumber numberWithFloat:logarithmicSpiralMaxYValue / (dataIndex + 1.0)];
+    // Hyperbolic spiral equation: r = a \ theta
+    // a = 51000
+    dataPoint.yValue = @(51000.f / theta);
   }
   return dataPoint;
 }

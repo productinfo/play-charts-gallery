@@ -34,6 +34,7 @@
   self.chart.yAxis.style.majorTickStyle.tickGap = @-50;
   
   self.chart.xAxis = [SChartNumberAxis new];
+  self.chart.xAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@0 andMaximum:@360];
   NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
   [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
   [numberFormatter setPositiveFormat:@"0°"];
