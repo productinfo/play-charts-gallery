@@ -34,9 +34,12 @@
 
 - (NSInteger)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(NSInteger)seriesIndex {
   if (seriesIndex == 2) {
+    // We draw fewer points for the hyperbolic spiral as its radius grows fast than the
+    // other two spirals.
     return 75;
-  }
-  else{
+  } else {
+    // Since we scale the logarithmic to match the scale used by the archimedean spiral
+    // we draw the same number of points for both.
     return 217;
   }
 }
@@ -58,27 +61,24 @@
   
   SChartDataPoint *dataPoint = [SChartDataPoint new];
   if ((seriesIndex == 0) || (seriesIndex == 1)) {
-    // X values are mod totalDegreesInCircle to make the spiral does several full rotations.
+    // X values are mod totalDegreesInCircle to make the spiral do several full rotations.
     dataPoint.xValue = [NSNumber numberWithFloat:fmod((dataIndex * regularStep), totalDegreesInCircle)];
-  
     if (seriesIndex == 0) {
       // Archimedean spiral equation: r = a + (b * theta)
-      dataPoint.yValue = [NSNumber numberWithFloat:1 + (dataIndex * regularStep)];
+      dataPoint.yValue = @(1 + (dataIndex * regularStep));
     } else {
-      // X values are mod totalDegreesInCircle to make the spiral does several full rotations.
-      dataPoint.xValue = [NSNumber numberWithFloat:fmod((dataIndex * regularStep), totalDegreesInCircle)];
+      // X values are mod totalDegreesInCircle to make the spiral do several full rotations.
+      dataPoint.xValue = @(fmod((dataIndex * regularStep), totalDegreesInCircle));
     
       // Logarithmic spiral equation: r = a \ theta
-      dataPoint.yValue = [NSNumber numberWithFloat:1 + (exp(logarithmicSpiralScale * dataIndex * regularStep))];
+      dataPoint.yValue = @(1 + (exp(logarithmicSpiralScale * dataIndex * regularStep)));
     }
   } else {
-    // X values are mod totalDegreesInCircle to make the spiral does several full rotations.
     // X values are reversed so direction of logarithmic spiral matches archimedean and hyperbolic spirals
     dataPoint.xValue = [NSNumber numberWithFloat:totalDegreesInCircle - fmod((dataIndex * hyperbolicStep), totalDegreesInCircle)];
     
     // Hyperbolic spiral equation: r = a * (e ^ (b * theta)),
     dataPoint.yValue = [NSNumber numberWithFloat:logarithmicSpiralMaxYValue / (dataIndex + 1.0)];
-    
   }
   return dataPoint;
 }
