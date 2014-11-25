@@ -1,5 +1,5 @@
 //
-//  ChartsGalleryPolarChartViewController.h
+//  ChartsGalleryPolarViewController.h
 //  ChartsGallery
 //
 //  Created by Daniel Allsop on 13/11/2014.
@@ -21,6 +21,6 @@
 
 #import "ChartsGalleryCommonViewController.h"
 
-@interface ChartsGalleryPolarChartViewController : ChartsGalleryCommonViewController
+@interface ChartsGalleryPolarViewController : ChartsGalleryCommonViewController
 
 @end

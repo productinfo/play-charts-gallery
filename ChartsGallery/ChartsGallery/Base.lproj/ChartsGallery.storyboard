@@ -541,7 +541,7 @@
         <!--Radar-->
         <scene sceneID="fIi-c6-8Tb">
             <objects>
-                <viewController storyboardIdentifier="ChartsGalleryRadarChartViewController" id="Mca-Ew-hct" userLabel="Radar" customClass="ChartsGalleryRadarChartViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChartsGalleryRadarViewController" id="Mca-Ew-hct" userLabel="Radar" customClass="ChartsGalleryRadarViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RxY-gM-1tX">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -567,7 +567,7 @@
         <!--Polar-->
         <scene sceneID="bwf-yR-MJL">
             <objects>
-                <viewController storyboardIdentifier="ChartsGalleryPolarChartViewController" id="NrU-ux-bma" userLabel="Polar" customClass="ChartsGalleryPolarChartViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChartsGalleryPolarViewController" id="NrU-ux-bma" userLabel="Polar" customClass="ChartsGalleryPolarViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sxp-Z6-BOq">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

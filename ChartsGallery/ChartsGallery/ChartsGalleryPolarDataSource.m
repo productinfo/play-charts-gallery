@@ -1,5 +1,5 @@
 //
-//  ChartsGalleryPolarChartDataSource.m
+//  ChartsGalleryPolarDataSource.m
 //  ChartsGallery
 //
 //  Created by Daniel Allsop on 13/11/2014.
@@ -19,9 +19,9 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryPolarChartDataSource.h"
+#import "ChartsGalleryPolarDataSource.h"
 
-@interface ChartsGalleryPolarChartDataSource ()
+@interface ChartsGalleryPolarDataSource ()
 
 @property (strong, nonatomic) NSArray *seriesNames;
 @property (strong, nonatomic) NSMutableArray *dataCollection;
@@ -30,7 +30,7 @@
 
 @end
 
-@implementation ChartsGalleryPolarChartDataSource
+@implementation ChartsGalleryPolarDataSource
 
 - (instancetype)init {
   self = [super init];

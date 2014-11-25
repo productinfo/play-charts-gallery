@@ -1,5 +1,5 @@
 //
-//  ChartsGalleryPolarChartViewController.m
+//  ChartsGalleryPolarViewController.m
 //  ChartsGallery
 //
 //  Created by Daniel Allsop on 13/11/2014.
@@ -19,13 +19,13 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryPolarChartViewController.h"
-#import "ChartsGalleryPolarChartDataSource.h"
+#import "ChartsGalleryPolarViewController.h"
+#import "ChartsGalleryPolarDataSource.h"
 
-@implementation ChartsGalleryPolarChartViewController
+@implementation ChartsGalleryPolarViewController
 
 - (void)createDataSource {
-  self.dataSource = [ChartsGalleryPolarChartDataSource new];
+  self.dataSource = [ChartsGalleryPolarDataSource new];
 }
 
 - (void)setupChart {

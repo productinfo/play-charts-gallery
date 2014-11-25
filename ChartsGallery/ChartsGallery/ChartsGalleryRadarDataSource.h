@@ -1,5 +1,5 @@
 //
-//  ChartsGalleryPolarChartDataSource.h
+//  ChartsGalleryRadarDataSource.h
 //  ChartsGallery
 //
 //  Created by Daniel Allsop on 13/11/2014.
@@ -19,9 +19,8 @@
 //  limitations under the License.
 //
 
+#import "ChartsGalleryCommonDataSource.h"
 
-#import <ShinobiCharts/ShinobiChart.h>
-
-@interface ChartsGalleryPolarChartDataSource : NSObject <SChartDatasource>
+@interface ChartsGalleryRadarDataSource : ChartsGalleryCommonDataSource
 
 @end

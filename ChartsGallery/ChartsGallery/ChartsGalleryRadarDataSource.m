@@ -1,5 +1,5 @@
 //
-//  ChartsGalleryRadarChartDataSource.m
+//  ChartsGalleryRadarDataSource.m
 //  ChartsGallery
 //
 //  Created by Daniel Allsop on 13/11/2014.
@@ -19,15 +19,15 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryRadarChartDataSource.h"
+#import "ChartsGalleryRadarDataSource.h"
 
-@interface ChartsGalleryRadarChartDataSource ()
+@interface ChartsGalleryRadarDataSource ()
 
 @property (nonatomic, strong) NSArray *categories;
 
 @end
 
-@implementation ChartsGalleryRadarChartDataSource
+@implementation ChartsGalleryRadarDataSource
 
 - (instancetype)init {
   self = [super initWithDataFromFile:@"ChartsGallery-radar-data"];
@@ -49,11 +49,8 @@
   return radialSeries;
 }
 
-- (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
-  SChartDataPoint *dataPoint = [SChartDataPoint new];
-  dataPoint.xValue = self.categories[dataIndex];
-  dataPoint.yValue = self.dataCollection[dataIndex][self.seriesNames[seriesIndex]];
-  return dataPoint;
+- (id)xValueAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+  return self.categories[dataIndex];
 }
 
 @end

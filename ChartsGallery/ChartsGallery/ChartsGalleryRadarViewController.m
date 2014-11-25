@@ -1,5 +1,5 @@
 //
-//  ChartsGalleryRadarChartViewController.h
+//  ChartsGalleryRadarViewController.m
 //  ChartsGallery
 //
 //  Created by Daniel Allsop on 13/11/2014.
@@ -19,8 +19,22 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryCommonViewController.h"
+#import "ChartsGalleryRadarViewController.h"
+#import "ChartsGalleryRadarDataSource.h"
 
-@interface ChartsGalleryRadarChartViewController : ChartsGalleryCommonViewController
+@implementation ChartsGalleryRadarViewController
+
+- (void)createDataSource {
+  self.dataSource = [ChartsGalleryRadarDataSource new];
+}
+
+- (void)setupChart {
+  self.chart.xAxis = [SChartCategoryAxis new];
+  self.chart.yAxis = [SChartNumberAxis new];
+  
+  self.chart.title = @"Average rainfall per month 2014 (mm)";
+    
+  [super setupChart];
+}
 
 @end
