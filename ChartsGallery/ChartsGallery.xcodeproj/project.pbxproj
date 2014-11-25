@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54E8BF591A14D32900DEC27C /* ChartsGalleryRadarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8BF581A14D32900DEC27C /* ChartsGalleryRadarViewController.m */; };
+		54E8BF5C1A14D33D00DEC27C /* ChartsGalleryPolarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8BF5B1A14D33D00DEC27C /* ChartsGalleryPolarViewController.m */; };
+		54E8BF5F1A14D36600DEC27C /* ChartsGalleryRadarDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8BF5E1A14D36600DEC27C /* ChartsGalleryRadarDataSource.m */; };
+		54E8BF621A14D37800DEC27C /* ChartsGalleryPolarDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8BF611A14D37800DEC27C /* ChartsGalleryPolarDataSource.m */; };
+		54E8BF6A1A1515E200DEC27C /* ChartsGallery-radar-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54E8BF691A1515E200DEC27C /* ChartsGallery-radar-data.plist */; };
 		68171BE119ADDBC5000AFEEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68171BE019ADDBC5000AFEEB /* Foundation.framework */; };
 		68171BE319ADDBC5000AFEEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68171BE219ADDBC5000AFEEB /* CoreGraphics.framework */; };
 		68171BE519ADDBC5000AFEEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68171BE419ADDBC5000AFEEB /* UIKit.framework */; };
@@ -106,13 +111,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54E8BF571A14D32900DEC27C /* ChartsGalleryRadarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryRadarViewController.h; sourceTree = "<group>"; };
+		54E8BF581A14D32900DEC27C /* ChartsGalleryRadarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryRadarViewController.m; sourceTree = "<group>"; };
+		54E8BF5A1A14D33D00DEC27C /* ChartsGalleryPolarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryPolarViewController.h; sourceTree = "<group>"; };
+		54E8BF5B1A14D33D00DEC27C /* ChartsGalleryPolarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryPolarViewController.m; sourceTree = "<group>"; };
+		54E8BF5D1A14D36600DEC27C /* ChartsGalleryRadarDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryRadarDataSource.h; sourceTree = "<group>"; };
+		54E8BF5E1A14D36600DEC27C /* ChartsGalleryRadarDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryRadarDataSource.m; sourceTree = "<group>"; };
+		54E8BF601A14D37800DEC27C /* ChartsGalleryPolarDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryPolarDataSource.h; sourceTree = "<group>"; };
+		54E8BF611A14D37800DEC27C /* ChartsGalleryPolarDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryPolarDataSource.m; sourceTree = "<group>"; };
+		54E8BF691A1515E200DEC27C /* ChartsGallery-radar-data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ChartsGallery-radar-data.plist"; sourceTree = "<group>"; };
 		68171BDD19ADDBC5000AFEEB /* ChartsGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68171BE019ADDBC5000AFEEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		68171BE219ADDBC5000AFEEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		68171BE419ADDBC5000AFEEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		68171BE819ADDBC5000AFEEB /* ChartsGallery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChartsGallery-Info.plist"; sourceTree = "<group>"; };
 		68171BEA19ADDBC5000AFEEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		68171BEC19ADDBC5000AFEEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		68171BEC19ADDBC5000AFEEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; };
 		68171BEE19ADDBC5000AFEEB /* ChartsGallery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChartsGallery-Prefix.pch"; sourceTree = "<group>"; };
 		68171BEF19ADDBC5000AFEEB /* ChartsGalleryAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryAppDelegate.h; sourceTree = "<group>"; };
 		68171BF019ADDBC5000AFEEB /* ChartsGalleryAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -216,7 +230,7 @@
 		68C631A219B5B639009BFDC0 /* ChartsGalleryDonutDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryDonutDataSource.h; sourceTree = "<group>"; };
 		68C631A319B5B639009BFDC0 /* ChartsGalleryDonutDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryDonutDataSource.m; sourceTree = "<group>"; };
 		68D4708B19BF1E83001B1D0D /* ChartsGalleryColumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryColumnViewController.h; sourceTree = "<group>"; };
-		68D4708C19BF1E83001B1D0D /* ChartsGalleryColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryColumnViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		68D4708C19BF1E83001B1D0D /* ChartsGalleryColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryColumnViewController.m; sourceTree = "<group>"; };
 		68D4708D19BF1E83001B1D0D /* ChartsGalleryColumnDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryColumnDataSource.h; sourceTree = "<group>"; };
 		68D4708E19BF1E83001B1D0D /* ChartsGalleryColumnDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryColumnDataSource.m; sourceTree = "<group>"; };
 		68D4709119BF1E96001B1D0D /* ChartsGallery-column-data.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ChartsGallery-column-data.plist"; sourceTree = "<group>"; };
@@ -249,6 +263,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54E8BF541A14D30300DEC27C /* RadarChart */ = {
+			isa = PBXGroup;
+			children = (
+				54E8BF571A14D32900DEC27C /* ChartsGalleryRadarViewController.h */,
+				54E8BF581A14D32900DEC27C /* ChartsGalleryRadarViewController.m */,
+				54E8BF5D1A14D36600DEC27C /* ChartsGalleryRadarDataSource.h */,
+				54E8BF5E1A14D36600DEC27C /* ChartsGalleryRadarDataSource.m */,
+				54E8BF691A1515E200DEC27C /* ChartsGallery-radar-data.plist */,
+			);
+			name = RadarChart;
+			sourceTree = "<group>";
+		};
+		54E8BF561A14D30A00DEC27C /* PolarChart */ = {
+			isa = PBXGroup;
+			children = (
+				54E8BF5A1A14D33D00DEC27C /* ChartsGalleryPolarViewController.h */,
+				54E8BF5B1A14D33D00DEC27C /* ChartsGalleryPolarViewController.m */,
+				54E8BF601A14D37800DEC27C /* ChartsGalleryPolarDataSource.h */,
+				54E8BF611A14D37800DEC27C /* ChartsGalleryPolarDataSource.m */,
+			);
+			name = PolarChart;
+			sourceTree = "<group>";
+		};
 		68171BD419ADDBC5000AFEEB = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +340,8 @@
 				68C6319E19B5B573009BFDC0 /* DonutChart */,
 				6818163F19C83BF500D10022 /* ScatterChart */,
 				6818165119C8630100D10022 /* BubbleChart */,
+				54E8BF541A14D30300DEC27C /* RadarChart */,
+				54E8BF561A14D30A00DEC27C /* PolarChart */,
 				68C6319719B5AE23009BFDC0 /* DataSources */,
 				68171BEF19ADDBC5000AFEEB /* ChartsGalleryAppDelegate.h */,
 				68171BF019ADDBC5000AFEEB /* ChartsGalleryAppDelegate.m */,
@@ -673,6 +712,7 @@
 				6818165819C8835700D10022 /* ChartsGallery-bubble-data.plist in Resources */,
 				68D470A319C0369A001B1D0D /* ChartsGallery-histogram-data.plist in Resources */,
 				68171BF419ADDBC5000AFEEB /* ChartsGallery.storyboard in Resources */,
+				54E8BF6A1A1515E200DEC27C /* ChartsGallery-radar-data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +725,7 @@
 			files = (
 				6818160219C707EC00D10022 /* ChartsGalleryStepDataSource.m in Sources */,
 				681815EA19C6E4AB00D10022 /* ChartsGalleryHistogramSeries.m in Sources */,
+				54E8BF591A14D32900DEC27C /* ChartsGalleryRadarViewController.m in Sources */,
 				6818165619C8642A00D10022 /* ChartsGalleryBubbleSeries.m in Sources */,
 				681815F119C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.m in Sources */,
 				6818160B19C70F6400D10022 /* ChartsGalleryCandlestickDataSource.m in Sources */,
@@ -714,10 +755,13 @@
 				68171BF119ADDBC5000AFEEB /* ChartsGalleryAppDelegate.m in Sources */,
 				68229E9F19BDB234004B5A17 /* ChartsGalleryAlternateLineDataSource.m in Sources */,
 				68D4709019BF1E83001B1D0D /* ChartsGalleryColumnDataSource.m in Sources */,
+				54E8BF5C1A14D33D00DEC27C /* ChartsGalleryPolarViewController.m in Sources */,
 				6818163719C81FF200D10022 /* ChartsGalleryBandDataSource.m in Sources */,
+				54E8BF5F1A14D36600DEC27C /* ChartsGalleryRadarDataSource.m in Sources */,
 				68171BED19ADDBC5000AFEEB /* main.m in Sources */,
 				68229EAB19BDCDA7004B5A17 /* ChartsGalleryAreaDataSource.m in Sources */,
 				68C6319C19B5AE30009BFDC0 /* ChartsGalleryCommonDataSource.m in Sources */,
+				54E8BF621A14D37800DEC27C /* ChartsGalleryPolarDataSource.m in Sources */,
 				68229EBF19BDD864004B5A17 /* ChartsGalleryStackedAreaDataSource.m in Sources */,
 				68D470A119C0355C001B1D0D /* ChartsGalleryHistogramViewController.m in Sources */,
 				68229EAA19BDCDA7004B5A17 /* ChartsGalleryAreaViewController.m in Sources */,

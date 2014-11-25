@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>England</key>
+		<real>82.90000000000001</real>
+		<key>Scotland</key>
+		<real>170.5</real>
+		<key>Wales</key>
+		<real>158.4</real>
+		<key>Northern Ireland</key>
+		<real>119.1</real>
+	</dict>
+	<dict>
+		<key>England</key>
+		<real>60.3</real>
+		<key>Scotland</key>
+		<real>123.4</real>
+		<key>Wales</key>
+		<real>113.8</real>
+		<key>Northern Ireland</key>
+		<real>86.5</real>
+	</dict>
+	<dict>
+		<key>England</key>
+		<integer>64</integer>
+		<key>Scotland</key>
+		<real>135.5</real>
+		<key>Wales</key>
+		<real>118.5</real>
+		<key>Northern Ireland</key>
+		<real>93.40000000000001</real>
+	</dict>
+	<dict>
+		<key>England</key>
+		<real>58.7</real>
+		<key>Scotland</key>
+		<real>86.2</real>
+		<key>Wales</key>
+		<real>85.7</real>
+		<key>Northern Ireland</key>
+		<real>70.59999999999999</real>
+	</dict>
+	<dict>
+		<key>England</key>
+		<real>58.4</real>
+		<key>Scotland</key>
+		<integer>79</integer>
+		<key>Wales</key>
+		<real>80.59999999999999</real>
+		<key>Northern Ireland</key>
+		<real>68.09999999999999</real>
+	</dict>
+	<dict>
+		<key>England</key>
+		<real>61.8</real>
+		<key>Scotland</key>
+		<real>85.09999999999999</real>
+		<key>Wales</key>
+		<integer>86</integer>
+		<key>Northern Ireland</key>
+		<real>72.09999999999999</real>
+	</dict>
+	<dict>
+		<key>England</key>
+		<real>62.6</real>
+		<key>Scotland</key>
+		<real>92.09999999999999</real>
+		<key>Wales</key>
+		<real>78.3</real>
+		<key>Northern Ireland</key>
+		<real>73.2</real>
+	</dict>
+	<dict>
+		<key>England</key>
+		<real>69.3</real>
+		<key>Scotland</key>
+		<real>107.4</real>
+		<key>Wales</key>
+		<real>105.8</real>
+		<key>Northern Ireland</key>
+		<real>90.8</real>
+	</dict>
+	<dict>
+		<key>England</key>
+		<real>69.7</real>
+		<key>Scotland</key>
+		<real>139.7</real>
+		<key>Wales</key>
+		<real>123.8</real>
+		<key>Northern Ireland</key>
+		<real>94.40000000000001</real>
+	</dict>
+	<dict>
+		<key>England</key>
+		<real>91.7</real>
+		<key>Scotland</key>
+		<real>162.6</real>
+		<key>Wales</key>
+		<real>152.9</real>
+		<key>Northern Ireland</key>
+		<real>114.5</real>
+	</dict>
+	<dict>
+		<key>England</key>
+		<real>88.2</real>
+		<key>Scotland</key>
+		<real>165.9</real>
+		<key>Wales</key>
+		<real>156.6</real>
+		<key>Northern Ireland</key>
+		<real>110.5</real>
+	</dict>
+	<dict>
+		<key>England</key>
+		<real>87.2</real>
+		<key>Scotland</key>
+		<real>169.6</real>
+		<key>Wales</key>
+		<real>173.1</real>
+		<key>Northern Ireland</key>
+		<real>118.5</real>
+	</dict>
+</array>
+</plist>
