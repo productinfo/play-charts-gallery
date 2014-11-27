@@ -46,6 +46,7 @@
   SChartRadialLineSeries *radialSeries = [SChartRadialLineSeries new];
   radialSeries.title = self.seriesNames[index];
   radialSeries.pointsWrapAround = YES;
+  radialSeries.style.lineWidth = @2;
   return radialSeries;
 }
 

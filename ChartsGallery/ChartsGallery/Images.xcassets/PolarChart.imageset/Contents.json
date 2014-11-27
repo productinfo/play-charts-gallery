@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "polar_chart@1x.png"
+      "filename" : "PolarChart*1.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "polar_chart@2x.png"
+      "filename" : "PolarChart*2.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "polar_chart@3x.png"
+      "filename" : "PolarChart*3.png"
     }
   ],
   "info" : {
