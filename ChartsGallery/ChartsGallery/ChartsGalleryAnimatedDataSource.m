@@ -53,12 +53,8 @@
 }
 
 - (id)xValueAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
-  // This is a bar chart, so the x-value is the category
+  // This is a column chart, so the x-value is the category
   return self.categories[dataIndex];
-}
-
-- (id)yValueAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
-  return self.dataCollection[dataIndex][self.seriesNames[seriesIndex]];
 }
 
 @end
