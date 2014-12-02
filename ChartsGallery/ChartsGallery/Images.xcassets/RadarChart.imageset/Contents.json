@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "RadarChart*1.png"
+      "filename" : "radar_chart@1x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "RadarChart*2.png"
+      "filename" : "radar_chart@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "RadarChart*3.png"
+      "filename" : "radar_chart@3x.png"
     }
   ],
   "info" : {
