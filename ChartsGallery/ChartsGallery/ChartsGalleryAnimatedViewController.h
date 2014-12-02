@@ -19,8 +19,13 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryHistogramViewController.h"
+#import "ChartsGalleryCommonViewController.h"
 
-@interface ChartsGalleryAnimatedViewController : ChartsGalleryHistogramViewController
+@interface ChartsGalleryAnimatedViewController : ChartsGalleryCommonViewController
+
+- (IBAction)toggleSeriesZero:(id)sender;
+- (IBAction)toggleSeriesOne:(id)sender;
+- (IBAction)toggleSeriesTwo:(id)sender;
+- (IBAction)toggleSeriesThree:(id)sender;
 
 @end

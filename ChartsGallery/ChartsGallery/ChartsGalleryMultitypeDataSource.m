@@ -60,6 +60,7 @@
   }
   series.crosshairEnabled = YES;
   series.title = self.seriesTitles[index];
+  series.animationEnabled = YES;
   return series;
 }
 

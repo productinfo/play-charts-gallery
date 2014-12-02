@@ -19,8 +19,8 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryHistogramDataSource.h"
+#import "ChartsGalleryCommonDataSource.h"
 
-@interface ChartsGalleryAnimatedDataSource : ChartsGalleryHistogramDataSource
+@interface ChartsGalleryAnimatedDataSource : ChartsGalleryCommonDataSource
 
 @end
