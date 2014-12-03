@@ -1,8 +1,8 @@
 //
-//  ChartsGalleryAnimatedViewController.h
+//  ChartsGalleryCustomColumnSeries.h
 //  ChartsGallery
 //
-//  Created by Daniel Allsop on 27/11/2014.
+//  Created by Daniel Allsop on 02/12/2014.
 //
 //  Copyright 2014 Scott Logic
 //
@@ -19,8 +19,10 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryCommonViewController.h"
+#import <ShinobiCharts/ShinobiCharts.h>
 
-@interface ChartsGalleryAnimatedViewController : ChartsGalleryCommonViewController
+@interface ChartsGalleryCustomColumnSeries : SChartColumnSeries
+
+- (id)initWithChart:(ShinobiChart *)chart;
 
 @end

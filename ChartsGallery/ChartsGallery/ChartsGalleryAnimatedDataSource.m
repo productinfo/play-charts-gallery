@@ -20,6 +20,7 @@
 //
 
 #import "ChartsGalleryAnimatedDataSource.h"
+#import "ChartsGalleryCustomColumnSeries.h"
 
 @interface ChartsGalleryAnimatedDataSource ()
 
@@ -44,7 +45,7 @@
 }
 
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
-  SChartColumnSeries *series = [SChartColumnSeries new];
+  ChartsGalleryCustomColumnSeries *series = [[ChartsGalleryCustomColumnSeries alloc] initWithChart:chart];
   series.title = self.seriesTitles[index];
   series.animationEnabled = YES;
   series.exitAnimation = [series.entryAnimation copy];

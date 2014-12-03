@@ -14,6 +14,8 @@
 		54E8BF5F1A14D36600DEC27C /* ChartsGalleryRadarDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8BF5E1A14D36600DEC27C /* ChartsGalleryRadarDataSource.m */; };
 		54E8BF621A14D37800DEC27C /* ChartsGalleryPolarDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E8BF611A14D37800DEC27C /* ChartsGalleryPolarDataSource.m */; };
 		54E8BF6A1A1515E200DEC27C /* ChartsGallery-radar-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54E8BF691A1515E200DEC27C /* ChartsGallery-radar-data.plist */; };
+		54EBA8EE1A2DFF74005ED0DA /* ChartsGalleryCustomLegendSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EBA8ED1A2DFF74005ED0DA /* ChartsGalleryCustomLegendSymbol.m */; };
+		54EBA8F11A2DFF92005ED0DA /* ChartsGalleryCustomColumnSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EBA8F01A2DFF92005ED0DA /* ChartsGalleryCustomColumnSeries.m */; };
 		68171BE119ADDBC5000AFEEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68171BE019ADDBC5000AFEEB /* Foundation.framework */; };
 		68171BE319ADDBC5000AFEEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68171BE219ADDBC5000AFEEB /* CoreGraphics.framework */; };
 		68171BE519ADDBC5000AFEEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68171BE419ADDBC5000AFEEB /* UIKit.framework */; };
@@ -126,6 +128,10 @@
 		54E8BF601A14D37800DEC27C /* ChartsGalleryPolarDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryPolarDataSource.h; sourceTree = "<group>"; };
 		54E8BF611A14D37800DEC27C /* ChartsGalleryPolarDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryPolarDataSource.m; sourceTree = "<group>"; };
 		54E8BF691A1515E200DEC27C /* ChartsGallery-radar-data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ChartsGallery-radar-data.plist"; sourceTree = "<group>"; };
+		54EBA8EC1A2DFF74005ED0DA /* ChartsGalleryCustomLegendSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryCustomLegendSymbol.h; sourceTree = "<group>"; };
+		54EBA8ED1A2DFF74005ED0DA /* ChartsGalleryCustomLegendSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryCustomLegendSymbol.m; sourceTree = "<group>"; };
+		54EBA8EF1A2DFF92005ED0DA /* ChartsGalleryCustomColumnSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryCustomColumnSeries.h; sourceTree = "<group>"; };
+		54EBA8F01A2DFF92005ED0DA /* ChartsGalleryCustomColumnSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryCustomColumnSeries.m; sourceTree = "<group>"; };
 		68171BDD19ADDBC5000AFEEB /* ChartsGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68171BE019ADDBC5000AFEEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		68171BE219ADDBC5000AFEEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -276,6 +282,10 @@
 				54E37BE41A2739B800463050 /* ChartsGalleryAnimatedViewController.m */,
 				54E37BE61A2739CC00463050 /* ChartsGalleryAnimatedDataSource.h */,
 				54E37BE71A2739CC00463050 /* ChartsGalleryAnimatedDataSource.m */,
+				54EBA8EF1A2DFF92005ED0DA /* ChartsGalleryCustomColumnSeries.h */,
+				54EBA8F01A2DFF92005ED0DA /* ChartsGalleryCustomColumnSeries.m */,
+				54EBA8EC1A2DFF74005ED0DA /* ChartsGalleryCustomLegendSymbol.h */,
+				54EBA8ED1A2DFF74005ED0DA /* ChartsGalleryCustomLegendSymbol.m */,
 			);
 			name = AnimatedChart;
 			sourceTree = "<group>";
@@ -666,6 +676,11 @@
 				CLASSPREFIX = ChartsGallery;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Alison Clarke";
+				TargetAttributes = {
+					68171BDC19ADDBC5000AFEEB = {
+						DevelopmentTeam = XJ74287KY8;
+					};
+				};
 			};
 			buildConfigurationList = 68171BD819ADDBC5000AFEEB /* Build configuration list for PBXProject "ChartsGallery" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -748,6 +763,7 @@
 				681815F119C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.m in Sources */,
 				6818160B19C70F6400D10022 /* ChartsGalleryCandlestickDataSource.m in Sources */,
 				68C6319319B5AB44009BFDC0 /* ChartsGalleryPieViewController.m in Sources */,
+				54EBA8F11A2DFF92005ED0DA /* ChartsGalleryCustomColumnSeries.m in Sources */,
 				6853D95B19B5EB2400735962 /* ChartsGalleryMultitypeViewController.m in Sources */,
 				68229E9619BDA7E7004B5A17 /* ChartsGalleryLineViewController.m in Sources */,
 				54E37BE51A2739B800463050 /* ChartsGalleryAnimatedViewController.m in Sources */,
@@ -773,6 +789,7 @@
 				68D470A019C0355C001B1D0D /* ChartsGalleryHistogramDataSource.m in Sources */,
 				68171BF119ADDBC5000AFEEB /* ChartsGalleryAppDelegate.m in Sources */,
 				68229E9F19BDB234004B5A17 /* ChartsGalleryAlternateLineDataSource.m in Sources */,
+				54EBA8EE1A2DFF74005ED0DA /* ChartsGalleryCustomLegendSymbol.m in Sources */,
 				68D4709019BF1E83001B1D0D /* ChartsGalleryColumnDataSource.m in Sources */,
 				54E8BF5C1A14D33D00DEC27C /* ChartsGalleryPolarViewController.m in Sources */,
 				6818163719C81FF200D10022 /* ChartsGalleryBandDataSource.m in Sources */,

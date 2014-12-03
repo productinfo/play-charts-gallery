@@ -28,7 +28,7 @@
   self.dataSource = [ChartsGalleryAnimatedDataSource new];
 }
 
-- (void)setupChart {  
+- (void)setupChart {
   self.chart.xAxis = [SChartCategoryAxis new];
   self.chart.xAxis.title = @"";
   self.chart.xAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@-0.5 andMaximum:@5.5];
@@ -39,32 +39,13 @@
   self.chart.yAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@0 andMaximum:@100.5];
   self.chart.yAxis.animationEdgeBouncing = NO;
   
+  self.chart.legend.symbolWidth = @51;
+  self.chart.legend.style.font = [UIFont systemFontOfSize:30];
+  self.chart.legend.style.borderWidth = 0;
+  
   self.chart.title = @"Items purchased online by age in 2011";
-  self.chart.legend = NO;
   
   [super setupChart];
-}
-
-- (IBAction)toggleSeriesZero:(id)sender {
-  [self toggleChartSeriesHidden:0];
-}
-
-- (IBAction)toggleSeriesOne:(id)sender {
-  [self toggleChartSeriesHidden:1];
-}
-
-- (IBAction)toggleSeriesTwo:(id)sender {
-  [self toggleChartSeriesHidden:2];
-}
-
-- (IBAction)toggleSeriesThree:(id)sender {
-  [self toggleChartSeriesHidden:3];
-}
-
-- (void)toggleChartSeriesHidden:(NSInteger)series {
-  SChartColumnSeries *columnSeries = self.chart.series[series];
-  [columnSeries setHidden:!columnSeries.hidden];
-  [self.chart redrawChart];
 }
 
 @end
