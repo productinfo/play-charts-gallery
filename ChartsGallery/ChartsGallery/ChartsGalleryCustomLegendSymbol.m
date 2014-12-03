@@ -25,35 +25,33 @@
 
 @property ShinobiChart *chart;
 @property SChartColumnSeries *series;
-@property UISwitch *swtch;
+@property UISwitch *seriesToggleSwitch;
 
 @end
 
 @implementation ChartsGalleryCustomLegendSymbol
 
-- (id)initWithChart:(ShinobiChart *)chart andSeries:(SChartColumnSeries*)series{
+- (instancetype)initWithChart:(ShinobiChart *)chart andSeries:(SChartColumnSeries*)series {
   self = [super init];
   if (self) {
     self.chart = chart;
     self.series = series;
     
-    self.swtch = [[UISwitch alloc] initWithFrame:CGRectMake(0, 0, 51, 31)];
-    self.swtch.on = YES;
-    [self.swtch addTarget:self
+    self.seriesToggleSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(0, 0, 51, 31)];
+    self.seriesToggleSwitch.on = YES;
+    [self.seriesToggleSwitch addTarget:self
                 action:@selector(switchToggled:)
       forControlEvents:UIControlEventValueChanged];
-    [self addSubview:self.swtch];
+    [self addSubview:self.seriesToggleSwitch];
   }
   return self;
 }
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-  self.swtch.onTintColor = self.series.style.areaColor;
+- (void)layoutSubviews {
+  self.seriesToggleSwitch.onTintColor = self.series.style.areaColor;
 }
 
-- (void)switchToggled:(UISwitch *)sender{
+- (void)switchToggled:(UISwitch *)sender {
   [self.series setHidden:!self.series.hidden];
   [self.chart redrawChart];
 }

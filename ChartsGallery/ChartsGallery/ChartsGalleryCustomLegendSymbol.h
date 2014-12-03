@@ -23,6 +23,6 @@
 
 @interface ChartsGalleryCustomLegendSymbol : SChartLegendSymbol
 
-- (id)initWithChart:(ShinobiChart *)chart andSeries:(SChartColumnSeries*)series;
+- (instancetype)initWithChart:(ShinobiChart *)chart andSeries:(SChartColumnSeries*)series;
 
 @end

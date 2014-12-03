@@ -31,7 +31,7 @@
 
 @implementation ChartsGalleryCustomColumnSeries
 
-- (id)initWithChart:(ShinobiChart *)chart{
+- (instancetype)initWithChart:(ShinobiChart *)chart {
   self = [super init];
   if (self) {
     self.chart = chart;
@@ -40,7 +40,7 @@
   return self;
 }
 
--(SChartLegendSymbol *)blockSymbolForSeriesInLegend {
+- (SChartLegendSymbol *)blockSymbolForSeriesInLegend {
   return self.customLegendSymbol;
 }
 

@@ -23,6 +23,6 @@
 
 @interface ChartsGalleryCustomColumnSeries : SChartColumnSeries
 
-- (id)initWithChart:(ShinobiChart *)chart;
+- (instancetype)initWithChart:(ShinobiChart *)chart;
 
 @end
