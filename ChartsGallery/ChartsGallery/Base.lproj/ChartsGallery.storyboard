@@ -607,7 +607,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Animated" image="BarChart" id="4Cy-m2-b1R" userLabel="Animated"/>
+                    <tabBarItem key="tabBarItem" title="Animated" image="ColumnChart" id="4Cy-m2-b1R" userLabel="Animated"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="chart" destination="aa1-z2-bLz" id="fd9-Gf-aXx"/>
