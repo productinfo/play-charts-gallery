@@ -90,6 +90,7 @@
                         <segue destination="RLn-hE-zJf" kind="relationship" relationship="viewControllers" id="cd4-2f-0dQ"/>
                         <segue destination="Mca-Ew-hct" kind="relationship" relationship="viewControllers" id="ySF-xs-E2S"/>
                         <segue destination="NrU-ux-bma" kind="relationship" relationship="viewControllers" id="jYF-DD-95y"/>
+                        <segue destination="1F8-7L-3IY" kind="relationship" relationship="viewControllers" id="Zyo-hI-vyv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NK6-Ya-Huh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -589,6 +590,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DuQ-YW-MiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-396" y="6475"/>
+        </scene>
+        <!--Animated-->
+        <scene sceneID="0oa-Qy-vIX">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryAnimatedViewController" id="1F8-7L-3IY" userLabel="Animated" customClass="ChartsGalleryAnimatedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y0E-Dw-Uuh">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="aa1-z2-bLz" customClass="ShinobiChart">
+                                <rect key="frame" x="50" y="80" width="924" height="608"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Animated" image="ColumnChart" id="4Cy-m2-b1R" userLabel="Animated"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="aa1-z2-bLz" id="fd9-Gf-aXx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7L-19-MIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="6874"/>
         </scene>
     </scenes>
     <resources>

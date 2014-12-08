@@ -1,8 +1,8 @@
 //
-//  ChartsGalleryRadarViewController.m
+//  ChartsGalleryAnimatedDataSource.h
 //  ChartsGallery
 //
-//  Created by Daniel Allsop on 13/11/2014.
+//  Created by Daniel Allsop on 27/11/2014.
 //
 //  Copyright 2014 Scott Logic
 //
@@ -19,24 +19,8 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryRadarViewController.h"
-#import "ChartsGalleryRadarDataSource.h"
+#import "ChartsGalleryCommonDataSource.h"
 
-@implementation ChartsGalleryRadarViewController
-
-- (void)createDataSource {
-  self.dataSource = [ChartsGalleryRadarDataSource new];
-}
-
-- (void)setupChart {
-  self.chart.xAxis = [SChartCategoryAxis new];
-  
-  self.chart.yAxis = [SChartNumberAxis new];
-  self.chart.yAxis.style.majorTickStyle.tickGap = @-50;
-  
-  self.chart.title = @"Average rainfall per month 2014 (mm)";
-    
-  [super setupChart];
-}
+@interface ChartsGalleryAnimatedDataSource : ChartsGalleryCommonDataSource
 
 @end
