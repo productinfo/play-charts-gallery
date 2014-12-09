@@ -32,7 +32,7 @@ static NSArray *bubbleColors;
   if (self) {
     self.count = 0;
     self.style.dataPointLabelStyle.showLabels = YES;
-    self.scale = @0.01f;    
+    self.scale = @0.008f;
   }
   return self;
 }
