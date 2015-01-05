@@ -45,12 +45,9 @@
                                   andText:@"Resting"];
 }
 
-- (void) addBandAnnotationWithMinYPosition:(id)bandMinYPosition
-                                  withMaxY:(id)bandMaxYPosition
-                                  andColor:(UIColor*)bandColor
-              andTextAnnotationAtXPosition:(id)textXPosition
-                             withYPosition:(id)textYPosition
-                                   andText:(NSString*)annotationText {
+- (void) addBandAnnotationWithMinYPosition:(id)bandMinYPosition withMaxY:(id)bandMaxYPosition
+                                  andColor:(UIColor*)bandColor andTextAnnotationAtXPosition:(id)textXPosition
+                             withYPosition:(id)textYPosition andText:(NSString*)annotationText {
   
   SChartAxis *xAxis = self.chart.xAxis;
   SChartAxis *yAxis = self.chart.yAxis;
@@ -62,6 +59,7 @@
                                                                       withColor:bandColor];
   bandAnnotation.layer.borderWidth = 0.0015f;
   bandAnnotation.layer.borderColor = [bandColor colorWithAlphaComponent:1].CGColor;
+  bandAnnotation.position = SChartAnnotationBelowData;
   [self.chart addAnnotation:bandAnnotation];
   [bandAnnotation updateViewWithCanvas:self.chart.canvas];
   
@@ -74,7 +72,7 @@
                                                             withTextColor:[UIColor blackColor]
                                                       withBackgroundColor:[UIColor clearColor]];
   textAnnotation.label.transform = CGAffineTransformMakeRotation(-(M_PI)/2);
-  textAnnotation.position = SChartAnnotationAboveData;
+  textAnnotation.position = SChartAnnotationBelowData;
   [self.chart addAnnotation:textAnnotation];
   [textAnnotation updateViewWithCanvas:self.chart.canvas];
 }
