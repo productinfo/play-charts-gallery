@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="I9F-tU-t0x">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="I9F-tU-t0x">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -10,17 +10,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryPieViewController" id="Uib-DK-u78" customClass="ChartsGalleryPieViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="abr-cV-zRP">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="ISt-ix-Soh" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Pie" image="PieChart" id="iVy-bj-hod"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -36,17 +37,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryLineViewController" id="FRc-rX-MTk" customClass="ChartsGalleryLineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iOQ-mJ-J5b">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="cGI-K3-eOY" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Line" image="LineChart" id="Ubm-cF-ZGP"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -105,17 +107,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryMultitypeViewController" id="mdY-8Q-Jit" customClass="ChartsGalleryMultitypeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R3s-ws-Ods">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="TG2-ed-3vU" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Multitype" image="MultitypeChart" id="Odv-YB-tgS"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -131,17 +134,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryDonutViewController" id="4aO-9z-7Jb" customClass="ChartsGalleryDonutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gff-81-GWo">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="Uq4-My-8c0" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Donut" image="DonutChart" id="tPg-5e-Msj"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -157,17 +161,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryAlternateLineViewController" id="7yL-8V-ooA" customClass="ChartsGalleryAlternateLineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GIU-2y-Dcj">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="v9C-Er-X9R" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Alternate Line" image="AlternateLineChart" id="d2d-oy-xXF"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -183,17 +188,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryAreaViewController" id="0Jc-vb-BgR" customClass="ChartsGalleryAreaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Z8-C9-CQW">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="oXd-6U-mQx" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Area" image="AreaChart" id="8JB-WY-2fD"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -209,17 +215,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryStackedLineViewController" id="mmj-KV-BRQ" customClass="ChartsGalleryStackedLineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9CS-LW-YKb">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="5on-N3-8Yz" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Stacked Line" image="StackedLineChart" id="kMn-QL-PNi"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -235,17 +242,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryStackedAreaViewController" id="14E-OK-JnC" customClass="ChartsGalleryStackedAreaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M9i-EL-btT">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="mSV-mQ-Fsa" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Stacked Area" image="AreaChart" id="Abt-f7-01t"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -261,17 +269,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryBarViewController" id="FiG-XR-eXk" customClass="ChartsGalleryBarViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7da-Qo-dwY">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="MBz-PQ-Zgi" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Bar" image="BarChart" id="Xq7-X0-p6J"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -287,17 +296,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryColumnViewController" id="A1N-2r-nUQ" customClass="ChartsGalleryColumnViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NmH-eH-xht">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="eJY-iB-3tn" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Column" image="ColumnChart" id="j5a-uc-jCx"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -313,17 +323,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryHistogramViewController" id="NOS-xH-FH1" customClass="ChartsGalleryHistogramViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8fh-gL-HFC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="41T-8a-HrR" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Histogram" image="Histogram" id="euL-I1-3Vs"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -339,17 +350,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryStackedBarViewController" id="Ina-S6-eFt" customClass="ChartsGalleryStackedBarViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wYc-JU-H0m">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="NFG-mw-1Tw" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Stacked Bar" image="StackedBarChart" id="1iA-mi-XGu"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -365,17 +377,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryStackedColumnViewController" id="UMQ-Og-NDY" customClass="ChartsGalleryStackedColumnViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jan-ia-Efh">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="ivs-Yx-wTC" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Stacked Column" image="StackedColumnChart" id="yNy-gP-Yby"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -391,17 +404,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryStepViewController" id="ISp-tt-BTv" customClass="ChartsGalleryStepViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oFJ-ko-Y92">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="RDf-i9-mWC" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Step" image="StepChart" id="F5f-Rs-oTE"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -417,17 +431,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryCandlestickViewController" id="qXL-eg-32z" customClass="ChartsGalleryCandlestickViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hV1-Cf-v6w">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="2gS-ci-w1S" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Candlestick" image="CandlestickChart" id="AnM-5j-dHX"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -443,17 +458,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryOHLCViewController" id="v4v-TS-hog" customClass="ChartsGalleryOHLCViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rOh-7c-HV9">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="OXx-L2-Nz2" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="OHLC" image="OhlcChart" id="ks3-iM-hG4"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -469,17 +485,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryBandViewController" id="f4r-vo-QzV" customClass="ChartsGalleryBandViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CeJ-6h-XqR">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="707-lo-eKT" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Band" image="BandChart" id="jEC-xE-Qfs"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -495,17 +512,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryScatterViewController" id="HgR-hK-jB4" customClass="ChartsGalleryScatterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="za8-0H-hwz">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="Dg4-8X-u7G" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Scatter" image="ScatterChart" id="jea-uP-YN5"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -521,17 +539,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryBubbleViewController" id="RLn-hE-zJf" customClass="ChartsGalleryBubbleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bCI-9W-z23">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="aXx-7n-jPC" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Bubble" image="BubbleChart" id="2xK-am-Y61"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -547,17 +566,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryRadarViewController" id="Mca-Ew-hct" userLabel="Radar" customClass="ChartsGalleryRadarViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RxY-gM-1tX">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="zUC-5K-zhW" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Radar" image="RadarChart" id="JZn-FJ-kl6"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -573,17 +593,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryPolarViewController" id="NrU-ux-bma" userLabel="Polar" customClass="ChartsGalleryPolarViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sxp-Z6-BOq">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="QHz-Ej-KXj" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Polar" image="PolarChart" id="I35-r6-QJH"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -599,17 +620,18 @@
             <objects>
                 <viewController storyboardIdentifier="ChartsGalleryAnimatedViewController" id="1F8-7L-3IY" userLabel="Animated" customClass="ChartsGalleryAnimatedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y0E-Dw-Uuh">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="aa1-z2-bLz" customClass="ShinobiChart">
-                                <rect key="frame" x="50" y="80" width="924" height="618"/>
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Animated" image="ColumnChart" id="4Cy-m2-b1R" userLabel="Animated"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
