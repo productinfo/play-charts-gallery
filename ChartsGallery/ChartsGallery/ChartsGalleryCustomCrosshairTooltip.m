@@ -64,7 +64,7 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
 }
 
 - (void)setDataPoint:(id<SChartData>)dataPoint fromSeries:(SChartSeries *)series fromChart:(ShinobiChart *)chart {
-  SChartDataPoint *chartDataPoint = ((SChartDataPoint*)dataPoint);
+  SChartDataPoint *chartDataPoint = (SChartDataPoint*)dataPoint;
   
   // Get a date string from the data point and display as label text
   self.label.text = [self.dateFormatter stringFromDate:chartDataPoint.xValue];
@@ -96,10 +96,11 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
   }
   
   // Further customize top most label in crosshair tooltip
+  // To center the top most label after we have deduced the maximum label width of all the labels.
   UILabel *topMostLabel = self.allLabels[0];
   topMostLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:14];
   CGRect labelFrame = topMostLabel.frame;
-  labelFrame.size.width =  maxLabelWidth;
+  labelFrame.size.width = maxLabelWidth;
   topMostLabel.frame = labelFrame;
   
   // Resize tooltip frame
