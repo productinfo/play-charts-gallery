@@ -91,6 +91,7 @@
                         <segue destination="Mca-Ew-hct" kind="relationship" relationship="viewControllers" id="ySF-xs-E2S"/>
                         <segue destination="NrU-ux-bma" kind="relationship" relationship="viewControllers" id="jYF-DD-95y"/>
                         <segue destination="1F8-7L-3IY" kind="relationship" relationship="viewControllers" id="Zyo-hI-vyv"/>
+                        <segue destination="V3D-CO-cjg" kind="relationship" relationship="viewControllers" id="n60-iK-eKs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NK6-Ya-Huh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -591,6 +592,33 @@
             </objects>
             <point key="canvasLocation" x="-396" y="6475"/>
         </scene>
+        <!--Data Label-->
+        <scene sceneID="cES-y8-mEK">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryDataLabelViewController" id="V3D-CO-cjg" userLabel="Data Label" customClass="ChartsGalleryDataLabelViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ioY-jX-j0h">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="zpe-BS-YOo" customClass="ShinobiChart">
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Data Label" image="DataLabelChart" id="9yi-tW-EXi" userLabel="Data Label"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="zpe-BS-YOo" id="SAx-SJ-ra3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdB-02-63I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404" y="7435"/>
+        </scene>
         <!--Animated-->
         <scene sceneID="0oa-Qy-vIX">
             <objects>
@@ -626,14 +654,15 @@
         <image name="BubbleChart" width="30" height="30"/>
         <image name="CandlestickChart" width="30" height="30"/>
         <image name="ColumnChart" width="30" height="30"/>
+        <image name="DataLabelChart" width="30" height="30"/>
         <image name="DonutChart" width="30" height="30"/>
         <image name="Histogram" width="30" height="30"/>
         <image name="LineChart" width="30" height="30"/>
         <image name="MultitypeChart" width="30" height="30"/>
         <image name="OhlcChart" width="30" height="30"/>
         <image name="PieChart" width="30" height="30"/>
-        <image name="PolarChart" width="25" height="25"/>
-        <image name="RadarChart" width="25" height="25"/>
+        <image name="PolarChart" width="30" height="30"/>
+        <image name="RadarChart" width="30" height="30"/>
         <image name="ScatterChart" width="30" height="30"/>
         <image name="StackedBarChart" width="30" height="30"/>
         <image name="StackedColumnChart" width="30" height="30"/>
