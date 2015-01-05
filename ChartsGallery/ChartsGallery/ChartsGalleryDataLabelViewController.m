@@ -33,10 +33,8 @@
   [super setupChart];
 }
 
-- (void)sChart:(ShinobiChart *)chart
-alterDataPointLabel:(SChartDataPointLabel *)label
-  forDataPoint:(SChartDataPoint *)dataPoint
-      inSeries:(SChartSeries *)series{
+- (void)sChart:(ShinobiChart *)chart alterDataPointLabel:(SChartDataPointLabel *)label
+  forDataPoint:(SChartDataPoint *)dataPoint inSeries:(SChartSeries *)series{
   // We need to reposition the label by updating its origin values.
   // By default the label is centered horizontally so that half of it overlaps the end of the bar.
   // The label is moved to the left so that it appears 5 pixels from the end of the bar thus removing the overlap.
