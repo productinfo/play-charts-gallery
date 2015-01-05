@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>60</integer>
+		<key>Pace</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>70</integer>
+		<key>Pace</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>85</integer>
+		<key>Pace</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>90</integer>
+		<key>Pace</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>95</integer>
+		<key>Pace</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>110</integer>
+		<key>Pace</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>115</integer>
+		<key>Pace</key>
+		<integer>6</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>115</integer>
+		<key>Pace</key>
+		<integer>7</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>122</integer>
+		<key>Pace</key>
+		<integer>8</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>112</integer>
+		<key>Pace</key>
+		<integer>9</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>103</integer>
+		<key>Pace</key>
+		<integer>10</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>90</integer>
+		<key>Pace</key>
+		<integer>11</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>105</integer>
+		<key>Pace</key>
+		<integer>12</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>115</integer>
+		<key>Pace</key>
+		<integer>13</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>130</integer>
+		<key>Pace</key>
+		<integer>14</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>162</integer>
+		<key>Pace</key>
+		<integer>15</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>148</integer>
+		<key>Pace</key>
+		<integer>16</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>150</integer>
+		<key>Pace</key>
+		<integer>17</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>130</integer>
+		<key>Pace</key>
+		<integer>18</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>110</integer>
+		<key>Pace</key>
+		<integer>19</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>90</integer>
+		<key>Pace</key>
+		<integer>20</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>80</integer>
+		<key>Pace</key>
+		<integer>21</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>75</integer>
+		<key>Pace</key>
+		<integer>22</integer>
+	</dict>
+	<dict>
+		<key>Heart Rate</key>
+		<integer>70</integer>
+		<key>Pace</key>
+		<integer>23</integer>
+	</dict>
+</array>
+</plist>
