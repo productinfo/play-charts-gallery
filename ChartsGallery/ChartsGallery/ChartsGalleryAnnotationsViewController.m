@@ -23,7 +23,7 @@
   // Add Anaerobic Annotations
   [self addBandAnnotationWithMinYPosition:@135
                                  withMaxY:@200
-                                 andColor:[UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:0.2f]
+                                 andColor:[UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:0.05f]
              andTextAnnotationAtXPosition:[self.calendar dateFromComponents:self.dateComponents]
                             withYPosition:@167
                                   andText:@"Anaerobic"];
@@ -31,7 +31,7 @@
   // Add Aerobic Annotations
   [self addBandAnnotationWithMinYPosition:@95
                                  withMaxY:@135
-                                 andColor:[UIColor colorWithRed:230.0f/255 green:134.0f/255 blue:1.0f/255 alpha:0.2f]
+                                 andColor:[UIColor colorWithRed:230.0f/255 green:134.0f/255 blue:1.0f/255 alpha:0.05f]
              andTextAnnotationAtXPosition:[self.calendar dateFromComponents:self.dateComponents]
                             withYPosition:@115
                                   andText:@"Aerobic"];
@@ -39,7 +39,7 @@
   // Add Resting Annotations
   [self addBandAnnotationWithMinYPosition:@95
                                  withMaxY:@0
-                                 andColor:[UIColor colorWithRed:61.0f/255 green:174.0f/255 blue:80.0f/255 alpha:0.2f]
+                                 andColor:[UIColor colorWithRed:61.0f/255 green:174.0f/255 blue:80.0f/255 alpha:0.05f]
              andTextAnnotationAtXPosition:[self.calendar dateFromComponents:self.dateComponents]
                             withYPosition:@47
                                   andText:@"Resting"];
@@ -58,7 +58,7 @@
                                                                        andYAxis:yAxis
                                                                       withColor:bandColor];
   bandAnnotation.layer.borderWidth = 0.0015f;
-  bandAnnotation.layer.borderColor = [bandColor colorWithAlphaComponent:1].CGColor;
+  bandAnnotation.layer.borderColor = [bandColor colorWithAlphaComponent:0.5].CGColor;
   bandAnnotation.position = SChartAnnotationBelowData;
   [self.chart addAnnotation:bandAnnotation];
   [bandAnnotation updateViewWithCanvas:self.chart.canvas];

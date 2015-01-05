@@ -44,10 +44,10 @@
   series.style.lineColor = [UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:1];
   series.crosshairEnabled = YES;
   series.style.lineColor = [UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:1];
-  series.style.lineWidth = @5;
+  series.style.lineWidth = @4;
   series.style.pointStyle.showPoints = YES;
-  series.style.pointStyle.radius = @20;
-  series.style.pointStyle.innerRadius = @10;
+  series.style.pointStyle.radius = @15;
+  series.style.pointStyle.innerRadius = @8;
   series.style.pointStyle.color = [UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:1];
   return series;
 }
