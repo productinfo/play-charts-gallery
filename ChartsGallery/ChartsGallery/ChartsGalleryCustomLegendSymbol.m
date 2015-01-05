@@ -48,15 +48,6 @@
 }
 
 - (void)layoutSubviews {
-
-  const CGFloat *components = CGColorGetComponents(self.series.style.areaColor.CGColor);
-  CGFloat red = components[0];
-  CGFloat green = components[1];
-  CGFloat blue = components[2];
-  CGFloat alpha = components[3];
-  NSLog(@"%f, %f, %f, %f", red, green, blue, alpha);
-  
-
   self.seriesToggleSwitch.onTintColor = self.series.style.areaColor;
 }
 

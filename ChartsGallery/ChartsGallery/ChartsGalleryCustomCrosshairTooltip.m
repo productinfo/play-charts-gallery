@@ -81,18 +81,18 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
   
   // Lay out the labels, keeping track of the maximum width
   CGFloat maxLabelWidth = 0;
-  CGFloat labelYPosition = CustomCrosshairChartTooltipLabelPadding;
+  CGFloat currentMaxHeight = CustomCrosshairChartTooltipLabelPadding;
   
   for (UILabel *label in self.allLabels) {
     // Position the label
     label.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:12];
     [label sizeToFit];
     CGRect frame = label.frame;
-    frame.origin = CGPointMake(CustomCrosshairChartTooltipLabelPadding, labelYPosition);
+    frame.origin = CGPointMake(CustomCrosshairChartTooltipLabelPadding, currentMaxHeight);
     label.frame = frame;
     
     maxLabelWidth = MAX(maxLabelWidth, label.frame.size.width);
-    labelYPosition += label.frame.size.height;
+    currentMaxHeight += label.frame.size.height;
   }
   
   // Further customize top most label in crosshair tooltip
@@ -106,7 +106,7 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
   // Resize tooltip frame
   CGRect frame = self.frame;
   frame.size.width = maxLabelWidth + (2 * CustomCrosshairChartTooltipLabelPadding);
-  frame.size.height = labelYPosition + CustomCrosshairChartTooltipLabelPadding;
+  frame.size.height = currentMaxHeight + CustomCrosshairChartTooltipLabelPadding;
   frame.origin.y = canvas.glView.frame.origin.y;
   frame.origin.x = position.x - (frame.size.width / 2);
   self.frame = frame;
