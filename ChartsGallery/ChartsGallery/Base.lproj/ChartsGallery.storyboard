@@ -91,6 +91,9 @@
                         <segue destination="Mca-Ew-hct" kind="relationship" relationship="viewControllers" id="ySF-xs-E2S"/>
                         <segue destination="NrU-ux-bma" kind="relationship" relationship="viewControllers" id="jYF-DD-95y"/>
                         <segue destination="1F8-7L-3IY" kind="relationship" relationship="viewControllers" id="Zyo-hI-vyv"/>
+                        <segue destination="xYe-p9-76z" kind="relationship" relationship="viewControllers" id="ucs-sF-byW"/>
+                        <segue destination="jk9-Tg-wxO" kind="relationship" relationship="viewControllers" id="ISl-v1-ucJ"/>
+                        <segue destination="V3D-CO-cjg" kind="relationship" relationship="viewControllers" id="n60-iK-eKs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NK6-Ya-Huh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -617,15 +620,99 @@
             </objects>
             <point key="canvasLocation" x="700" y="6874"/>
         </scene>
+        <!--Data Label-->
+        <scene sceneID="cES-y8-mEK">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryDataLabelViewController" id="V3D-CO-cjg" userLabel="Data Label" customClass="ChartsGalleryDataLabelViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ioY-jX-j0h">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="zpe-BS-YOo" customClass="ShinobiChart">
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Data Label" image="DataLabelChart" id="9yi-tW-EXi" userLabel="Data Label"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="zpe-BS-YOo" id="SAx-SJ-ra3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdB-02-63I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404" y="7435"/>
+        </scene>
+        <!--Annotations-->
+        <scene sceneID="X2q-0L-DFM">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryAnnotationsViewController" id="xYe-p9-76z" userLabel="Annotations" customClass="ChartsGalleryAnnotationsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fjo-RD-R0o">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="SEP-lu-MWQ" customClass="ShinobiChart">
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Annotations" image="AnnotationsChart" id="cCW-f3-AOm" userLabel="Annotations"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="SEP-lu-MWQ" id="fZ1-2O-HMc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tEP-lg-jSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-404" y="8342"/>
+        </scene>
+        <!--Crosshair-->
+        <scene sceneID="ZMc-nM-Qio">
+            <objects>
+                <viewController storyboardIdentifier="ChartsGalleryCrosshairViewController" id="jk9-Tg-wxO" userLabel="Crosshair" customClass="ChartsGalleryCrosshairViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nr3-y7-ssN">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="AUr-N5-gYe" customClass="ShinobiChart">
+                                <rect key="frame" x="10" y="10" width="1004" height="699"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Crosshair" image="CrosshairChart" id="ucd-7r-ZqB" userLabel="Crosshair"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="chart" destination="AUr-N5-gYe" id="u66-Ie-eaV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0D-xS-7B5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="7858"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AlternateLineChart" width="30" height="30"/>
+        <image name="AnnotationsChart" width="30" height="30"/>
         <image name="AreaChart" width="30" height="30"/>
         <image name="BandChart" width="30" height="30"/>
         <image name="BarChart" width="30" height="30"/>
         <image name="BubbleChart" width="30" height="30"/>
         <image name="CandlestickChart" width="30" height="30"/>
         <image name="ColumnChart" width="30" height="30"/>
+        <image name="CrosshairChart" width="30" height="30"/>
+        <image name="DataLabelChart" width="25" height="25"/>
         <image name="DonutChart" width="30" height="30"/>
         <image name="Histogram" width="30" height="30"/>
         <image name="LineChart" width="30" height="30"/>
