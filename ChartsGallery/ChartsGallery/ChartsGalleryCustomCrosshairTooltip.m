@@ -73,8 +73,8 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
   NSInteger dataPointIndex = chartDataPoint.index;
   ChartsGalleryCrosshairDataSource *dataSource = chart.datasource;
   NSDictionary *dataCollection = dataSource.dataCollection[dataPointIndex];
-  self.heartRate.text = [NSString stringWithFormat:@"Heart Rate: %@", dataCollection[@"Heart Rate"]];
-  self.pace.text = [NSString stringWithFormat:@"Pace: %@", dataCollection[@"Pace"]];
+  self.heartRate.text = [NSString stringWithFormat:@"Heart Rate: %@ bpm", dataCollection[@"Heart Rate"]];
+  self.pace.text = [NSString stringWithFormat:@"Pace: %@ kph", dataCollection[@"Pace"]];
 }
 
 - (void)setPosition:(struct SChartPoint)position onCanvas:(SChartCanvas*)canvas {
