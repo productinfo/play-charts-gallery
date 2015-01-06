@@ -664,7 +664,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <tabBarItem key="tabBarItem" title="Annotations" id="cCW-f3-AOm" userLabel="Annotations"/>
+                    <tabBarItem key="tabBarItem" title="Annotations" image="AnnotationsChart" id="cCW-f3-AOm" userLabel="Annotations"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="chart" destination="SEP-lu-MWQ" id="fZ1-2O-HMc"/>
@@ -691,7 +691,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <tabBarItem key="tabBarItem" title="Crosshair" id="ucd-7r-ZqB" userLabel="Crosshair"/>
+                    <tabBarItem key="tabBarItem" title="Crosshair" image="CrosshairChart" id="ucd-7r-ZqB" userLabel="Crosshair"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="chart" destination="AUr-N5-gYe" id="u66-Ie-eaV"/>
@@ -704,12 +704,14 @@
     </scenes>
     <resources>
         <image name="AlternateLineChart" width="30" height="30"/>
+        <image name="AnnotationsChart" width="30" height="30"/>
         <image name="AreaChart" width="30" height="30"/>
         <image name="BandChart" width="30" height="30"/>
         <image name="BarChart" width="30" height="30"/>
         <image name="BubbleChart" width="30" height="30"/>
         <image name="CandlestickChart" width="30" height="30"/>
         <image name="ColumnChart" width="30" height="30"/>
+        <image name="CrosshairChart" width="30" height="30"/>
         <image name="DataLabelChart" width="25" height="25"/>
         <image name="DonutChart" width="30" height="30"/>
         <image name="Histogram" width="30" height="30"/>
