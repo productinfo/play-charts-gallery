@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ChartsGallery"
-  s.version          = '0.1.11'
+  s.version          = '0.1.12'
   s.summary          = "A gallery of Shinobi charts"
   s.description      = <<-DESC
                        An app demonstrating many of the chart types it's possible to create with ShinobiCharts.
