@@ -26,7 +26,7 @@
   self.chart.yAxis.defaultRange = [[SChartRange alloc] initWithMinimum:@-0.5 andMaximum:@5.5];
   self.chart.yAxis.animationEdgeBouncing = NO;
   
-  self.chart.title = @"Items purchased online by age in 2011";
+  self.chart.title = @"Bar chart";
   
   [super setupChart];
 }

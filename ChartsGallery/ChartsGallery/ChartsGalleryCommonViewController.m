@@ -7,6 +7,8 @@
 //
 
 #import "ChartsGalleryCommonViewController.h"
+#import "ShinobiPlayUtils/UIFont+SPUFont.h"
+#import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 @interface ChartsGalleryCommonViewController()
 
@@ -15,9 +17,29 @@
 @implementation ChartsGalleryCommonViewController
 
 - (void)setupChart {
+  SChartTheme *theme = [SChartiOS7Theme new];
+  theme.chartTitleStyle.font = [UIFont shinobiFontOfSize:18];
+  theme.chartTitleStyle.textColor = [UIColor shinobiDarkGrayColor];
+  theme.chartTitleStyle.titleCentresOn = SChartTitleCentresOnChart;
+  theme.chartStyle.backgroundColor = [UIColor whiteColor];
+  theme.legendStyle.borderWidth = 0;
+  theme.legendStyle.font = [UIFont shinobiFontOfSize:16];
+  theme.legendStyle.titleFontColor = [UIColor shinobiDarkGrayColor];
+  theme.legendStyle.fontColor = [UIColor shinobiDarkGrayColor];
+  theme.xAxisStyle.titleStyle.font = [UIFont shinobiFontOfSize:16];
+  theme.xAxisStyle.titleStyle.textColor = [UIColor shinobiDarkGrayColor];
+  theme.xAxisStyle.majorTickStyle.labelFont = [UIFont lightShinobiFontOfSize:14];
+  theme.xAxisStyle.majorTickStyle.labelColor = [UIColor shinobiDarkGrayColor];
+  theme.xAxisStyle.lineColor = [UIColor shinobiDarkGrayColor];
+  theme.yAxisStyle.titleStyle.font = [UIFont shinobiFontOfSize:16];
+  theme.yAxisStyle.titleStyle.textColor = [UIColor shinobiDarkGrayColor];
+  theme.yAxisStyle.majorTickStyle.labelFont = [UIFont lightShinobiFontOfSize:14];
+  theme.yAxisStyle.majorTickStyle.labelColor = [UIColor shinobiDarkGrayColor];
+  theme.yAxisStyle.lineColor = [UIColor shinobiDarkGrayColor];
+  [self.chart applyTheme:theme];
+  
   self.chart.delegate = self;
   self.chart.legend.hidden = NO;
-  self.chart.backgroundColor = [UIColor whiteColor];
   
   for (SChartAxis *axis in self.chart.allAxes) {
     axis.enableGesturePanning = YES;

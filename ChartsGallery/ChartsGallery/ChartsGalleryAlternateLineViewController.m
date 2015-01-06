@@ -24,7 +24,7 @@
   self.chart.yAxis.title = @"Number of boys";
   self.chart.yAxis.rangePaddingHigh = @10;
   
-  self.chart.title = @"Names of boys born in Liverpool during February 1964";
+  self.chart.title = @"Line chart showing points";
   
   [super setupChart];
 }

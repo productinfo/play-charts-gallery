@@ -25,7 +25,7 @@
   self.chart.yAxis.title = @"SAT Score";
   self.chart.yAxis.animationEdgeBouncing = NO;
   
-  self.chart.title = @"SAT scores for schools";
+  self.chart.title = @"Column chart";
   
   [super setupChart];
 }

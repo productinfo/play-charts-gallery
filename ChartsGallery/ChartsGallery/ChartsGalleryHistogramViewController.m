@@ -19,8 +19,6 @@
   self.chart.xAxis = [SChartNumberAxis new];
   self.chart.xAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@0 andMaximum:@80];
   self.chart.xAxis.animationEdgeBouncing = NO;
-  self.chart.xAxis.style.interSeriesPadding = @0;
-  self.chart.xAxis.style.interSeriesSetPadding = @0;
   self.chart.xAxis.majorTickFrequency = @10;
   self.chart.xAxis.minorTickFrequency = @5;
   self.chart.xAxis.title = @"Age in years";
@@ -29,9 +27,13 @@
   self.chart.yAxis.rangePaddingLow = @0;
   self.chart.yAxis.title = @"Number of participants";
   
-  self.chart.title = @"Age distribution of event participants";
+  self.chart.title = @"Histogram";
   
   [super setupChart];
+  
+  self.chart.xAxis.style.interSeriesPadding = @0;
+  self.chart.xAxis.style.interSeriesSetPadding = @0;
+  
   self.chart.legend.hidden = YES;
 }
 

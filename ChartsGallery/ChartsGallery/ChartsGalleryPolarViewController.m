@@ -43,7 +43,7 @@
   labelFormatter.formatter = numberFormatter;
   self.chart.xAxis.labelFormatter = labelFormatter;
 
-  self.chart.title = @"Spirals";
+  self.chart.title = @"Polar chart";
   
   [super setupChart];
 }

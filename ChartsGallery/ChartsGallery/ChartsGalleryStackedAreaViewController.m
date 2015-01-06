@@ -23,7 +23,7 @@
   self.chart.yAxis = [SChartNumberAxis new];
   self.chart.yAxis.title = @"Units sold";
   
-  self.chart.title = @"Unit sales by region in 2011";
+  self.chart.title = @"Stacked area chart";
   
   [super setupChart];
 }

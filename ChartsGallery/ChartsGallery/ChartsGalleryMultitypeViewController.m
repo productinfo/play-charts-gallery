@@ -33,7 +33,7 @@
   secondAxis.title = @"Rainfall (mm)";
   [self.chart addYAxis:secondAxis];
   
-  self.chart.title = @"Historic monthly weather data for Heathrow Airport";
+  self.chart.title = @"Multitype chart";
   
   [super setupChart];
 }

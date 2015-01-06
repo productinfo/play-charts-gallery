@@ -37,17 +37,24 @@
     self.chart = chart;
     self.series = series;
     
-    self.seriesToggleSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(0, 0, 51, 31)];
+    self.seriesToggleSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(0, 0, 51, 33)];
     self.seriesToggleSwitch.on = YES;
     [self.seriesToggleSwitch addTarget:self
                 action:@selector(switchToggled:)
       forControlEvents:UIControlEventValueChanged];
     [self addSubview:self.seriesToggleSwitch];
+    self.seriesToggleSwitch.clipsToBounds = NO;
+    self.clipsToBounds = NO;
   }
   return self;
 }
 
 - (void)layoutSubviews {
+  // Fix our height to make sure the toggle switch fits inside
+  if (CGRectGetHeight(self.frame) < CGRectGetHeight(self.seriesToggleSwitch.frame)) {
+    CGFloat heightDiff = CGRectGetHeight(self.seriesToggleSwitch.frame) - CGRectGetHeight(self.frame);
+    self.frame = CGRectInset(self.frame, 0, -(heightDiff/2));
+  }
   self.seriesToggleSwitch.onTintColor = self.series.style.areaColor;
 }
 

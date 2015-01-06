@@ -22,7 +22,7 @@
   self.chart.yAxis = [SChartNumberAxis new];
   self.chart.yAxis.title = @"Price ($)";
   
-  self.chart.title = @"Historical crude oil prices";
+  self.chart.title = @"Band chart";
   
   [super setupChart];
   

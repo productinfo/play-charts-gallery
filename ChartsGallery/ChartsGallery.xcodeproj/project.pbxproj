@@ -167,7 +167,7 @@
 		68171BEC19ADDBC5000AFEEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; };
 		68171BEE19ADDBC5000AFEEB /* ChartsGallery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChartsGallery-Prefix.pch"; sourceTree = "<group>"; };
 		68171BEF19ADDBC5000AFEEB /* ChartsGalleryAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryAppDelegate.h; sourceTree = "<group>"; };
-		68171BF019ADDBC5000AFEEB /* ChartsGalleryAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		68171BF019ADDBC5000AFEEB /* ChartsGalleryAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryAppDelegate.m; sourceTree = "<group>"; };
 		68171BF319ADDBC5000AFEEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ChartsGallery.storyboard; sourceTree = "<group>"; };
 		68171BF519ADDBC5000AFEEB /* ChartsGalleryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChartsGalleryViewController.h; sourceTree = "<group>"; };
 		68171BF619ADDBC5000AFEEB /* ChartsGalleryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -419,9 +419,9 @@
 				68229EB919BDD850004B5A17 /* StackedAreaChart */,
 				68229EC619BEF0C0004B5A17 /* BarChart */,
 				68D4708919BF1E62001B1D0D /* ColumnChart */,
-				68D4709B19C0350B001B1D0D /* Histogram */,
 				681815EC19C6F13100D10022 /* StackedBarChart */,
 				681815F319C6F74500D10022 /* StackedColumnChart */,
+				68D4709B19C0350B001B1D0D /* Histogram */,
 				681815FD19C7079E00D10022 /* StepChart */,
 				6818160519C70F1400D10022 /* Candlestick */,
 				6818162819C7407F00D10022 /* OHLCChart */,
@@ -1005,6 +1005,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChartsGallery/ChartsGallery-Prefix.pch";
 				INFOPLIST_FILE = "ChartsGallery/ChartsGallery-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = ChartsGallery;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1022,6 +1023,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChartsGallery/ChartsGallery-Prefix.pch";
 				INFOPLIST_FILE = "ChartsGallery/ChartsGallery-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = ChartsGallery;
 				WRAPPER_EXTENSION = app;
 			};

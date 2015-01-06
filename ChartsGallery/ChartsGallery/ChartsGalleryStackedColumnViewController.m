@@ -25,7 +25,7 @@
   self.chart.yAxis.title = @"Unit sales in millions";
   self.chart.yAxis.animationEdgeBouncing = NO;
   
-  self.chart.title = @"Value of retail trade";
+  self.chart.title = @"Stacked column chart";
   
   [super setupChart];
 }

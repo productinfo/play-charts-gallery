@@ -39,13 +39,13 @@
   self.chart.yAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@0 andMaximum:@100.5];
   self.chart.yAxis.animationEdgeBouncing = NO;
   
-  self.chart.legend.symbolWidth = @51;
-  self.chart.legend.style.font = [UIFont systemFontOfSize:30];
-  self.chart.legend.style.borderWidth = 0;
-  
-  self.chart.title = @"Items purchased online by age in 2011";
-  
   [super setupChart];
+  
+  self.chart.legend.symbolWidth = @51;
+  self.chart.legend.style.borderWidth = 0;
+  self.chart.legend.style.verticalPadding = @20;
+  
+  self.chart.title = @"Column chart with entry/exit animations";
 }
 
 @end
