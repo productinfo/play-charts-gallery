@@ -45,9 +45,9 @@
                                   andText:@"Resting"];
 }
 
-- (void) addBandAnnotationWithMinYPosition:(id)bandMinYPosition withMaxY:(id)bandMaxYPosition
-                                  andColor:(UIColor*)bandColor andTextAnnotationAtXPosition:(id)textXPosition
-                             withYPosition:(id)textYPosition andText:(NSString*)annotationText {
+- (void)addBandAnnotationWithMinYPosition:(id)bandMinYPosition withMaxY:(id)bandMaxYPosition
+                                 andColor:(UIColor*)bandColor andTextAnnotationAtXPosition:(id)textXPosition
+                            withYPosition:(id)textYPosition andText:(NSString*)annotationText {
   
   SChartAxis *xAxis = self.chart.xAxis;
   SChartAxis *yAxis = self.chart.yAxis;

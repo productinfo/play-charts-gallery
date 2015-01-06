@@ -33,7 +33,7 @@
 }
 
 - (id)xValueAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
-  self.dateComponents.minute = dataIndex + 0.25;
+  self.dateComponents.minute = dataIndex;
   return [self.calendar dateFromComponents:self.dateComponents];
 }
 
@@ -43,12 +43,11 @@
   series.title = self.seriesNames[index];
   series.style.lineColor = [UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:1];
   series.crosshairEnabled = YES;
-  series.style.lineColor = [UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:1];
   series.style.lineWidth = @4;
   series.style.pointStyle.showPoints = YES;
   series.style.pointStyle.radius = @15;
   series.style.pointStyle.innerRadius = @8;
-  series.style.pointStyle.color = [UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:1];
+  series.style.pointStyle.color = series.style.lineColor;
   return series;
 }
 
