@@ -17,25 +17,29 @@
 @implementation ChartsGalleryCommonViewController
 
 - (void)setupChart {
+  // Get the theme to set the basic fonts and colours
   SChartTheme *theme = [SChartiOS7Theme new];
+  UIColor *darkGrayColor = [UIColor shinobiDarkGrayColor];
   theme.chartTitleStyle.font = [UIFont shinobiFontOfSize:18];
-  theme.chartTitleStyle.textColor = [UIColor shinobiDarkGrayColor];
+  theme.chartTitleStyle.textColor = darkGrayColor;
   theme.chartTitleStyle.titleCentresOn = SChartTitleCentresOnChart;
   theme.chartStyle.backgroundColor = [UIColor whiteColor];
   theme.legendStyle.borderWidth = 0;
   theme.legendStyle.font = [UIFont shinobiFontOfSize:16];
-  theme.legendStyle.titleFontColor = [UIColor shinobiDarkGrayColor];
-  theme.legendStyle.fontColor = [UIColor shinobiDarkGrayColor];
+  theme.legendStyle.titleFontColor = darkGrayColor;
+  theme.legendStyle.fontColor = darkGrayColor;
   theme.xAxisStyle.titleStyle.font = [UIFont shinobiFontOfSize:16];
-  theme.xAxisStyle.titleStyle.textColor = [UIColor shinobiDarkGrayColor];
+  theme.xAxisStyle.titleStyle.textColor = darkGrayColor;
   theme.xAxisStyle.majorTickStyle.labelFont = [UIFont lightShinobiFontOfSize:14];
-  theme.xAxisStyle.majorTickStyle.labelColor = [UIColor shinobiDarkGrayColor];
-  theme.xAxisStyle.lineColor = [UIColor shinobiDarkGrayColor];
-  theme.yAxisStyle.titleStyle.font = [UIFont shinobiFontOfSize:16];
-  theme.yAxisStyle.titleStyle.textColor = [UIColor shinobiDarkGrayColor];
-  theme.yAxisStyle.majorTickStyle.labelFont = [UIFont lightShinobiFontOfSize:14];
-  theme.yAxisStyle.majorTickStyle.labelColor = [UIColor shinobiDarkGrayColor];
-  theme.yAxisStyle.lineColor = [UIColor shinobiDarkGrayColor];
+  theme.xAxisStyle.majorTickStyle.labelColor = darkGrayColor;
+  theme.xAxisStyle.lineColor = darkGrayColor;
+  // Set yAxisStyle to match xAxisStyle (note we can't just copy the whole style object
+  // as that will make the axis label the wrong orientation)
+  theme.yAxisStyle.titleStyle.font = theme.yAxisStyle.titleStyle.font;
+  theme.yAxisStyle.titleStyle.textColor = theme.yAxisStyle.titleStyle.textColor;
+  theme.yAxisStyle.majorTickStyle = theme.xAxisStyle.majorTickStyle;
+  theme.yAxisStyle.minorTickStyle = theme.xAxisStyle.minorTickStyle;
+  theme.yAxisStyle.lineColor = theme.xAxisStyle.lineColor;
   [self.chart applyTheme:theme];
   
   self.chart.delegate = self;
