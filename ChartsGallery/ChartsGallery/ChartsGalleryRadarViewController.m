@@ -34,7 +34,7 @@
   self.chart.yAxis = [SChartNumberAxis new];
   self.chart.yAxis.style.majorTickStyle.tickGap = @-50;
   
-  self.chart.title = @"Average rainfall per month 2014 (mm)";
+  self.chart.title = @"Radar chart";
     
   [super setupChart];
 }

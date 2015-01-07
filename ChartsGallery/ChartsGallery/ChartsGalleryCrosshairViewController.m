@@ -46,7 +46,7 @@
   
   self.chart.legend.hidden = YES;
   
-  self.chart.title = @"Heart Rate Chart";
+  self.chart.title = @"Line chart with custom crosshair";
   
   self.dateComponents = [NSDateComponents new];
   self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];

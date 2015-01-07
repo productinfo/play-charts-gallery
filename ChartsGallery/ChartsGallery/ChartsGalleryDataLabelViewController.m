@@ -29,8 +29,8 @@
 }
 
 - (void)setupChart {
-  self.chart.delegate = self;
   [super setupChart];
+  self.chart.title = @"Stacked bar chart showing individual data point labels";
 }
 
 - (void)sChart:(ShinobiChart *)chart alterDataPointLabel:(SChartDataPointLabel *)label

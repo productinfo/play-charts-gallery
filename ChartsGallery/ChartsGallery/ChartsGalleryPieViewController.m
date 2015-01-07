@@ -24,7 +24,7 @@
 }
 
 - (void)setupChart {
-  self.chart.title = @"Favourite types of movie";
+  self.chart.title = @"Pie chart";
   [super setupChart];
   self.chart.legend.position = SChartLegendPositionMiddleRight;
 }

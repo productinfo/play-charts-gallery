@@ -27,7 +27,7 @@
   self.chart.yAxis.rangePaddingLow = @10;
   self.chart.yAxis.rangePaddingHigh = @10;
 
-  self.chart.title = @"Populations by latitude and longitude";
+  self.chart.title = @"Bubble chart";
   
   [super setupChart];
   

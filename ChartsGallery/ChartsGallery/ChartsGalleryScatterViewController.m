@@ -26,7 +26,7 @@
   self.chart.yAxis.rangePaddingLow = @3;
   self.chart.yAxis.rangePaddingHigh = @3;
   
-  self.chart.title = @"Height vs Average weight";
+  self.chart.title = @"Scatter chart";
   
   [super setupChart];
 }

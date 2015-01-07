@@ -23,7 +23,7 @@
   self.chart.yAxis = [SChartNumberAxis new];
   self.chart.yAxis.title = @"Average Temperature (°F)";
   
-  self.chart.title = @"City temperatures during 2011";
+  self.chart.title = @"Line chart";
   
   [super setupChart];
 }

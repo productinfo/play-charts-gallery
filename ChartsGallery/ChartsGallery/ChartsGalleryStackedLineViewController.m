@@ -23,7 +23,7 @@
   self.chart.yAxis = [SChartNumberAxis new];
   self.chart.yAxis.title = @"Sales value in millions";
   
-  self.chart.title = @"UK monthly retail sales";
+  self.chart.title = @"Stacked line chart";
   
   [super setupChart];
 }

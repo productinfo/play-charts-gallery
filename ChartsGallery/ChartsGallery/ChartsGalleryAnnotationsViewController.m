@@ -6,6 +6,7 @@
 
 #import "ChartsGalleryAnnotationsViewController.h"
 #import "ChartsGalleryAnnotationsDataSource.h"
+#import "ShinobiPlayUtils/UIFont+SPUFont.h"
 
 @interface ChartsGalleryAnnotationsViewController ()
 
@@ -19,6 +20,8 @@
 
 - (void)setupChart {
   [super setupChart];
+  
+  self.chart.title = @"Line chart with annotations";
 
   // Add Anaerobic Annotations
   [self addBandAnnotationWithMinYPosition:@135
@@ -64,7 +67,7 @@
   [bandAnnotation updateViewWithCanvas:self.chart.canvas];
   
   SChartAnnotation *textAnnotation = [SChartAnnotation annotationWithText:annotationText
-                                                                  andFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:20]
+                                                                  andFont:[UIFont shinobiFontOfSize:20]
                                                                 withXAxis:xAxis
                                                                  andYAxis:yAxis
                                                               atXPosition:textXPosition

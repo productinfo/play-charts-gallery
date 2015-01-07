@@ -24,7 +24,7 @@
   self.chart.yAxis = [SChartNumberAxis new];
   self.chart.yAxis.title = @"Value";
   
-  self.chart.title = @"Historical price of gold";
+  self.chart.title = @"Step chart";
   
   [super setupChart];
 }

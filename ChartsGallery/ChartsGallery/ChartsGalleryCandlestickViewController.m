@@ -23,7 +23,7 @@
   self.chart.yAxis.title = @"Value in £s";
   self.chart.yAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@5600 andMaximum:@5950];
   
-  self.chart.title = @"FTSE 100 values 2012";
+  self.chart.title = @"Candlestick chart";
   
   [super setupChart];
   
