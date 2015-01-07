@@ -26,7 +26,7 @@
   
   [super setupChart];
   
-  self.chart.legend.hidden = YES;
+  self.chart.legend.position = SChartLegendPositionBottomMiddle;
 }
 
 @end

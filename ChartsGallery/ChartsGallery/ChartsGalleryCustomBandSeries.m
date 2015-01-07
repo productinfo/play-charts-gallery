@@ -1,5 +1,5 @@
 //
-//  ChartsGalleryCustomLegendSymbol.h
+//  ChartsGalleryCustomBandSeries.m
 //  ChartsGallery
 //
 //  Created by Daniel Allsop on 02/12/2014.
@@ -19,10 +19,29 @@
 //  limitations under the License.
 //
 
-#import <ShinobiCharts/ShinobiCharts.h>
+#import "ChartsGalleryCustomBandSeries.h"
+#import "ChartsGalleryCustomLegendSymbol.h"
 
-@interface ChartsGalleryCustomLegendSymbol : SChartLegendSymbol
+@interface ChartsGalleryCustomBandSeries ()
 
-- (instancetype)initWithChart:(ShinobiChart *)chart andSeries:(SChartSeries*)series;
+@property ShinobiChart *chart;
+@property ChartsGalleryCustomLegendSymbol *customLegendSymbol;
+
+@end
+
+@implementation ChartsGalleryCustomBandSeries
+
+- (instancetype)initWithChart:(ShinobiChart *)chart {
+  self = [super init];
+  if (self) {
+    self.chart = chart;
+    self.customLegendSymbol = [[ChartsGalleryCustomLegendSymbol alloc] initWithChart:self.chart andSeries:self];
+  }
+  return self;
+}
+
+- (SChartLegendSymbol *)blockSymbolForSeriesInLegend {
+  return self.customLegendSymbol;
+}
 
 @end

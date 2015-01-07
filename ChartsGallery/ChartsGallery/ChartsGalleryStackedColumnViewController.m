@@ -22,12 +22,14 @@
   self.chart.xAxis.animationEdgeBouncing = NO;
   
   self.chart.yAxis = [SChartNumberAxis new];
-  self.chart.yAxis.title = @"Unit sales in millions";
+  self.chart.yAxis.title = @"Unit sales in 100,000s";
   self.chart.yAxis.animationEdgeBouncing = NO;
   
   self.chart.title = @"Stacked column chart";
   
   [super setupChart];
+  
+  self.chart.legend.style.textAlignment = NSTextAlignmentRight;
 }
 
 @end

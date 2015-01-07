@@ -28,6 +28,7 @@
 
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
   SChartBandSeries *series = [[SChartBandSeries alloc] init];
+  series.title = @"Open/Close";
   series.style.lineWidth = @2;
   series.style.showFill = YES;
   
@@ -44,8 +45,8 @@
 }
 
 - (id)yValuesAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
-  return [@{SChartBandKeyLow : self.dataCollection[dataIndex][@"close"],
-            SChartBandKeyHigh : self.dataCollection[dataIndex][@"open"]}
+  return [@{SChartBandKeyLow : self.dataCollection[dataIndex][@"open"],
+            SChartBandKeyHigh : self.dataCollection[dataIndex][@"close"]}
           mutableCopy];
 }
 

@@ -27,6 +27,8 @@
   self.chart.title = @"Stacked bar chart";
   
   [super setupChart];
+  
+  self.chart.legend.style.textAlignment = NSTextAlignmentRight;
 }
 
 @end

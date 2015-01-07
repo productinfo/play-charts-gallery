@@ -1,5 +1,5 @@
 //
-//  ChartsGalleryCustomLegendSymbol.h
+//  ChartsGalleryCustomBandSeries.h
 //  ChartsGallery
 //
 //  Created by Daniel Allsop on 02/12/2014.
@@ -21,8 +21,8 @@
 
 #import <ShinobiCharts/ShinobiCharts.h>
 
-@interface ChartsGalleryCustomLegendSymbol : SChartLegendSymbol
+@interface ChartsGalleryCustomBandSeries : SChartBandSeries
 
-- (instancetype)initWithChart:(ShinobiChart *)chart andSeries:(SChartSeries*)series;
+- (instancetype)initWithChart:(ShinobiChart *)chart;
 
 @end

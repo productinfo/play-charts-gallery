@@ -18,8 +18,9 @@
   series.labelFormatString = @"%.0f%%";
   series.gesturePanningEnabled = YES;
   series.selectedPosition = 0;
+  series.style.initialRotation = @(-0.22 * M_PI);
   series.style.protrusion = 0;
-  series.selectedStyle.protrusion = 50;
+  series.selectedStyle.protrusion = 20;
   return series;
 }
 

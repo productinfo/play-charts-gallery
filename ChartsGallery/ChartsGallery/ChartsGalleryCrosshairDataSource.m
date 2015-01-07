@@ -20,6 +20,7 @@
 //
 
 #import "ChartsGalleryCrosshairDataSource.h"
+#import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 @implementation ChartsGalleryCrosshairDataSource
 

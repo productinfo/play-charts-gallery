@@ -17,18 +17,21 @@
 
 - (void)setupChart {
   self.chart.xAxis = [SChartNumberAxis new];
-  self.chart.xAxis.title = @"Average Weight (lbs)";
+  self.chart.xAxis.title = @"Height (inches)";
   self.chart.xAxis.rangePaddingLow = @1;
   self.chart.xAxis.rangePaddingHigh = @1;
   
   self.chart.yAxis = [SChartNumberAxis new];
-  self.chart.yAxis.title = @"Height (inches)";
+  self.chart.yAxis.title = @"Average Weight (lbs)";
   self.chart.yAxis.rangePaddingLow = @3;
   self.chart.yAxis.rangePaddingHigh = @3;
   
   self.chart.title = @"Scatter chart";
   
   [super setupChart];
+  
+  self.chart.legend.style.textAlignment = NSTextAlignmentRight;
+  self.chart.legend.style.showSymbols = YES;
 }
 
 @end

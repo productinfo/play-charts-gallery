@@ -28,6 +28,8 @@
   self.chart.title = @"Column chart";
   
   [super setupChart];
+  
+  self.chart.legend.style.textAlignment = NSTextAlignmentRight;
 }
 
 @end

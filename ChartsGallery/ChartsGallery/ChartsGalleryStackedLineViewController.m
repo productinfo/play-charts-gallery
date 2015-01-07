@@ -26,6 +26,12 @@
   self.chart.title = @"Stacked line chart";
   
   [super setupChart];
+  
+  self.chart.legend.style.orientation = SChartLegendOrientationHorizontal;
+  self.chart.legend.style.horizontalPadding = @10;
+  self.chart.legend.position = SChartLegendPositionBottomMiddle;
+  self.chart.legend.style.symbolAlignment = SChartSeriesLegendAlignSymbolsLeft;
+  self.chart.legend.style.textAlignment = NSTextAlignmentLeft;
 }
 
 @end

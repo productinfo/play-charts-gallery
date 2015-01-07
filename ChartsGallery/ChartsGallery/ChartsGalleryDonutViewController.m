@@ -26,7 +26,10 @@
 - (void)setupChart {
   self.chart.title = @"Donut chart";
   [super setupChart];
-  self.chart.legend.position = SChartLegendPositionMiddleRight;  
+  self.chart.titleCentresOn = SChartTitleCentresOnPlottingArea;
+  self.chart.legend.position = SChartLegendPositionMiddleRight;
+  self.chart.legend.placement = SChartLegendPlacementOutsidePlotArea;
+  self.chart.legend.style.textAlignment = NSTextAlignmentRight;
 }
 
 @end

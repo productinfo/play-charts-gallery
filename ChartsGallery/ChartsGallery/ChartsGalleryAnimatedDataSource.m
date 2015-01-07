@@ -21,6 +21,8 @@
 
 #import "ChartsGalleryAnimatedDataSource.h"
 #import "ChartsGalleryCustomColumnSeries.h"
+#import "ChartsGalleryCustomBandSeries.h"
+#import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 @interface ChartsGalleryAnimatedDataSource ()
 
@@ -31,31 +33,33 @@
 
 @implementation ChartsGalleryAnimatedDataSource
 
-- (instancetype)init {
-  self = [super initWithDataFromFile:@"ChartsGallery-bar-data"];
-  if (self) {
-    self.seriesNames = @[@"under_34",@"3544",@"4554", @"55"];
-    self.seriesTitles = @[@"Under 34", @"35-44", @"45-54", @"55"];
-    self.categories = @[@"Clothing", @"Media", @"Household", @"Books", @"Tickets",
-                        @"Travel", @"Hotels", @"Games", @"Electricals", @"Food",
-                        @"Investments", @"Telecoms", @"IT", @"e-learning", @"Medicine",
-                        @"Other"];
-  }
-  return self;
-}
-
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
-  ChartsGalleryCustomColumnSeries *series = [[ChartsGalleryCustomColumnSeries alloc] initWithChart:chart];
+  SChartSeries *series = nil;
+  if(index == 0) {
+    // Rainfall: column series
+    ChartsGalleryCustomColumnSeries *columnSeries = [[ChartsGalleryCustomColumnSeries alloc]
+                                                     initWithChart:chart];
+    columnSeries.style.areaColor = [UIColor shinobiPlayBlueColor];
+    columnSeries.style.showAreaWithGradient = NO;
+    series = columnSeries;
+  } else {
+    // Temperature: band series
+    ChartsGalleryCustomBandSeries *bandSeries = [[ChartsGalleryCustomBandSeries alloc]
+                                                 initWithChart:chart];
+    bandSeries.style.lineWidth = @2;
+    bandSeries.style.lineColorHigh = [UIColor shinobiPlayRedColor];
+    bandSeries.style.lineColorLow = [UIColor shinobiPlayOrangeColor];
+    bandSeries.style.areaColorNormal = [[[UIColor shinobiPlayRedColor] shinobiLightColor]
+                                        colorWithAlphaComponent:0.5];
+    bandSeries.style.areaColorInverted = bandSeries.style.areaColorNormal;
+    series = bandSeries;
+  }
+  series.crosshairEnabled = YES;
   series.title = self.seriesTitles[index];
   series.animationEnabled = YES;
+  series.entryAnimation.duration = @1;
   series.exitAnimation = [series.entryAnimation copy];
-  series.baseline = @0;
   return series;
-}
-
-- (id)xValueAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
-  // This is a column chart, so the x-value is the category
-  return self.categories[dataIndex];
 }
 
 @end

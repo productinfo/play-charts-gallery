@@ -29,6 +29,8 @@
   self.chart.title = @"Bar chart";
   
   [super setupChart];
+  
+  self.chart.legend.style.textAlignment = NSTextAlignmentRight;
 }
 
 @end
