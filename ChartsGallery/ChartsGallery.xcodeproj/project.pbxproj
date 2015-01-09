@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5431185F1A5D569D00E45874 /* ChartsGalleryShortVerticalLineAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5431185E1A5D569D00E45874 /* ChartsGalleryShortVerticalLineAnnotation.m */; };
+		543118631A5D749F00E45874 /* ChartsGalleryAnchoredTextAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 543118621A5D749F00E45874 /* ChartsGalleryAnchoredTextAnnotation.m */; };
+		543118661A5D78A100E45874 /* ChartsGalleryAnnotationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 543118651A5D78A100E45874 /* ChartsGalleryAnnotationManager.m */; };
+		543118691A5EED9300E45874 /* ChartsGalleryMaxHeartRateAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 543118681A5EED9300E45874 /* ChartsGalleryMaxHeartRateAnnotation.m */; };
+		5431186C1A6010F500E45874 /* ChartsGalleryCustomTextAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5431186B1A6010F500E45874 /* ChartsGalleryCustomTextAnnotation.m */; };
 		54DBC2841A40493300CD248D /* ChartsGalleryAnnotationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DBC2831A40493300CD248D /* ChartsGalleryAnnotationsViewController.m */; };
 		54DBC2871A404AE800CD248D /* ChartsGalleryDataLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DBC2861A404AE800CD248D /* ChartsGalleryDataLabelViewController.m */; };
 		54DBC28A1A404EFB00CD248D /* ChartsGalleryDataLabelDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DBC2891A404EFB00CD248D /* ChartsGalleryDataLabelDataSource.m */; };
@@ -124,6 +129,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5431185D1A5D569D00E45874 /* ChartsGalleryShortVerticalLineAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryShortVerticalLineAnnotation.h; sourceTree = "<group>"; };
+		5431185E1A5D569D00E45874 /* ChartsGalleryShortVerticalLineAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryShortVerticalLineAnnotation.m; sourceTree = "<group>"; };
+		543118611A5D749F00E45874 /* ChartsGalleryAnchoredTextAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryAnchoredTextAnnotation.h; sourceTree = "<group>"; };
+		543118621A5D749F00E45874 /* ChartsGalleryAnchoredTextAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryAnchoredTextAnnotation.m; sourceTree = "<group>"; };
+		543118641A5D78A100E45874 /* ChartsGalleryAnnotationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryAnnotationManager.h; sourceTree = "<group>"; };
+		543118651A5D78A100E45874 /* ChartsGalleryAnnotationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryAnnotationManager.m; sourceTree = "<group>"; };
+		543118671A5EED9300E45874 /* ChartsGalleryMaxHeartRateAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryMaxHeartRateAnnotation.h; sourceTree = "<group>"; };
+		543118681A5EED9300E45874 /* ChartsGalleryMaxHeartRateAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryMaxHeartRateAnnotation.m; sourceTree = "<group>"; };
+		5431186A1A6010F500E45874 /* ChartsGalleryCustomTextAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryCustomTextAnnotation.h; sourceTree = "<group>"; };
+		5431186B1A6010F500E45874 /* ChartsGalleryCustomTextAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryCustomTextAnnotation.m; sourceTree = "<group>"; };
 		54DBC2821A40493300CD248D /* ChartsGalleryAnnotationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryAnnotationsViewController.h; sourceTree = "<group>"; };
 		54DBC2831A40493300CD248D /* ChartsGalleryAnnotationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryAnnotationsViewController.m; sourceTree = "<group>"; };
 		54DBC2851A404AE800CD248D /* ChartsGalleryDataLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryDataLabelViewController.h; sourceTree = "<group>"; };
@@ -199,7 +214,7 @@
 		6818162919C740A200D10022 /* ChartsGalleryOHLCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChartsGalleryOHLCViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		6818162A19C740AD00D10022 /* ChartsGalleryOHLCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryOHLCViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6818162C19C740B800D10022 /* ChartsGalleryOHLCDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ChartsGalleryOHLCDataSource.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		6818162D19C740C700D10022 /* ChartsGalleryOHLCDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryOHLCDataSource.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6818162D19C740C700D10022 /* ChartsGalleryOHLCDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryOHLCDataSource.m; sourceTree = "<group>"; };
 		6818163219C81FCC00D10022 /* ChartsGalleryBandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryBandViewController.h; sourceTree = "<group>"; };
 		6818163319C81FD900D10022 /* ChartsGalleryBandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryBandViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		6818163519C81FE400D10022 /* ChartsGalleryBandDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryBandDataSource.h; sourceTree = "<group>"; };
@@ -308,6 +323,16 @@
 				54DBC2831A40493300CD248D /* ChartsGalleryAnnotationsViewController.m */,
 				54E9D81B1A4080EA005B9C1E /* ChartsGalleryAnnotationsDataSource.h */,
 				54E9D81C1A4080EA005B9C1E /* ChartsGalleryAnnotationsDataSource.m */,
+				543118641A5D78A100E45874 /* ChartsGalleryAnnotationManager.h */,
+				543118651A5D78A100E45874 /* ChartsGalleryAnnotationManager.m */,
+				5431185D1A5D569D00E45874 /* ChartsGalleryShortVerticalLineAnnotation.h */,
+				5431185E1A5D569D00E45874 /* ChartsGalleryShortVerticalLineAnnotation.m */,
+				5431186A1A6010F500E45874 /* ChartsGalleryCustomTextAnnotation.h */,
+				5431186B1A6010F500E45874 /* ChartsGalleryCustomTextAnnotation.m */,
+				543118611A5D749F00E45874 /* ChartsGalleryAnchoredTextAnnotation.h */,
+				543118621A5D749F00E45874 /* ChartsGalleryAnchoredTextAnnotation.m */,
+				543118671A5EED9300E45874 /* ChartsGalleryMaxHeartRateAnnotation.h */,
+				543118681A5EED9300E45874 /* ChartsGalleryMaxHeartRateAnnotation.m */,
 			);
 			name = AnnotationsChart;
 			sourceTree = "<group>";
@@ -834,11 +859,13 @@
 				68C6319319B5AB44009BFDC0 /* ChartsGalleryPieViewController.m in Sources */,
 				54EBA8F11A2DFF92005ED0DA /* ChartsGalleryCustomColumnSeries.m in Sources */,
 				6853D95B19B5EB2400735962 /* ChartsGalleryMultitypeViewController.m in Sources */,
+				543118661A5D78A100E45874 /* ChartsGalleryAnnotationManager.m in Sources */,
 				68229E9619BDA7E7004B5A17 /* ChartsGalleryLineViewController.m in Sources */,
 				54E37BE51A2739B800463050 /* ChartsGalleryAnimatedViewController.m in Sources */,
 				6818165019C862FA00D10022 /* ChartsGalleryBubbleDataSource.m in Sources */,
 				68229E9719BDA7E7004B5A17 /* ChartsGalleryLineDataSource.m in Sources */,
 				68C631A419B5B639009BFDC0 /* ChartsGalleryDonutDataSource.m in Sources */,
+				5431186C1A6010F500E45874 /* ChartsGalleryCustomTextAnnotation.m in Sources */,
 				54E9D8201A4080FE005B9C1E /* ChartsGalleryCrosshairDataSource.m in Sources */,
 				68229ECD19BEF0DD004B5A17 /* ChartsGalleryBarDataSource.m in Sources */,
 				6818164A19C84F9400D10022 /* ChartsGalleryScatterViewController.m in Sources */,
@@ -849,9 +876,11 @@
 				6818163E19C83A3F00D10022 /* ChartsGalleryMultiYDataSource.m in Sources */,
 				54E9D82D1A418778005B9C1E /* ChartsGalleryCustomCrosshair.m in Sources */,
 				6818164719C84F7600D10022 /* ChartsGalleryScatterDataSource.m in Sources */,
+				5431185F1A5D569D00E45874 /* ChartsGalleryShortVerticalLineAnnotation.m in Sources */,
 				681815F919C6F8C400D10022 /* ChartsGalleryStackedColumnDataSource.m in Sources */,
 				68229E9E19BDB234004B5A17 /* ChartsGalleryAlternateLineViewController.m in Sources */,
 				6818164D19C862E600D10022 /* ChartsGalleryBubbleViewController.m in Sources */,
+				543118691A5EED9300E45874 /* ChartsGalleryMaxHeartRateAnnotation.m in Sources */,
 				68229EB619BDD35E004B5A17 /* ChartsGalleryStackedLineViewController.m in Sources */,
 				54DBC28A1A404EFB00CD248D /* ChartsGalleryDataLabelDataSource.m in Sources */,
 				68C6319619B5AD8F009BFDC0 /* ChartsGalleryPieDataSource.m in Sources */,
@@ -876,6 +905,7 @@
 				54E8BF621A14D37800DEC27C /* ChartsGalleryPolarDataSource.m in Sources */,
 				54DBC2871A404AE800CD248D /* ChartsGalleryDataLabelViewController.m in Sources */,
 				68229EBF19BDD864004B5A17 /* ChartsGalleryStackedAreaDataSource.m in Sources */,
+				543118631A5D749F00E45874 /* ChartsGalleryAnchoredTextAnnotation.m in Sources */,
 				68D470A119C0355C001B1D0D /* ChartsGalleryHistogramViewController.m in Sources */,
 				68229EAA19BDCDA7004B5A17 /* ChartsGalleryAreaViewController.m in Sources */,
 				68171BF719ADDBC5000AFEEB /* ChartsGalleryViewController.m in Sources */,

@@ -39,10 +39,18 @@
   
   self.chart.xAxis = [SChartDateTimeAxis new];
   self.chart.xAxis.title = @"Time (Minutes)";
+  self.chart.xAxis.enableGesturePanning = YES;
+  self.chart.xAxis.enableMomentumPanning = YES;
+  self.chart.xAxis.enableGestureZooming = YES;
+  self.chart.xAxis.enableMomentumZooming = YES;
   
   self.chart.yAxis = [SChartNumberAxis new];
   self.chart.yAxis.title = @"Heart Rate (bpm)";
   self.chart.yAxis.defaultRange = [[SChartRange alloc] initWithMinimum:@0 andMaximum:@200];
+  self.chart.yAxis.enableGesturePanning = YES;
+  self.chart.yAxis.enableMomentumPanning = YES;
+  self.chart.yAxis.enableGestureZooming = YES;
+  self.chart.yAxis.enableMomentumZooming = YES;
   
   self.chart.legend.hidden = YES;
   
@@ -50,9 +58,7 @@
   
   self.dateComponents = [NSDateComponents new];
   self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-  
-  self.dateComponents.minute = 1.5;
-  
+    
   self.chart.crosshair = [[ChartsGalleryCustomCrosshair alloc] initWithChart:self.chart];
   self.chart.crosshair.tooltip = [ChartsGalleryCustomCrosshairTooltip new];
   self.chart.crosshair.enableCrosshairLines = YES;  

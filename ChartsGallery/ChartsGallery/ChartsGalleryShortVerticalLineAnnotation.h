@@ -1,8 +1,8 @@
 //
-//  ChartsGalleryAnnotationsViewController.h
+//  ChartsGalleryShortVerticalLineAnnotation.h
 //  ChartsGallery
 //
-//  Created by Daniel Allsop on 16/12/2014.
+//  Created by Daniel Allsop on 07/01/2015.
 //
 //  Copyright 2014 Scott Logic
 //
@@ -19,8 +19,14 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryCrosshairViewController.h"
 
-@interface ChartsGalleryAnnotationsViewController : ChartsGalleryCrosshairViewController <SChartDelegate>
+#import <ShinobiCharts/ShinobiCharts.h>
+
+@interface ChartsGalleryShortVerticalLineAnnotation : SChartAnnotation
+
+- (instancetype)initWithMinYPosition:(id)minYPosition maxYPosition:(id)maxYPosition xAxis:(SChartAxis *)xAxis yAxis:(SChartAxis*)yAxis color:(UIColor*)color;
+
+@property id minYPosition;
+@property id maxYPosition;
 
 @end

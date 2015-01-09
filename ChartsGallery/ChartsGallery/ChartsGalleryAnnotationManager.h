@@ -1,8 +1,8 @@
 //
-//  ChartsGalleryAnnotationsViewController.h
+//  ChartsGalleryAnnotationManager.h
 //  ChartsGallery
 //
-//  Created by Daniel Allsop on 16/12/2014.
+//  Created by Daniel Allsop on 07/01/2015.
 //
 //  Copyright 2014 Scott Logic
 //
@@ -19,8 +19,13 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryCrosshairViewController.h"
+#import <Foundation/Foundation.h>
+#import <ShinobiCharts/ShinobiChart.h>
 
-@interface ChartsGalleryAnnotationsViewController : ChartsGalleryCrosshairViewController <SChartDelegate>
+@interface ChartsGalleryAnnotationManager : NSObject
+
+- (instancetype)initWithChart:(ShinobiChart*)chart datasource:(id)datasource;
+
+- (void)updateValueAnnotationForXAxisRange:(SChartRange *)xRange yAxisRange:(SChartRange *)yRange;
 
 @end
