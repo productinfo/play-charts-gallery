@@ -31,15 +31,18 @@
   self.initialSetup = NO;
   
   // Add Anaerobic Annotations
-  [self addBandAnnotationWithMinY:@135 maxY:@200
+  [self addBandAnnotationWithMinY:@135
+                             maxY:@200
                             color:[UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:0.05f]];
   
   // Add Aerobic Annotations
-  [self addBandAnnotationWithMinY:@95 maxY:@135
+  [self addBandAnnotationWithMinY:@95
+                             maxY:@135
                             color:[UIColor colorWithRed:230.0f/255 green:134.0f/255 blue:1.0f/255 alpha:0.05f]];
   
   // Add Resting Annotations
-  [self addBandAnnotationWithMinY:@95 maxY:@0
+  [self addBandAnnotationWithMinY:@95
+                             maxY:@0
                             color:[UIColor colorWithRed:61.0f/255 green:174.0f/255 blue:80.0f/255 alpha:0.05f]];
   
   // Add Max Heart Rate Annotation
