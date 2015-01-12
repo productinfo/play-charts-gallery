@@ -70,7 +70,7 @@
   [self.lineAnnotationsLeft addObject:lineAnnotationLeft];
   [self.chart addAnnotation:lineAnnotationLeft];
   
-  // The custom text annotations are at a offset from the y axis.
+  // The custom text annotations are at a fixed offset from the y axis.
   ChartsGalleryAnchoredTextAnnotation *textAnnotation = [[ChartsGalleryAnchoredTextAnnotation alloc] initWithText:text
                                                                                                         withXAxis:xAxis
                                                                                                          andYAxis:yAxis
