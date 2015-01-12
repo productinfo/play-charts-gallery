@@ -20,6 +20,7 @@
 //
 
 #import "ChartsGalleryAnchoredTextAnnotation.h"
+#import "ShinobiPlayUtils/UIFont+SPUFont.h"
 
 @implementation ChartsGalleryAnchoredTextAnnotation
 
@@ -35,7 +36,7 @@
 }
 
 - (void)customiseLabel {
-  self.label.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20];
+  self.label.font = [UIFont shinobiFontOfSize:20];
 }
 
 - (void)updateViewWithCanvas:(SChartCanvas *)canvas {

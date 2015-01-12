@@ -20,6 +20,7 @@
 //
 
 #import "ChartsGalleryMaxHeartRateAnnotation.h"
+#import "ShinobiPlayUtils/UIFont+SPUFont.h"
 
 @implementation ChartsGalleryMaxHeartRateAnnotation
 
@@ -35,7 +36,7 @@
 }
 
 - (void)customiseLabel {  
-  self.label.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:15];
+  self.label.font = [UIFont shinobiFontOfSize:15];
   self.label.numberOfLines = 0;
   self.label.lineBreakMode = NSLineBreakByWordWrapping;
 }

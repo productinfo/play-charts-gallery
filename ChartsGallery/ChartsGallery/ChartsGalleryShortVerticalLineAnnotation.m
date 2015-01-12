@@ -19,7 +19,6 @@
 //  limitations under the License.
 //
 
-
 #import "ChartsGalleryShortVerticalLineAnnotation.h"
 
 @implementation ChartsGalleryShortVerticalLineAnnotation

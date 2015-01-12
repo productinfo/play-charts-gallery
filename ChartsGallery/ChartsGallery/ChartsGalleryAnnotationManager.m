@@ -44,21 +44,25 @@
     self.textAnnotations = [NSMutableArray new];
     self.lineAnnotationsRight = [NSMutableArray new];
     
-    // Create three sets of custom annotations. Each set feature two custom vertical line annotations and a text annotation.
-    // The custom vertical line annotations are shorter in height that regular vertical line annotations.
-    // The custom text annotations are offset from the y axis.
-    [self initLeftLineAnnotationLefttextAnnotationRightLineAnnotationWithText:@"Anaerobic" minYPosition:@135 maxYPosition:@200 color:[UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:0.5f]];
-    [self initLeftLineAnnotationLefttextAnnotationRightLineAnnotationWithText:@"Aerobic" minYPosition:@95 maxYPosition:@135 color:[UIColor colorWithRed:230.0f/255 green:134.0f/255 blue:1.0f/255 alpha:0.5f]];
-    [self initLeftLineAnnotationLefttextAnnotationRightLineAnnotationWithText:@"Resting" minYPosition:@0 maxYPosition:@95 color:[UIColor colorWithRed:61.0f/255 green:174.0f/255 blue:80.0f/255 alpha:0.5f]];
+    // Adds three sets of custom annotations to the chart.
+    // Each set of annotations feature two custom vertical line annotations and a text annotation.
+    [self addAnnotationsForBandWithText:@"Anaerobic" minYPosition:@135 maxYPosition:@200
+                                  color:[UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:0.5f]];
+    [self addAnnotationsForBandWithText:@"Aerobic" minYPosition:@95 maxYPosition:@135
+                                  color:[UIColor colorWithRed:230.0f/255 green:134.0f/255 blue:1.0f/255 alpha:0.5f]];
+    [self addAnnotationsForBandWithText:@"Resting" minYPosition:@0 maxYPosition:@95
+                                  color:[UIColor colorWithRed:61.0f/255 green:174.0f/255 blue:80.0f/255 alpha:0.5f]];
   }
   return self;
 }
 
-- (void)initLeftLineAnnotationLefttextAnnotationRightLineAnnotationWithText:(NSString*)text minYPosition:(id)minYPosition maxYPosition:(id)maxYPosition color:(UIColor*)color {
-
+- (void)addAnnotationsForBandWithText:(NSString*)text minYPosition:(id)minYPosition maxYPosition:(id)maxYPosition color:(UIColor*)color {
   SChartAxis *xAxis = self.chart.xAxis;
   SChartAxis *yAxis = self.chart.yAxis;
   
+  // The custom vertical line annotations are shorter in height than regular vertical line annotations
+  // They are also offset from the y axis.
+  // The custom vertical line annotations are shorter in height than regular vertical line annotations.
   ChartsGalleryShortVerticalLineAnnotation *lineAnnotationLeft = [[ChartsGalleryShortVerticalLineAnnotation alloc] initWithMinYPosition:minYPosition
                                                                                                                            maxYPosition:maxYPosition
                                                                                                                                   xAxis:xAxis
@@ -67,6 +71,7 @@
   [self.lineAnnotationsLeft addObject:lineAnnotationLeft];
   [self.chart addAnnotation:lineAnnotationLeft];
   
+  // The custom text annotations are offset from the y axis.
   ChartsGalleryAnchoredTextAnnotation *textAnnotation = [[ChartsGalleryAnchoredTextAnnotation alloc] initWithText:text
                                                                                                         withXAxis:xAxis
                                                                                                          andYAxis:yAxis
@@ -81,7 +86,7 @@
                                                                                                                             maxYPosition:maxYPosition
                                                                                                                                     xAxis:xAxis
                                                                                                                                     yAxis:yAxis
-                                                                                                                                  color:color];
+                                                                                                                                    color:color];
   [self.lineAnnotationsRight addObject:lineAnnotationRight];
   [self.chart addAnnotation:lineAnnotationRight];
 }
@@ -89,27 +94,28 @@
 #pragma mark - API Methods
 
 - (void)updateValueAnnotationForXAxisRange:(SChartRange *)xRange yAxisRange:(SChartRange *)yRange {
-  // Update the positions of the annotations so they remain visible at all time, and redraw the chart
+  // Update the positions of the annotations so they remain visible at all times
   for (int i = 0; i < self.lineAnnotationsLeft.count; ++i) {
-    [self updateLineAnnotationLeft:self.lineAnnotationsLeft[i] textAnnotation:self.textAnnotations[i]
-               lineAnnotationRight:self.lineAnnotationsRight[i] withXAxisRange:xRange];
+    
+    // Both of the vertical line annotations have their x position fixed with respect to the x axis
+    // They also have their y position and height altered depending on the charts current zoom level
+    ChartsGalleryShortVerticalLineAnnotation *lineAnnotationLeft = self.lineAnnotationsLeft[i];
+    float height = ([self.chart.yAxis pixelValueForDataValue:lineAnnotationLeft.maxYPosition] - [self.chart.yAxis pixelValueForDataValue:lineAnnotationLeft.minYPosition]);
+    lineAnnotationLeft.frame = CGRectMake(lineAnnotationLeft.frame.origin.x, lineAnnotationLeft.frame.origin.y, 6, height);
+    lineAnnotationLeft.xValue = xRange.minimum;
+    
+    // The text annotiation also has its x position fixed with respect to the x axis
+    // They also have their y position altered depending on the charts current zoom level
+    ChartsGalleryShortVerticalLineAnnotation *textAnnotation = self.textAnnotations[i];
+    textAnnotation.xValue = xRange.minimum;
+    
+    ChartsGalleryShortVerticalLineAnnotation *lineAnnotationRight = self.lineAnnotationsRight[i];
+    lineAnnotationRight.frame = CGRectMake(lineAnnotationRight.frame.origin.x, lineAnnotationRight.frame.origin.y, 6, height);
+    lineAnnotationRight.xValue = xRange.maximum;
   }
   
+  // Redraw the chart
   [self.chart redrawChart];
-}
-
-- (void)updateLineAnnotationLeft:(ChartsGalleryShortVerticalLineAnnotation*)lineAnnotationLeft
-                  textAnnotation:(ChartsGalleryAnchoredTextAnnotation*)textAnnotation
-             lineAnnotationRight:(ChartsGalleryShortVerticalLineAnnotation*)lineAnnotationRight
-                  withXAxisRange:(SChartRange *)xRange {
-  float height = ([self.chart.yAxis pixelValueForDataValue:lineAnnotationLeft.maxYPosition] - [self.chart.yAxis pixelValueForDataValue:lineAnnotationRight.minYPosition]);
-  lineAnnotationLeft.frame = CGRectMake(lineAnnotationLeft.frame.origin.x, lineAnnotationRight.frame.origin.y, 6, height);
-  lineAnnotationLeft.xValue = xRange.minimum;
-
-  textAnnotation.xValue = xRange.minimum;
-
-  lineAnnotationRight.frame = CGRectMake(lineAnnotationLeft.frame.origin.x, lineAnnotationRight.frame.origin.y, 6, height);
-  lineAnnotationRight.xValue = xRange.maximum;
 }
 
 @end
