@@ -23,6 +23,17 @@
 
 @implementation ChartsGalleryAnnotationsDataSource
 
+- (SChartDataPoint*)findDataPointWithHighestYValueForSeries:(SChartSeries*)chartSeries {
+  SChartDataPoint *dataPointWithHighestYValue;
+  SChartDataSeries *chartDataSeries = chartSeries.dataSeries;
+  for(SChartDataPoint* dataPoint in chartDataSeries.dataPoints){
+    if([dataPoint.yValue floatValue] > [dataPointWithHighestYValue.yValue floatValue]){
+      dataPointWithHighestYValue = dataPoint;
+    }
+  }
+  return dataPointWithHighestYValue;
+}
+
 #pragma mark - SChartDatasource methods
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
   SChartLineSeries *series = (SChartLineSeries*)[super sChart:chart seriesAtIndex:index];

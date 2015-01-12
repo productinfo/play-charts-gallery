@@ -34,7 +34,8 @@
   return self;
 }
 
-- (void)customiseLabel{
+- (void)customiseLabel {  
+  self.label.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:15];
   self.label.numberOfLines = 0;
   self.label.lineBreakMode = NSLineBreakByWordWrapping;
 }

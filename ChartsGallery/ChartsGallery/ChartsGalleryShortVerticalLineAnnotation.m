@@ -24,7 +24,9 @@
 
 @implementation ChartsGalleryShortVerticalLineAnnotation
 
-- (instancetype)initWithMinYPosition:(id)minYPosition maxYPosition:(id)maxYPosition xAxis:(SChartAxis *)xAxis yAxis:(SChartAxis*)yAxis color:(UIColor*)color {
+- (instancetype)initWithMinYPosition:(id)minYPosition maxYPosition:(id)maxYPosition
+                               xAxis:(SChartAxis *)xAxis yAxis:(SChartAxis*)yAxis
+                               color:(UIColor*)color {
   // Calculate the annotation height based on the yAxis bands
   self = [super initWithFrame:CGRectMake(0, 0, 6, 0)];
   if (self) {

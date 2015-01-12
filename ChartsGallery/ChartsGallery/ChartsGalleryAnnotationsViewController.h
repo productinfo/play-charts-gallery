@@ -21,6 +21,6 @@
 
 #import "ChartsGalleryCrosshairViewController.h"
 
-@interface ChartsGalleryAnnotationsViewController : ChartsGalleryCrosshairViewController <SChartDelegate>
+@interface ChartsGalleryAnnotationsViewController : ChartsGalleryCrosshairViewController
 
 @end

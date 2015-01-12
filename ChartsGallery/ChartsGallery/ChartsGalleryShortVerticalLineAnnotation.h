@@ -24,7 +24,9 @@
 
 @interface ChartsGalleryShortVerticalLineAnnotation : SChartAnnotation
 
-- (instancetype)initWithMinYPosition:(id)minYPosition maxYPosition:(id)maxYPosition xAxis:(SChartAxis *)xAxis yAxis:(SChartAxis*)yAxis color:(UIColor*)color;
+- (instancetype)initWithMinYPosition:(id)minYPosition maxYPosition:(id)maxYPosition
+                               xAxis:(SChartAxis *)xAxis yAxis:(SChartAxis*)yAxis
+                               color:(UIColor*)color;
 
 @property id minYPosition;
 @property id maxYPosition;

@@ -34,10 +34,14 @@
   return self;
 }
 
+- (void)customiseLabel {
+  self.label.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20];
+}
+
 - (void)updateViewWithCanvas:(SChartCanvas *)canvas {
   [super updateViewWithCanvas:canvas];
   // Move us so we are anchored above the minimum value
-  self.center = CGPointMake(self.center.x + (self.label.bounds.size.height * 2), self.center.y);
+  self.center = CGPointMake(self.center.x + (self.label.bounds.size.height * 1.25), self.center.y);
 }
 
 @end

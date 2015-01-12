@@ -34,7 +34,6 @@
     
     self.label = [[UILabel alloc] initWithFrame:self.bounds];
     self.label.backgroundColor = [UIColor clearColor];
-    self.label.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20];
     self.label.textColor = [UIColor blackColor];
     self.label.text = text;
     self.label.textAlignment = NSTextAlignmentCenter;
@@ -47,7 +46,7 @@
   return self;
 }
 
-- (void)customiseLabel{
+- (void)customiseLabel {
   // Implement this method in the subclass to perform any extra customisations to the label 
 }
 
