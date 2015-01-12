@@ -37,7 +37,7 @@
     self.label.textColor = [UIColor blackColor];
     self.label.text = text;
     self.label.textAlignment = NSTextAlignmentCenter;
-    [self customiseLabel];
+    [self customizeLabel];
     [self.label sizeToFit];
     [self addSubview:self.label];
     
@@ -46,7 +46,7 @@
   return self;
 }
 
-- (void)customiseLabel {
+- (void)customizeLabel {
   // Implement this method in the subclass to perform any extra customisations to the label 
 }
 

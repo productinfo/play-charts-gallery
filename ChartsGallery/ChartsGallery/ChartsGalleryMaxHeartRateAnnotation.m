@@ -35,7 +35,7 @@
   return self;
 }
 
-- (void)customiseLabel {  
+- (void)customizeLabel {
   self.label.font = [UIFont shinobiFontOfSize:15];
   self.label.numberOfLines = 0;
   self.label.lineBreakMode = NSLineBreakByWordWrapping;

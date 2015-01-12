@@ -20,7 +20,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ShinobiCharts/ShinobiChart.h>
+#import <ShinobiCharts/ShinobiCharts.h>
 
 @interface ChartsGalleryAnnotationManager : NSObject
 

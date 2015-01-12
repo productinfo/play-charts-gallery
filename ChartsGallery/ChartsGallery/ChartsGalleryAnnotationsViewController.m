@@ -11,7 +11,7 @@
 
 @interface ChartsGalleryAnnotationsViewController ()
 
-@property (strong, nonatomic) ChartsGalleryAnnotationManager *annotationManager;
+@property (nonatomic, strong) ChartsGalleryAnnotationManager *annotationManager;
 @property (nonatomic, strong) ChartsGalleryMaxHeartRateAnnotation *textAnnotationMaxHeartRate;
 
 @property BOOL initialSetup;
@@ -31,19 +31,16 @@
   self.initialSetup = NO;
   
   // Add Anaerobic Annotations
-  [self addBandAnnotationWithMinYPosition:@135
-                                     MaxY:@200
-                                    Color:[UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:0.05f]];
+  [self addBandAnnotationWithMinY:@135 maxY:@200
+                            color:[UIColor colorWithRed:230.0f/255 green:41.0f/255 blue:77.0f/255 alpha:0.05f]];
   
   // Add Aerobic Annotations
-  [self addBandAnnotationWithMinYPosition:@95
-                                     MaxY:@135
-                                    Color:[UIColor colorWithRed:230.0f/255 green:134.0f/255 blue:1.0f/255 alpha:0.05f]];
+  [self addBandAnnotationWithMinY:@95 maxY:@135
+                            color:[UIColor colorWithRed:230.0f/255 green:134.0f/255 blue:1.0f/255 alpha:0.05f]];
   
   // Add Resting Annotations
-  [self addBandAnnotationWithMinYPosition:@95
-                                     MaxY:@0
-                                    Color:[UIColor colorWithRed:61.0f/255 green:174.0f/255 blue:80.0f/255 alpha:0.05f]];
+  [self addBandAnnotationWithMinY:@95 maxY:@0
+                            color:[UIColor colorWithRed:61.0f/255 green:174.0f/255 blue:80.0f/255 alpha:0.05f]];
   
   // Add Max Heart Rate Annotation
   // Create our text annotation subclass. We set the text to be the widest of our possible values
@@ -60,8 +57,7 @@
                                                                       datasource:self.chart.datasource];
 }
 
-- (void)addBandAnnotationWithMinYPosition:(id)bandMinYPosition MaxY:(id)bandMaxYPosition
-                                    Color:(UIColor*)bandColor {
+- (void)addBandAnnotationWithMinY:(id)bandMinYPosition maxY:(id)bandMaxYPosition color:(UIColor*)bandColor {
   
   SChartAnnotation *bandAnnotation = [SChartAnnotation horizontalBandAtPosition:bandMinYPosition
                                                                         andMaxY:bandMaxYPosition

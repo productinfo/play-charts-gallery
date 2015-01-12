@@ -99,7 +99,7 @@
     // Both of the vertical line annotations have their x position fixed with respect to the x axis
     // They also have their y position and height altered depending on the charts current zoom level
     ChartsGalleryShortVerticalLineAnnotation *lineAnnotationLeft = self.lineAnnotationsLeft[i];
-    float height = ([self.chart.yAxis pixelValueForDataValue:lineAnnotationLeft.maxYPosition] - [self.chart.yAxis pixelValueForDataValue:lineAnnotationLeft.minYPosition]);
+    CGFloat height = ([self.chart.yAxis pixelValueForDataValue:lineAnnotationLeft.maxYPosition] - [self.chart.yAxis pixelValueForDataValue:lineAnnotationLeft.minYPosition]);
     lineAnnotationLeft.frame = CGRectMake(lineAnnotationLeft.frame.origin.x, lineAnnotationLeft.frame.origin.y, 6, height);
     lineAnnotationLeft.xValue = xRange.minimum;
     

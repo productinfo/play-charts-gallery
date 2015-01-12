@@ -26,7 +26,7 @@
 - (SChartDataPoint*)findDataPointWithHighestYValueForSeries:(SChartSeries*)chartSeries {
   SChartDataPoint *dataPointWithHighestYValue;
   SChartDataSeries *chartDataSeries = chartSeries.dataSeries;
-  for(SChartDataPoint* dataPoint in chartDataSeries.dataPoints){
+  for(SChartDataPoint *dataPoint in chartDataSeries.dataPoints){
     if([dataPoint.yValue floatValue] > [dataPointWithHighestYValue.yValue floatValue]){
       dataPointWithHighestYValue = dataPoint;
     }
