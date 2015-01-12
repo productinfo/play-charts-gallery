@@ -62,7 +62,6 @@
   
   // The custom vertical line annotations are shorter in height than regular vertical line annotations
   // They are also offset from the y axis.
-  // The custom vertical line annotations are shorter in height than regular vertical line annotations.
   ChartsGalleryShortVerticalLineAnnotation *lineAnnotationLeft = [[ChartsGalleryShortVerticalLineAnnotation alloc] initWithMinYPosition:minYPosition
                                                                                                                            maxYPosition:maxYPosition
                                                                                                                                   xAxis:xAxis
@@ -71,7 +70,7 @@
   [self.lineAnnotationsLeft addObject:lineAnnotationLeft];
   [self.chart addAnnotation:lineAnnotationLeft];
   
-  // The custom text annotations are offset from the y axis.
+  // The custom text annotations are at a offset from the y axis.
   ChartsGalleryAnchoredTextAnnotation *textAnnotation = [[ChartsGalleryAnchoredTextAnnotation alloc] initWithText:text
                                                                                                         withXAxis:xAxis
                                                                                                          andYAxis:yAxis
@@ -104,7 +103,7 @@
     lineAnnotationLeft.frame = CGRectMake(lineAnnotationLeft.frame.origin.x, lineAnnotationLeft.frame.origin.y, 6, height);
     lineAnnotationLeft.xValue = xRange.minimum;
     
-    // The text annotiation also has its x position fixed with respect to the x axis
+    // The text annotation also has its x position fixed with respect to the x axis
     // They also have their y position altered depending on the charts current zoom level
     ChartsGalleryShortVerticalLineAnnotation *textAnnotation = self.textAnnotations[i];
     textAnnotation.xValue = xRange.minimum;
