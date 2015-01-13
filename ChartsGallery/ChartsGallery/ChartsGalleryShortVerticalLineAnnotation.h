@@ -1,8 +1,8 @@
 //
-//  ChartsGalleryAnnotationsDataSource.h
+//  ChartsGalleryShortVerticalLineAnnotation.h
 //  ChartsGallery
 //
-//  Created by Daniel Allsop on 16/12/2014.
+//  Created by Daniel Allsop on 07/01/2015.
 //
 //  Copyright 2014 Scott Logic
 //
@@ -19,10 +19,16 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryCrosshairDataSource.h"
 
-@interface ChartsGalleryAnnotationsDataSource : ChartsGalleryCrosshairDataSource
+#import <ShinobiCharts/ShinobiCharts.h>
 
-- (SChartDataPoint*)findDataPointWithHighestYValueForSeries:(SChartSeries*)chartSeries;
+@interface ChartsGalleryShortVerticalLineAnnotation : SChartAnnotation
+
+- (instancetype)initWithMinYPosition:(id)minYPosition maxYPosition:(id)maxYPosition
+                               xAxis:(SChartAxis *)xAxis yAxis:(SChartAxis*)yAxis
+                               color:(UIColor*)color;
+
+@property id minYPosition;
+@property id maxYPosition;
 
 @end
