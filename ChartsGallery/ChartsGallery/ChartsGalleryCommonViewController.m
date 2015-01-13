@@ -48,8 +48,8 @@
   theme.xAxisStyle.lineColor = darkGrayColor;
   // Set yAxisStyle to match xAxisStyle (note we can't just copy the whole style object
   // as that will make the axis label the wrong orientation)
-  theme.yAxisStyle.titleStyle.font = theme.yAxisStyle.titleStyle.font;
-  theme.yAxisStyle.titleStyle.textColor = theme.yAxisStyle.titleStyle.textColor;
+  theme.yAxisStyle.titleStyle.font = theme.xAxisStyle.titleStyle.font;
+  theme.yAxisStyle.titleStyle.textColor = theme.xAxisStyle.titleStyle.textColor;
   theme.yAxisStyle.majorTickStyle = theme.xAxisStyle.majorTickStyle;
   theme.yAxisStyle.minorTickStyle = theme.xAxisStyle.minorTickStyle;
   theme.yAxisStyle.lineColor = theme.xAxisStyle.lineColor;
@@ -64,6 +64,14 @@
     axis.enableMomentumPanning = YES;
     axis.enableMomentumZooming = YES;
   }
+}
+
+- (void)useHorizontalLegend {
+  self.chart.legend.style.orientation = SChartLegendOrientationHorizontal;
+  self.chart.legend.style.horizontalPadding = @10;
+  self.chart.legend.position = SChartLegendPositionBottomMiddle;
+  self.chart.legend.style.symbolAlignment = SChartSeriesLegendAlignSymbolsLeft;
+  self.chart.legend.style.textAlignment = NSTextAlignmentLeft;
 }
 
 @end

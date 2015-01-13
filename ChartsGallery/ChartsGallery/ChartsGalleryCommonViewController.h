@@ -29,4 +29,6 @@
 
 @interface ChartsGalleryCommonViewController : SPUGalleryManagedChartViewController<SChartDelegate>
 
+- (void)useHorizontalLegend;
+
 @end
