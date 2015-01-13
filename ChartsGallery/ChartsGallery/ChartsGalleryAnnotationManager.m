@@ -92,16 +92,13 @@
   textAnnotation.label.transform = CGAffineTransformMakeRotation(-(M_PI)/2);
   [self.textAnnotations addObject:textAnnotation];
   [self.chart addAnnotation:textAnnotation];
-  
-
 }
 
 #pragma mark - API Methods
 
 - (void)updateValueAnnotationForXAxisRange:(SChartRange *)xRange yAxisRange:(SChartRange *)yRange {
   // Update the positions of the annotations so they remain visible at all times
-  for (int i = 0; i < self.lineAnnotationsLeft.count; ++i) {
-    
+  for (int i = 0; i < self.lineAnnotationsLeft.count; ++i) {    
     // Both of the vertical line annotations have their x position fixed with respect to the x axis
     // They also have their y position and height altered depending on the charts current zoom level
     ChartsGalleryShortVerticalLineAnnotation *lineAnnotationLeft = self.lineAnnotationsLeft[i];
