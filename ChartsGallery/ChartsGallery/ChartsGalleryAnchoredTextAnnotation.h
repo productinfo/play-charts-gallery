@@ -1,8 +1,8 @@
 //
-//  ChartsGalleryAnnotationsDataSource.h
+//  ChartsGalleryAnchoredTextAnnotation.h
 //  ChartsGallery
 //
-//  Created by Daniel Allsop on 16/12/2014.
+//  Created by Daniel Allsop on 07/01/2015.
 //
 //  Copyright 2014 Scott Logic
 //
@@ -19,10 +19,11 @@
 //  limitations under the License.
 //
 
-#import "ChartsGalleryCrosshairDataSource.h"
+#import "ChartsGalleryCustomTextAnnotation.h"
 
-@interface ChartsGalleryAnnotationsDataSource : ChartsGalleryCrosshairDataSource
+@interface ChartsGalleryAnchoredTextAnnotation : ChartsGalleryCustomTextAnnotation
 
-- (SChartDataPoint*)findDataPointWithHighestYValueForSeries:(SChartSeries*)chartSeries;
+- (instancetype)initWithText:(NSString *)text withXAxis:(SChartAxis *)xAxis andYAxis:(SChartAxis *)yAxis
+                 atXPosition:(id)xPosition betweenMinYPosition:(id)minYPosition andMaxYPosition:(id)maxYPosition;
 
 @end

@@ -27,7 +27,6 @@
   self = [super initWithDataFromFile:@"ChartsGallery-running-data"];
   if (self) {
     self.seriesNames = @[@"Heart Rate"];
-    self.dateComponents.minute = 1;
   }
   return self;
 }
