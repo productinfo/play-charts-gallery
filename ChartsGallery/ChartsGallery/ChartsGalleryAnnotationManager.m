@@ -60,8 +60,10 @@
   SChartAxis *xAxis = self.chart.xAxis;
   SChartAxis *yAxis = self.chart.yAxis;
   
-  // The custom vertical line annotations are shorter in height than regular vertical line annotations
-  // They are also offset from the y axis.
+  // These vertical line annotations represent line segments - with their min and max
+  // y-values specified in the data domain. They will be pinned to the left hand side of
+  // the chart, and as such, the x-values will be updated in
+  // updateValueAnnotationForXAxisRange:yAxisRange:
   ChartsGalleryShortVerticalLineAnnotation *lineAnnotationLeft = [[ChartsGalleryShortVerticalLineAnnotation alloc] initWithMinYPosition:minYPosition
                                                                                                                            maxYPosition:maxYPosition
                                                                                                                                   xAxis:xAxis
@@ -70,7 +72,17 @@
   [self.lineAnnotationsLeft addObject:lineAnnotationLeft];
   [self.chart addAnnotation:lineAnnotationLeft];
   
-  // The custom text annotations are at a fixed offset from the y axis.
+  ChartsGalleryShortVerticalLineAnnotation *lineAnnotationRight = [[ChartsGalleryShortVerticalLineAnnotation alloc] initWithMinYPosition:minYPosition
+                                                                                                                            maxYPosition:maxYPosition
+                                                                                                                                   xAxis:xAxis
+                                                                                                                                   yAxis:yAxis
+                                                                                                                                   color:color];
+  [self.lineAnnotationsRight addObject:lineAnnotationRight];
+  [self.chart addAnnotation:lineAnnotationRight];
+  
+  // This text annotation labels the band with a title. They are also pinned to the left
+  // hand side of the chart, and as such, the x-values will be updated in
+  // updateValueAnnotationForXAxisRange:yAxisRange:
   ChartsGalleryAnchoredTextAnnotation *textAnnotation = [[ChartsGalleryAnchoredTextAnnotation alloc] initWithText:text
                                                                                                         withXAxis:xAxis
                                                                                                          andYAxis:yAxis
@@ -81,13 +93,7 @@
   [self.textAnnotations addObject:textAnnotation];
   [self.chart addAnnotation:textAnnotation];
   
-  ChartsGalleryShortVerticalLineAnnotation *lineAnnotationRight = [[ChartsGalleryShortVerticalLineAnnotation alloc] initWithMinYPosition:minYPosition
-                                                                                                                            maxYPosition:maxYPosition
-                                                                                                                                    xAxis:xAxis
-                                                                                                                                    yAxis:yAxis
-                                                                                                                                    color:color];
-  [self.lineAnnotationsRight addObject:lineAnnotationRight];
-  [self.chart addAnnotation:lineAnnotationRight];
+
 }
 
 #pragma mark - API Methods
