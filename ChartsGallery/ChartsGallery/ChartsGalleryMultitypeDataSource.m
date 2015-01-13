@@ -66,6 +66,7 @@
 
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
   SChartSeries *series = nil;
+  
   if(index == 0) {
     // Rainfall: column series
     SChartColumnSeries *columnSeries = [SChartColumnSeries new];
@@ -83,6 +84,7 @@
     bandSeries.style.areaColorInverted = bandSeries.style.areaColorNormal;
     series = bandSeries;
   }
+  
   series.crosshairEnabled = YES;
   series.title = self.seriesTitles[index];
   return series;

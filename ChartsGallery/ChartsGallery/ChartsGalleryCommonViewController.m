@@ -1,5 +1,5 @@
 //
-//  ChartsGalleryCommonViewController.h
+//  ChartsGalleryCommonViewController.m
 //  ChartsGallery
 //
 //  Created by Alison Clarke on 09/09/2014.

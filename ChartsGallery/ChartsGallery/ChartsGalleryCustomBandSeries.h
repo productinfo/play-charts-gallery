@@ -2,7 +2,7 @@
 //  ChartsGalleryCustomBandSeries.h
 //  ChartsGallery
 //
-//  Created by Daniel Allsop on 02/12/2014.
+//  Created by Alison Clarke on 13/01/2014.
 //
 //  Copyright 2014 Scott Logic
 //

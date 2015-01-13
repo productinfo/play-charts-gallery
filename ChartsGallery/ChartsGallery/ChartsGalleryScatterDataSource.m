@@ -49,8 +49,8 @@
   series.title = [self.seriesNames[index] capitalizedString];
   series.style.pointStyle.radius = @40;
   series.style.pointStyle.texture = [UIImage imageNamed:series.title];
-  series.style.pointStyle.innerColor = index == 0 ? [UIColor shinobiPlayBlueColor]
-                                                  : [UIColor shinobiPlayGreenColor];
+  series.style.pointStyle.innerColor = (index == 0) ? [UIColor shinobiPlayBlueColor]
+                                                    : [UIColor shinobiPlayGreenColor];
   return series;
 }
 

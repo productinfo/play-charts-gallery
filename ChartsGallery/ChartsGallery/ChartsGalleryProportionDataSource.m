@@ -38,11 +38,9 @@
       SChartRadialDataPoint *dp = [SChartRadialDataPoint new];
       dp.name = labels[i];
       dp.value = data[i];
-      if (i == 0) {
-        dp.selected = YES;
-      }
       [self.datapoints addObject:dp];
     }
+    ((SChartRadialDataPoint *)self.datapoints[0]).selected = YES;
   }
   return self;
 }
