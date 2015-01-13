@@ -30,13 +30,19 @@
 
 - (void)setupChart {
   self.chart.xAxis = [SChartCategoryAxis new];
-  
   self.chart.yAxis = [SChartNumberAxis new];
-  self.chart.yAxis.style.majorTickStyle.tickGap = @-50;
-  
+  self.chart.yAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@0
+                                                                  andMaximum:@180];
+  self.chart.yAxis.majorTickFrequency = @20;
   self.chart.title = @"Radar chart";
     
   [super setupChart];
+  
+  self.chart.legend.style.textAlignment = NSTextAlignmentRight;
+  self.chart.xAxis.style.majorGridLineStyle.lineRenderMode = SChartRadialLineRenderModeLinear;
+  self.chart.xAxis.style.majorGridLineStyle.showMajorGridLines = YES;
+  self.chart.yAxis.style.majorGridLineStyle.lineRenderMode = SChartRadialLineRenderModeLinear;
+  self.chart.yAxis.style.majorGridLineStyle.showMajorGridLines = YES;
 }
 
 @end

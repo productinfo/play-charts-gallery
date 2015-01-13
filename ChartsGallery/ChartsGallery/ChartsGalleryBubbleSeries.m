@@ -2,11 +2,25 @@
 //  ChartsGalleryBubbleSeries.m
 //  ChartsGallery
 //
-//  Created by Alison Clarke on 16/09/2014.
-//  Copyright (c) 2014 Alison Clarke. All rights reserved.
+//  Created by Alison Clarke on 09/09/2014.
+//
+//  Copyright 2014 Scott Logic
+//
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//  http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
 //
 
 #import "ChartsGalleryBubbleSeries.h"
+#import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 static NSArray *bubbleColors;
 
@@ -19,12 +33,7 @@ static NSArray *bubbleColors;
 @implementation ChartsGalleryBubbleSeries
 
 + (void)initialize {
-  bubbleColors = @[[UIColor colorWithRed:1/255.f *.8 green:122/255.f *.8 blue:255/255.f *.8 alpha:1.f],
-                   [UIColor colorWithRed:76/255.f *.8 green:217/255.f *.8 blue:100/255.f *.8 alpha:1.f],
-                   [UIColor colorWithRed:255/255.f *.9 green:149/255.f *.9 blue:1/255.f *.9 alpha:1.f],
-                   [UIColor colorWithRed:255/255.f *.9 green:45/255.f *.9 blue:85/255.f *.9 alpha:1.f],
-                   [UIColor colorWithRed:88/255.f *.8 green:86/255.f *.8 blue:214/255.f *.8 alpha:1.f],
-                   [UIColor colorWithRed:142/255.f green:142/255.f blue:147/255.f alpha:1.f]];
+  bubbleColors = [UIColor shinobiPlayColorArray];
 }
 
 - (instancetype)init {

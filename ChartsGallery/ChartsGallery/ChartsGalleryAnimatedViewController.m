@@ -29,23 +29,31 @@
 }
 
 - (void)setupChart {
-  self.chart.xAxis = [SChartCategoryAxis new];
-  self.chart.xAxis.title = @"";
-  self.chart.xAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@-0.5 andMaximum:@5.5];
-  self.chart.xAxis.animationEdgeBouncing = NO;
+  self.chart.xAxis = [SChartDateTimeAxis new];
+  self.chart.xAxis.defaultRange = [(ChartsGalleryAnimatedDataSource *)self.chart.datasource getInitialDateRange];
+  self.chart.xAxis.title = @"Date";
+  self.chart.xAxis.labelFormatString = @"MMM yyyy";
   
+  // Add first y-axis: temperature
   self.chart.yAxis = [SChartNumberAxis new];
-  self.chart.yAxis.title = @"% purchased an item";
-  self.chart.yAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@0 andMaximum:@100.5];
-  self.chart.yAxis.animationEdgeBouncing = NO;
+  self.chart.yAxis.defaultRange = [[SChartRange alloc] initWithMinimum:0 andMaximum:@28];
+  self.chart.yAxis.title = @"Temperature (°C)";
+  
+  // Add second y-axis: rainfall, in reverse position (i.e. on right hand side)
+  SChartNumberAxis *secondAxis = [SChartNumberAxis new];
+  secondAxis.axisPosition = SChartAxisPositionReverse;
+  secondAxis.defaultRange = [[SChartRange alloc] initWithMinimum:0 andMaximum:@160];
+  secondAxis.title = @"Rainfall (mm)";
+  [self.chart addYAxis:secondAxis];
+  
+  self.chart.title = @"Multitype chart with entry/exit animations";
   
   [super setupChart];
   
   self.chart.legend.symbolWidth = @51;
   self.chart.legend.style.borderWidth = 0;
-  self.chart.legend.style.verticalPadding = @20;
-  
-  self.chart.title = @"Column chart with entry/exit animations";
+  self.chart.legend.style.verticalPadding = @20;  
+  self.chart.legend.style.textAlignment = NSTextAlignmentRight;
 }
 
 @end

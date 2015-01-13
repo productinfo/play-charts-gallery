@@ -24,14 +24,14 @@
 @interface ChartsGalleryCustomLegendSymbol ()
 
 @property ShinobiChart *chart;
-@property SChartColumnSeries *series;
+@property SChartSeries *series;
 @property UISwitch *seriesToggleSwitch;
 
 @end
 
 @implementation ChartsGalleryCustomLegendSymbol
 
-- (instancetype)initWithChart:(ShinobiChart *)chart andSeries:(SChartColumnSeries*)series {
+- (instancetype)initWithChart:(ShinobiChart *)chart andSeries:(SChartSeries*)series {
   self = [super init];
   if (self) {
     self.chart = chart;
@@ -55,7 +55,13 @@
     CGFloat heightDiff = CGRectGetHeight(self.seriesToggleSwitch.frame) - CGRectGetHeight(self.frame);
     self.frame = CGRectInset(self.frame, 0, -(heightDiff/2));
   }
-  self.seriesToggleSwitch.onTintColor = self.series.style.areaColor;
+  UIColor *tintColor = self.seriesToggleSwitch.onTintColor;
+  if ([self.series isKindOfClass:[SChartColumnSeries class]]) {
+    tintColor = ((SChartColumnSeries *)self.series).style.areaColor;
+  } else if ([self.series isKindOfClass:[SChartBandSeries class]]) {
+    tintColor = ((SChartBandSeries *)self.series).style.areaColorNormal;
+  }
+  self.seriesToggleSwitch.onTintColor = tintColor;
 }
 
 - (void)switchToggled:(UISwitch *)sender {

@@ -46,7 +46,7 @@
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
   SChartRadialLineSeries *radialSeries = [SChartRadialLineSeries new];
   radialSeries.title = self.seriesNames[index];
-  radialSeries.style.lineWidth = @2;
+  radialSeries.style.lineWidth = @1;
   return radialSeries;
 }
 

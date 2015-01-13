@@ -46,6 +46,12 @@
   self.chart.title = @"Polar chart";
   
   [super setupChart];
+  
+  self.chart.legend.style.textAlignment = NSTextAlignmentRight;
+  self.chart.xAxis.style.lineWidth = @1;
+  self.chart.xAxis.style.majorTickStyle.lineWidth = @1;
+  self.chart.yAxis.style.lineWidth = @1;
+  self.chart.yAxis.style.majorTickStyle.lineWidth = @1;
 }
 
 @end

@@ -61,7 +61,8 @@
     
   self.chart.crosshair = [[ChartsGalleryCustomCrosshair alloc] initWithChart:self.chart];
   self.chart.crosshair.tooltip = [ChartsGalleryCustomCrosshairTooltip new];
-  self.chart.crosshair.enableCrosshairLines = YES;  
+  self.chart.crosshair.enableCrosshairLines = YES;
+  self.chart.crosshair.interpolatePoints = NO;
 }
 
 @end
