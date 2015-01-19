@@ -40,7 +40,6 @@
 		68171BF719ADDBC5000AFEEB /* ChartsGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68171BF619ADDBC5000AFEEB /* ChartsGalleryViewController.m */; };
 		68171BF919ADDBC5000AFEEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68171BF819ADDBC5000AFEEB /* Images.xcassets */; };
 		68171C1619ADDC04000AFEEB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68171C1519ADDC04000AFEEB /* QuartzCore.framework */; };
-		68171C2219ADDCD6000AFEEB /* libShinobiPlayUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68171C1D19ADDC45000AFEEB /* libShinobiPlayUtils.a */; };
 		681815EA19C6E4AB00D10022 /* ChartsGalleryHistogramSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 681815E919C6E4AB00D10022 /* ChartsGalleryHistogramSeries.m */; };
 		681815F119C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 681815EE19C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.m */; };
 		681815F219C6F14C00D10022 /* ChartsGalleryStackedBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 681815F019C6F14C00D10022 /* ChartsGalleryStackedBarViewController.m */; };
@@ -83,6 +82,19 @@
 		68229EC419BDF693004B5A17 /* ChartsGallery-alternateLine-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68229EC319BDF693004B5A17 /* ChartsGallery-alternateLine-data.plist */; };
 		68229ECC19BEF0DD004B5A17 /* ChartsGalleryBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68229EC919BEF0DD004B5A17 /* ChartsGalleryBarViewController.m */; };
 		68229ECD19BEF0DD004B5A17 /* ChartsGalleryBarDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 68229ECB19BEF0DD004B5A17 /* ChartsGalleryBarDataSource.m */; };
+		682C3EFB1A6D024A00EF95D0 /* libShinobiPlayChartsUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682C3EF81A6D023E00EF95D0 /* libShinobiPlayChartsUtils.a */; };
+		682C3F281A6D481000EF95D0 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 682C3F1B1A6D481000EF95D0 /* Roboto-Black.ttf */; };
+		682C3F291A6D481000EF95D0 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 682C3F1C1A6D481000EF95D0 /* Roboto-BlackItalic.ttf */; };
+		682C3F2A1A6D481000EF95D0 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 682C3F1D1A6D481000EF95D0 /* Roboto-Bold.ttf */; };
+		682C3F2B1A6D481000EF95D0 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 682C3F1E1A6D481000EF95D0 /* Roboto-BoldItalic.ttf */; };
+		682C3F2C1A6D481000EF95D0 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 682C3F1F1A6D481000EF95D0 /* Roboto-Italic.ttf */; };
+		682C3F2D1A6D481000EF95D0 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 682C3F201A6D481000EF95D0 /* Roboto-Light.ttf */; };
+		682C3F2E1A6D481000EF95D0 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 682C3F211A6D481000EF95D0 /* Roboto-LightItalic.ttf */; };
+		682C3F2F1A6D481000EF95D0 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 682C3F221A6D481000EF95D0 /* Roboto-Medium.ttf */; };
+		682C3F301A6D481000EF95D0 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 682C3F231A6D481000EF95D0 /* Roboto-MediumItalic.ttf */; };
+		682C3F311A6D481000EF95D0 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 682C3F241A6D481000EF95D0 /* Roboto-Regular.ttf */; };
+		682C3F321A6D481000EF95D0 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 682C3F251A6D481000EF95D0 /* Roboto-Thin.ttf */; };
+		682C3F331A6D481000EF95D0 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 682C3F261A6D481000EF95D0 /* Roboto-ThinItalic.ttf */; };
 		684FADF81A652B7C000DD2BC /* ChartsGalleryCustomBandSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = 684FADF71A652B7C000DD2BC /* ChartsGalleryCustomBandSeries.m */; };
 		6853D95B19B5EB2400735962 /* ChartsGalleryMultitypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6853D95819B5EB2400735962 /* ChartsGalleryMultitypeViewController.m */; };
 		6853D95C19B5EB2400735962 /* ChartsGalleryMultitypeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6853D95A19B5EB2400735962 /* ChartsGalleryMultitypeDataSource.m */; };
@@ -106,26 +118,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		68171C1C19ADDC45000AFEEB /* PBXContainerItemProxy */ = {
+		682C3EF71A6D023E00EF95D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 68171C1719ADDC45000AFEEB /* ShinobiPlayUtils.xcodeproj */;
+			containerPortal = 682C3EF11A6D023E00EF95D0 /* ShinobiPlayChartsUtils.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 68793C011959855D009C17BD;
-			remoteInfo = ShinobiPlayUtils;
+			remoteGlobalIDString = 684FAE071A6690EB000DD2BC;
+			remoteInfo = ShinobiPlayChartsUtils;
 		};
-		68171C1E19ADDC45000AFEEB /* PBXContainerItemProxy */ = {
+		682C3EF91A6D023E00EF95D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 68171C1719ADDC45000AFEEB /* ShinobiPlayUtils.xcodeproj */;
+			containerPortal = 682C3EF11A6D023E00EF95D0 /* ShinobiPlayChartsUtils.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 68793C111959855E009C17BD;
-			remoteInfo = ShinobiPlayUtilsTests;
-		};
-		68171C2019ADDCCB000AFEEB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 68171C1719ADDC45000AFEEB /* ShinobiPlayUtils.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 68793C001959855D009C17BD;
-			remoteInfo = ShinobiPlayUtils;
+			remoteGlobalIDString = 684FAE121A6690EB000DD2BC;
+			remoteInfo = ShinobiPlayChartsUtilsTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -190,7 +195,6 @@
 		68171BF819ADDBC5000AFEEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		68171BFF19ADDBC5000AFEEB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		68171C1519ADDC04000AFEEB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		68171C1719ADDC45000AFEEB /* ShinobiPlayUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShinobiPlayUtils.xcodeproj; path = ShinobiPlayUtils/ShinobiPlayUtils/ShinobiPlayUtils.xcodeproj; sourceTree = "<group>"; };
 		681815E819C6E4AB00D10022 /* ChartsGalleryHistogramSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryHistogramSeries.h; sourceTree = "<group>"; };
 		681815E919C6E4AB00D10022 /* ChartsGalleryHistogramSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryHistogramSeries.m; sourceTree = "<group>"; };
 		681815ED19C6F14C00D10022 /* ChartsGalleryStackedBarDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryStackedBarDataSource.h; sourceTree = "<group>"; };
@@ -265,6 +269,19 @@
 		68229EC919BEF0DD004B5A17 /* ChartsGalleryBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryBarViewController.m; sourceTree = "<group>"; };
 		68229ECA19BEF0DD004B5A17 /* ChartsGalleryBarDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryBarDataSource.h; sourceTree = "<group>"; };
 		68229ECB19BEF0DD004B5A17 /* ChartsGalleryBarDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryBarDataSource.m; sourceTree = "<group>"; };
+		682C3EF11A6D023E00EF95D0 /* ShinobiPlayChartsUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShinobiPlayChartsUtils.xcodeproj; path = ShinobiPlayChartsUtils/ShinobiPlayChartsUtils/ShinobiPlayChartsUtils.xcodeproj; sourceTree = "<group>"; };
+		682C3F1B1A6D481000EF95D0 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "Fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		682C3F1C1A6D481000EF95D0 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BlackItalic.ttf"; path = "Fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		682C3F1D1A6D481000EF95D0 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		682C3F1E1A6D481000EF95D0 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BoldItalic.ttf"; path = "Fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		682C3F1F1A6D481000EF95D0 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Italic.ttf"; path = "Fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		682C3F201A6D481000EF95D0 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "Fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		682C3F211A6D481000EF95D0 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-LightItalic.ttf"; path = "Fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		682C3F221A6D481000EF95D0 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "Fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		682C3F231A6D481000EF95D0 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "Fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		682C3F241A6D481000EF95D0 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "Fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		682C3F251A6D481000EF95D0 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "Fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		682C3F261A6D481000EF95D0 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-ThinItalic.ttf"; path = "Fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		684FADF51A652B6F000DD2BC /* ChartsGalleryCustomBandSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryCustomBandSeries.h; sourceTree = "<group>"; };
 		684FADF71A652B7C000DD2BC /* ChartsGalleryCustomBandSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryCustomBandSeries.m; sourceTree = "<group>"; };
 		6853D95719B5EB2400735962 /* ChartsGalleryMultitypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryMultitypeViewController.h; sourceTree = "<group>"; };
@@ -306,9 +323,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				682C3EFB1A6D024A00EF95D0 /* libShinobiPlayChartsUtils.a in Frameworks */,
 				68C6318C19B5A7A2009BFDC0 /* ShinobiCharts.framework in Frameworks */,
 				68C6318F19B5A7A9009BFDC0 /* libstdc++.dylib in Frameworks */,
-				68171C2219ADDCD6000AFEEB /* libShinobiPlayUtils.a in Frameworks */,
 				68171C1619ADDC04000AFEEB /* QuartzCore.framework in Frameworks */,
 				68171BE319ADDBC5000AFEEB /* CoreGraphics.framework in Frameworks */,
 				68171BE519ADDBC5000AFEEB /* UIKit.framework in Frameworks */,
@@ -410,7 +427,7 @@
 		68171BD419ADDBC5000AFEEB = {
 			isa = PBXGroup;
 			children = (
-				68171C1719ADDC45000AFEEB /* ShinobiPlayUtils.xcodeproj */,
+				682C3EF11A6D023E00EF95D0 /* ShinobiPlayChartsUtils.xcodeproj */,
 				68171BE619ADDBC5000AFEEB /* ChartsGallery */,
 				68171BDF19ADDBC5000AFEEB /* Frameworks */,
 				68171BDE19ADDBC5000AFEEB /* Products */,
@@ -442,6 +459,7 @@
 		68171BE619ADDBC5000AFEEB /* ChartsGallery */ = {
 			isa = PBXGroup;
 			children = (
+				682C3F271A6D481000EF95D0 /* Fonts */,
 				68229E8F19BDA7C1004B5A17 /* LineChart */,
 				68229E9919BDB219004B5A17 /* AlternateLineChart */,
 				68229EAF19BDD346004B5A17 /* StackedLineChart */,
@@ -490,15 +508,6 @@
 				68171BEE19ADDBC5000AFEEB /* ChartsGallery-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		68171C1819ADDC45000AFEEB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				68171C1D19ADDC45000AFEEB /* libShinobiPlayUtils.a */,
-				68171C1F19ADDC45000AFEEB /* ShinobiPlayUtilsTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		681815EC19C6F13100D10022 /* StackedBarChart */ = {
@@ -668,6 +677,35 @@
 			name = BarChart;
 			sourceTree = "<group>";
 		};
+		682C3EF21A6D023E00EF95D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				682C3EF81A6D023E00EF95D0 /* libShinobiPlayChartsUtils.a */,
+				682C3EFA1A6D023E00EF95D0 /* ShinobiPlayChartsUtilsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		682C3F271A6D481000EF95D0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				682C3F1B1A6D481000EF95D0 /* Roboto-Black.ttf */,
+				682C3F1C1A6D481000EF95D0 /* Roboto-BlackItalic.ttf */,
+				682C3F1D1A6D481000EF95D0 /* Roboto-Bold.ttf */,
+				682C3F1E1A6D481000EF95D0 /* Roboto-BoldItalic.ttf */,
+				682C3F1F1A6D481000EF95D0 /* Roboto-Italic.ttf */,
+				682C3F201A6D481000EF95D0 /* Roboto-Light.ttf */,
+				682C3F211A6D481000EF95D0 /* Roboto-LightItalic.ttf */,
+				682C3F221A6D481000EF95D0 /* Roboto-Medium.ttf */,
+				682C3F231A6D481000EF95D0 /* Roboto-MediumItalic.ttf */,
+				682C3F241A6D481000EF95D0 /* Roboto-Regular.ttf */,
+				682C3F251A6D481000EF95D0 /* Roboto-Thin.ttf */,
+				682C3F261A6D481000EF95D0 /* Roboto-ThinItalic.ttf */,
+			);
+			name = Fonts;
+			path = ../ShinobiPlayChartsUtils/ShinobiPlayChartsUtils/ShinobiPlayUtils/ShinobiPlayUtils/ShinobiPlayUtils;
+			sourceTree = "<group>";
+		};
 		6853D95519B5EB0F00735962 /* MultiChart */ = {
 			isa = PBXGroup;
 			children = (
@@ -757,7 +795,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				68171C2119ADDCCB000AFEEB /* PBXTargetDependency */,
 			);
 			name = ChartsGallery;
 			productName = ChartsGallery;
@@ -792,8 +829,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 68171C1819ADDC45000AFEEB /* Products */;
-					ProjectRef = 68171C1719ADDC45000AFEEB /* ShinobiPlayUtils.xcodeproj */;
+					ProductGroup = 682C3EF21A6D023E00EF95D0 /* Products */;
+					ProjectRef = 682C3EF11A6D023E00EF95D0 /* ShinobiPlayChartsUtils.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -804,18 +841,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		68171C1D19ADDC45000AFEEB /* libShinobiPlayUtils.a */ = {
+		682C3EF81A6D023E00EF95D0 /* libShinobiPlayChartsUtils.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libShinobiPlayUtils.a;
-			remoteRef = 68171C1C19ADDC45000AFEEB /* PBXContainerItemProxy */;
+			path = libShinobiPlayChartsUtils.a;
+			remoteRef = 682C3EF71A6D023E00EF95D0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		68171C1F19ADDC45000AFEEB /* ShinobiPlayUtilsTests.xctest */ = {
+		682C3EFA1A6D023E00EF95D0 /* ShinobiPlayChartsUtilsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = ShinobiPlayUtilsTests.xctest;
-			remoteRef = 68171C1E19ADDC45000AFEEB /* PBXContainerItemProxy */;
+			path = ShinobiPlayChartsUtilsTests.xctest;
+			remoteRef = 682C3EF91A6D023E00EF95D0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -826,24 +863,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				6818160419C7084C00D10022 /* ChartsGallery-step-data.plist in Resources */,
+				682C3F331A6D481000EF95D0 /* Roboto-ThinItalic.ttf in Resources */,
 				68229EAD19BDCF56004B5A17 /* ChartsGallery-area-data.plist in Resources */,
 				68229EC419BDF693004B5A17 /* ChartsGallery-alternateLine-data.plist in Resources */,
 				68D4709419BF2140001B1D0D /* ChartsGallery-bar-data.plist in Resources */,
+				682C3F301A6D481000EF95D0 /* Roboto-MediumItalic.ttf in Resources */,
+				682C3F311A6D481000EF95D0 /* Roboto-Regular.ttf in Resources */,
+				682C3F2E1A6D481000EF95D0 /* Roboto-LightItalic.ttf in Resources */,
+				682C3F2A1A6D481000EF95D0 /* Roboto-Bold.ttf in Resources */,
+				682C3F321A6D481000EF95D0 /* Roboto-Thin.ttf in Resources */,
 				68229EB819BDD3F3004B5A17 /* ChartsGallery-stackedLine-data.plist in Resources */,
 				68D4709A19BF537F001B1D0D /* ChartsGallery-multitype-data.plist in Resources */,
 				68171BF919ADDBC5000AFEEB /* Images.xcassets in Resources */,
+				682C3F281A6D481000EF95D0 /* Roboto-Black.ttf in Resources */,
 				68D4709219BF1E96001B1D0D /* ChartsGallery-column-data.plist in Resources */,
 				68171BEB19ADDBC5000AFEEB /* InfoPlist.strings in Resources */,
+				682C3F291A6D481000EF95D0 /* Roboto-BlackItalic.ttf in Resources */,
+				682C3F2D1A6D481000EF95D0 /* Roboto-Light.ttf in Resources */,
 				68229E9819BDA7E7004B5A17 /* ChartsGallery-line-data.plist in Resources */,
+				682C3F2C1A6D481000EF95D0 /* Roboto-Italic.ttf in Resources */,
 				6818163B19C82C4B00D10022 /* ChartsGallery-band-data.plist in Resources */,
 				6818162719C713D000D10022 /* ChartsGallery-ohlc-data.plist in Resources */,
 				6818164419C84F3300D10022 /* ChartsGallery-scatter-data.plist in Resources */,
+				682C3F2B1A6D481000EF95D0 /* Roboto-BoldItalic.ttf in Resources */,
 				54E9D82F1A4195BB005B9C1E /* ChartsGallery-running-data.plist in Resources */,
 				681815FB19C6F8F300D10022 /* ChartsGallery-stackedColumn-data.plist in Resources */,
 				6818165819C8835700D10022 /* ChartsGallery-bubble-data.plist in Resources */,
 				68D470A319C0369A001B1D0D /* ChartsGallery-histogram-data.plist in Resources */,
 				68171BF419ADDBC5000AFEEB /* ChartsGallery.storyboard in Resources */,
 				54E8BF6A1A1515E200DEC27C /* ChartsGallery-radar-data.plist in Resources */,
+				682C3F2F1A6D481000EF95D0 /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -928,14 +977,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		68171C2119ADDCCB000AFEEB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ShinobiPlayUtils;
-			targetProxy = 68171C2019ADDCCB000AFEEB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		68171BE919ADDBC5000AFEEB /* InfoPlist.strings */ = {
