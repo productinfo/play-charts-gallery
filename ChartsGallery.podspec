@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ChartsGallery"
-  s.version          = '0.1.14'
+  s.version          = '0.1.15'
   s.summary          = "A gallery of Shinobi charts"
   s.description      = <<-DESC
                        An app demonstrating many of the chart types it's possible to create with ShinobiCharts.
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
   s.source_files = 'ChartsGallery/ChartsGallery/**/*.{h,m}'
-  s.dependency 'ShinobiPlayUtils'
+  s.dependency 'ShinobiPlayChartsUtils'
   s.resources = ['ChartsGallery/**/ChartsGallery*data.plist', 'ChartsGallery/**/*.storyboard', 'ChartsGallery/**/*.xib', 'ChartsGallery/**/*.xcassets']
   s.frameworks = 'QuartzCore', 'ShinobiCharts'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(DEVELOPER_FRAMEWORKS_DIR)" "$(PROJECT_DIR)/../"' }
