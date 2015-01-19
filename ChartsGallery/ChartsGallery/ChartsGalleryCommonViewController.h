@@ -24,7 +24,7 @@
 //  Copyright (c) 2014 Alison Clarke. All rights reserved.
 //
 
-#import "ShinobiPlayUtils/SPUGalleryManagedChartViewController.h"
+#import "ShinobiPlayChartsUtils/SPUGalleryManagedChartViewController.h"
 #import <ShinobiCharts/ShinobiCharts.h>
 
 @interface ChartsGalleryCommonViewController : SPUGalleryManagedChartViewController<SChartDelegate>
