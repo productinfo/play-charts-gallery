@@ -27,6 +27,8 @@
 - (void)setupChart {
   [super setupChart];
   
+  self.chart.title = @"Line chart with annotations";
+  
   self.chart.delegate = self;
   self.initialSetup = NO;
   

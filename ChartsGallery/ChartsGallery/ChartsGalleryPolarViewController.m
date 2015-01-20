@@ -21,6 +21,7 @@
 
 #import "ChartsGalleryPolarViewController.h"
 #import "ChartsGalleryPolarDataSource.h"
+#import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 @implementation ChartsGalleryPolarViewController
 
@@ -52,6 +53,12 @@
   self.chart.xAxis.style.majorTickStyle.lineWidth = @1;
   self.chart.yAxis.style.lineWidth = @1;
   self.chart.yAxis.style.majorTickStyle.lineWidth = @1;
+  
+  // Add grid "stripes" to color the background of the circle
+  self.chart.yAxis.style.gridStripeStyle.showGridStripes = YES;
+  UIColor *backgroundColor = [[UIColor shinobiDarkGrayColor] shinobiBackgroundColor];
+  self.chart.yAxis.style.gridStripeStyle.stripeColor = backgroundColor;
+  self.chart.yAxis.style.gridStripeStyle.alternateStripeColor = backgroundColor;
 }
 
 @end

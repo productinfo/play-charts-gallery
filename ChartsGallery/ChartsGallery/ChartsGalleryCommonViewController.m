@@ -41,18 +41,12 @@
   theme.legendStyle.font = [UIFont shinobiFontOfSize:16];
   theme.legendStyle.titleFontColor = darkGrayColor;
   theme.legendStyle.fontColor = darkGrayColor;
-  theme.xAxisStyle.titleStyle.font = [UIFont shinobiFontOfSize:16];
-  theme.xAxisStyle.titleStyle.textColor = darkGrayColor;
-  theme.xAxisStyle.majorTickStyle.labelFont = [UIFont lightShinobiFontOfSize:14];
-  theme.xAxisStyle.majorTickStyle.labelColor = darkGrayColor;
-  theme.xAxisStyle.lineColor = darkGrayColor;
-  // Set yAxisStyle to match xAxisStyle (note we can't just copy the whole style object
-  // as that will make the axis label the wrong orientation)
-  theme.yAxisStyle.titleStyle.font = theme.xAxisStyle.titleStyle.font;
-  theme.yAxisStyle.titleStyle.textColor = theme.xAxisStyle.titleStyle.textColor;
-  theme.yAxisStyle.majorTickStyle = theme.xAxisStyle.majorTickStyle;
-  theme.yAxisStyle.minorTickStyle = theme.xAxisStyle.minorTickStyle;
-  theme.yAxisStyle.lineColor = theme.xAxisStyle.lineColor;
+  theme.crosshairStyle.defaultFont = [UIFont shinobiFontOfSize:14];
+  theme.crosshairStyle.defaultTextColor = [UIColor shinobiDarkGrayColor];
+  [self styleAxisStyle:theme.xAxisStyle useLightLabelFont:YES];
+  [self styleAxisStyle:theme.yAxisStyle useLightLabelFont:YES];
+  [self styleAxisStyle:theme.xAxisRadialStyle useLightLabelFont:NO];
+  [self styleAxisStyle:theme.yAxisRadialStyle useLightLabelFont:NO];
   [self.chart applyTheme:theme];
   
   self.chart.delegate = self;
@@ -64,6 +58,18 @@
     axis.enableMomentumPanning = YES;
     axis.enableMomentumZooming = YES;
   }
+}
+
+- (void)styleAxisStyle:(SChartAxisStyle *)style useLightLabelFont:(BOOL)useLightLabelFont {
+  style.titleStyle.font = [UIFont shinobiFontOfSize:16];
+  style.titleStyle.textColor = [UIColor shinobiDarkGrayColor];
+  if (useLightLabelFont) {
+    style.majorTickStyle.labelFont = [UIFont lightShinobiFontOfSize:14];
+  } else {
+    style.majorTickStyle.labelFont = [UIFont shinobiFontOfSize:14];
+  }
+  style.majorTickStyle.labelColor = style.titleStyle.textColor;
+  style.lineColor = style.titleStyle.textColor;
 }
 
 - (void)useHorizontalLegend {
