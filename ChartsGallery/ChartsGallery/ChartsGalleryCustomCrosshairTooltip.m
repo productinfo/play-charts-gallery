@@ -23,6 +23,7 @@
 #import <ShinobiCharts/SChartCanvas.h>
 #import "ChartsGalleryCrosshairDataSource.h"
 #import "ShinobiPlayUtils/UIFont+SPUFont.h"
+#import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
 
@@ -61,6 +62,8 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
 - (UILabel*)createTooltipLabel {
   UILabel *newLabel = [[UILabel alloc] initWithFrame:CGRectZero];
   newLabel.backgroundColor = [UIColor clearColor];
+  newLabel.font = [UIFont shinobiFontOfSize:12];
+  newLabel.textColor = [UIColor shinobiDarkGrayColor];
   return newLabel;
 }
 
@@ -86,7 +89,6 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
   
   for (UILabel *label in self.allLabels) {
     // Position the label
-    label.font = [UIFont shinobiFontOfSize:12];
     [label sizeToFit];
     CGRect frame = label.frame;
     frame.origin = CGPointMake(CustomCrosshairChartTooltipLabelPadding, currentMaxHeight);
@@ -99,7 +101,6 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
   // Further customize top most label in crosshair tooltip
   // To center the top most label after we have deduced the maximum label width of all the labels.
   UILabel *topMostLabel = self.allLabels[0];
-  topMostLabel.font = [UIFont shinobiFontOfSize:14];
   CGRect labelFrame = topMostLabel.frame;
   labelFrame.size.width = maxLabelWidth;
   topMostLabel.frame = labelFrame;

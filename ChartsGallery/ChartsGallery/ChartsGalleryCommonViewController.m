@@ -41,18 +41,22 @@
   theme.legendStyle.font = [UIFont shinobiFontOfSize:16];
   theme.legendStyle.titleFontColor = darkGrayColor;
   theme.legendStyle.fontColor = darkGrayColor;
-  theme.xAxisStyle.titleStyle.font = [UIFont shinobiFontOfSize:16];
-  theme.xAxisStyle.titleStyle.textColor = darkGrayColor;
-  theme.xAxisStyle.majorTickStyle.labelFont = [UIFont lightShinobiFontOfSize:14];
-  theme.xAxisStyle.majorTickStyle.labelColor = darkGrayColor;
-  theme.xAxisStyle.lineColor = darkGrayColor;
-  // Set yAxisStyle to match xAxisStyle (note we can't just copy the whole style object
-  // as that will make the axis label the wrong orientation)
-  theme.yAxisStyle.titleStyle.font = theme.xAxisStyle.titleStyle.font;
-  theme.yAxisStyle.titleStyle.textColor = theme.xAxisStyle.titleStyle.textColor;
-  theme.yAxisStyle.majorTickStyle = theme.xAxisStyle.majorTickStyle;
-  theme.yAxisStyle.minorTickStyle = theme.xAxisStyle.minorTickStyle;
-  theme.yAxisStyle.lineColor = theme.xAxisStyle.lineColor;
+  theme.crosshairStyle.defaultFont = [UIFont shinobiFontOfSize:14];
+  theme.crosshairStyle.defaultTextColor = [UIColor shinobiDarkGrayColor];
+  
+  // Style all axes in the same way
+  NSArray *axisStyles = @[theme.xAxisStyle,
+                          theme.yAxisStyle,
+                          theme.xAxisRadialStyle,
+                          theme.yAxisRadialStyle];
+  for (SChartAxisStyle *style in axisStyles) {
+    style.titleStyle.font = [UIFont shinobiFontOfSize:16];
+    style.titleStyle.textColor = darkGrayColor;
+    style.majorTickStyle.labelFont = [UIFont lightShinobiFontOfSize:14];
+    style.majorTickStyle.labelColor = darkGrayColor;
+    style.lineColor = darkGrayColor;
+  }
+  
   [self.chart applyTheme:theme];
   
   self.chart.delegate = self;

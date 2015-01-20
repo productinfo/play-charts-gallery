@@ -32,8 +32,8 @@
 - (instancetype)init {
   self = [super initWithDataFromFile:@"ChartsGallery-line-data"];
   if (self) {
-    self.seriesNames = @[@"la", @"boston", @"seattle", @"miami",];
-    self.seriesTitles = @[@"LA", @"Boston", @"Seattle", @"Miami"];
+    self.seriesNames = @[@"boston", @"seattle", @"miami", @"la"];
+    self.seriesTitles = @[@"Boston", @"Seattle", @"Miami", @"LA"];
   }
   return self;
 }
