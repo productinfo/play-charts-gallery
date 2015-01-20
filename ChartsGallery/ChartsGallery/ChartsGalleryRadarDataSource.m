@@ -32,8 +32,8 @@
 - (instancetype)init {
   self = [super initWithDataFromFile:@"ChartsGallery-radar-data"];
   if (self) {
-      self.seriesNames = @[@"England", @"Scotland", @"Wales",
-                           @"Northern Ireland"];
+      self.seriesNames = @[@"Scotland", @"Wales",
+                           @"Northern Ireland", @"England"];
       self.categories = @[@"January", @"February", @"March",
                           @"April", @"May", @"June",
                           @"July", @"August", @"September",

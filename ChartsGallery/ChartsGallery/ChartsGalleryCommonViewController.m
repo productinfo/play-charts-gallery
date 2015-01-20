@@ -43,20 +43,10 @@
   theme.legendStyle.fontColor = darkGrayColor;
   theme.crosshairStyle.defaultFont = [UIFont shinobiFontOfSize:14];
   theme.crosshairStyle.defaultTextColor = [UIColor shinobiDarkGrayColor];
-  
-  // Style all axes in the same way
-  NSArray *axisStyles = @[theme.xAxisStyle,
-                          theme.yAxisStyle,
-                          theme.xAxisRadialStyle,
-                          theme.yAxisRadialStyle];
-  for (SChartAxisStyle *style in axisStyles) {
-    style.titleStyle.font = [UIFont shinobiFontOfSize:16];
-    style.titleStyle.textColor = darkGrayColor;
-    style.majorTickStyle.labelFont = [UIFont lightShinobiFontOfSize:14];
-    style.majorTickStyle.labelColor = darkGrayColor;
-    style.lineColor = darkGrayColor;
-  }
-  
+  [self styleAxisStyle:theme.xAxisStyle useLightLabelFont:YES];
+  [self styleAxisStyle:theme.yAxisStyle useLightLabelFont:YES];
+  [self styleAxisStyle:theme.xAxisRadialStyle useLightLabelFont:NO];
+  [self styleAxisStyle:theme.yAxisRadialStyle useLightLabelFont:NO];
   [self.chart applyTheme:theme];
   
   self.chart.delegate = self;
@@ -68,6 +58,18 @@
     axis.enableMomentumPanning = YES;
     axis.enableMomentumZooming = YES;
   }
+}
+
+- (void)styleAxisStyle:(SChartAxisStyle *)style useLightLabelFont:(BOOL)useLightLabelFont {
+  style.titleStyle.font = [UIFont shinobiFontOfSize:16];
+  style.titleStyle.textColor = [UIColor shinobiDarkGrayColor];
+  if (useLightLabelFont) {
+    style.majorTickStyle.labelFont = [UIFont lightShinobiFontOfSize:14];
+  } else {
+    style.majorTickStyle.labelFont = [UIFont shinobiFontOfSize:14];
+  }
+  style.majorTickStyle.labelColor = style.titleStyle.textColor;
+  style.lineColor = style.titleStyle.textColor;
 }
 
 - (void)useHorizontalLegend {
