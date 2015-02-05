@@ -20,6 +20,7 @@
 //
 
 #import "ChartsGalleryRadarDataSource.h"
+#import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 @interface ChartsGalleryRadarDataSource ()
 
@@ -47,6 +48,17 @@
   radialSeries.title = self.seriesNames[index];
   radialSeries.pointsWrapAround = YES;
   radialSeries.style.showFill = YES;
+  
+  if (index == 0) {
+    radialSeries.style.areaColor = [[UIColor shinobiPlayBlueColor] colorWithAlphaComponent:200.0f/255];
+  } else if (index == 1) {
+    radialSeries.style.areaColor = [[UIColor shinobiPlayGreenColor] colorWithAlphaComponent:200.0f/255];
+  } else if (index == 2) {
+    radialSeries.style.areaColor = [[UIColor shinobiPlayOrangeColor] colorWithAlphaComponent:200.0f/255];
+  } else {
+    radialSeries.style.areaColor = [[UIColor shinobiPlayRedColor] colorWithAlphaComponent:200.0f/255];
+  }
+  
   return radialSeries;
 }
 
