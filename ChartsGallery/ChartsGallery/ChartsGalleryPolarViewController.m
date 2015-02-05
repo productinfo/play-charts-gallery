@@ -60,7 +60,7 @@
   
   // Add grid "stripes" to color the background of the circle
   self.chart.yAxis.style.gridStripeStyle.showGridStripes = YES;
-  UIColor *backgroundColor = [UIColor colorWithRed:240.0f/255 green:240.0f/255 blue:240.0f/255 alpha:1];
+  UIColor *backgroundColor = [UIColor colorWithRed:247.0f/255 green:247.0f/255 blue:247.0f/255 alpha:1];
   self.chart.yAxis.style.gridStripeStyle.stripeColor = backgroundColor;
   self.chart.yAxis.style.gridStripeStyle.alternateStripeColor = backgroundColor;
 }
