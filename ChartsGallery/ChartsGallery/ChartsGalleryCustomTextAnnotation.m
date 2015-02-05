@@ -20,6 +20,7 @@
 //
 
 #import "ChartsGalleryCustomTextAnnotation.h"
+#import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 @implementation ChartsGalleryCustomTextAnnotation
 
@@ -34,7 +35,7 @@
     
     self.label = [[UILabel alloc] initWithFrame:self.bounds];
     self.label.backgroundColor = [UIColor clearColor];
-    self.label.textColor = [UIColor blackColor];
+    self.label.textColor = [UIColor shinobiDarkGrayColor];
     self.label.text = text;
     self.label.textAlignment = NSTextAlignmentCenter;
     [self customizeLabel];
