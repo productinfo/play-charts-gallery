@@ -63,6 +63,7 @@
   self.chart.crosshair.tooltip = [ChartsGalleryCustomCrosshairTooltip new];
   self.chart.crosshair.enableCrosshairLines = YES;
   self.chart.crosshair.interpolatePoints = NO;
+  self.chart.crosshair.outOfRangeBehavior = SChartCrosshairOutOfRangeBehaviorKeepAtEdge;
 }
 
 @end
