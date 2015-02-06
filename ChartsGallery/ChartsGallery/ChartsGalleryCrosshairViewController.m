@@ -61,6 +61,7 @@
     
   self.chart.crosshair = [[ChartsGalleryCustomCrosshair alloc] initWithChart:self.chart];
   self.chart.crosshair.tooltip = [ChartsGalleryCustomCrosshairTooltip new];
+  self.chart.crosshair.style.defaultBackgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.95];
   self.chart.crosshair.enableCrosshairLines = YES;
   self.chart.crosshair.interpolatePoints = NO;
   self.chart.crosshair.outOfRangeBehavior = SChartCrosshairOutOfRangeBehaviorKeepAtEdge;
