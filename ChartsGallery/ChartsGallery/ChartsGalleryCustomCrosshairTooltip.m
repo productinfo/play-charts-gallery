@@ -51,7 +51,7 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
     [self addSubview:self.heartRate];
     
     self.pace = [self createTooltipLabel];
-    [self addSubview:self.self.pace];
+    [self addSubview:self.pace];
     
     self.allLabels = @[self.label, self.heartRate, self.pace];
   }
@@ -110,7 +110,10 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
   frame.size.width = maxLabelWidth + (2 * CustomCrosshairChartTooltipLabelPadding);
   frame.size.height = currentMaxHeight + CustomCrosshairChartTooltipLabelPadding;
   frame.origin.y = canvas.glView.frame.origin.y;
-  frame.origin.x = position.x - (frame.size.width / 2);
+  CGFloat width = CGRectGetWidth(frame);
+  frame.origin.x = position.x - (width / 2);
+  frame.origin.x = MAX(frame.origin.x, CGRectGetMinX(canvas.glView.frame));
+  frame.origin.x = MIN(frame.origin.x, CGRectGetMaxX(canvas.glView.frame) - width);
   self.frame = frame;
 }
 
