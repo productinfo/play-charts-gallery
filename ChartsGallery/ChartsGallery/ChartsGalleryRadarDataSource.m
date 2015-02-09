@@ -50,13 +50,13 @@
   radialSeries.style.showFill = YES;
   
   if (index == 0) {
-    radialSeries.style.areaColor = [[UIColor shinobiPlayBlueColor] colorWithAlphaComponent:200.0f/255];
+    radialSeries.style.areaColor = [[UIColor shinobiPlayBlueColor] colorWithAlphaComponent:0.8];
   } else if (index == 1) {
-    radialSeries.style.areaColor = [[UIColor shinobiPlayGreenColor] colorWithAlphaComponent:200.0f/255];
+    radialSeries.style.areaColor = [[UIColor shinobiPlayGreenColor] colorWithAlphaComponent:0.8];
   } else if (index == 2) {
-    radialSeries.style.areaColor = [[UIColor shinobiPlayOrangeColor] colorWithAlphaComponent:200.0f/255];
+    radialSeries.style.areaColor = [[UIColor shinobiPlayOrangeColor] colorWithAlphaComponent:0.8];
   } else {
-    radialSeries.style.areaColor = [[UIColor shinobiPlayRedColor] colorWithAlphaComponent:200.0f/255];
+    radialSeries.style.areaColor = [[UIColor shinobiPlayRedColor] colorWithAlphaComponent:0.8];
   }
   
   return radialSeries;
