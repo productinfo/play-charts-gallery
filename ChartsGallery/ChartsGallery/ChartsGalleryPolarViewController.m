@@ -49,10 +49,6 @@
   [super setupChart];
   
   self.chart.legend.style.textAlignment = NSTextAlignmentRight;
-  self.chart.xAxis.style.majorTickStyle.lineColor = [UIColor shinobiDarkGrayColor];
-  self.chart.yAxis.style.majorTickStyle.lineColor = [UIColor shinobiDarkGrayColor];
-  self.chart.xAxis.style.lineColor = [UIColor shinobiDarkGrayColor];
-  self.chart.yAxis.style.lineColor = [UIColor shinobiDarkGrayColor];
   self.chart.xAxis.style.lineWidth = @1;
   self.chart.xAxis.style.majorTickStyle.lineWidth = @1;
   self.chart.yAxis.style.lineWidth = @1;
@@ -60,7 +56,7 @@
   
   // Add grid "stripes" to color the background of the circle
   self.chart.yAxis.style.gridStripeStyle.showGridStripes = YES;
-  UIColor *backgroundColor = [UIColor colorWithRed:247.0f/255 green:247.0f/255 blue:247.0f/255 alpha:1];
+  UIColor *backgroundColor = [UIColor colorWithWhite:247.0f/255 alpha:1];
   self.chart.yAxis.style.gridStripeStyle.stripeColor = backgroundColor;
   self.chart.yAxis.style.gridStripeStyle.alternateStripeColor = backgroundColor;
 }
