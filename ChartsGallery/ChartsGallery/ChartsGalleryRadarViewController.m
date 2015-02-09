@@ -40,10 +40,6 @@
   [super setupChart];
   
   self.chart.legend.style.textAlignment = NSTextAlignmentRight;
-  self.chart.xAxis.style.majorTickStyle.lineColor = [UIColor shinobiDarkGrayColor];
-  self.chart.yAxis.style.majorTickStyle.lineColor = [UIColor shinobiDarkGrayColor];
-  self.chart.xAxis.style.lineColor = [UIColor shinobiDarkGrayColor];
-  self.chart.yAxis.style.lineColor = [UIColor shinobiDarkGrayColor];
   self.chart.xAxis.style.majorGridLineStyle.lineRenderMode = SChartRadialLineRenderModeLinear;
   self.chart.xAxis.style.majorGridLineStyle.showMajorGridLines = YES;
   self.chart.yAxis.style.majorGridLineStyle.lineRenderMode = SChartRadialLineRenderModeLinear;
