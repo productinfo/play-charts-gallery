@@ -21,6 +21,7 @@
 
 #import "ChartsGalleryRadarViewController.h"
 #import "ChartsGalleryRadarDataSource.h"
+#import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 @implementation ChartsGalleryRadarViewController
 

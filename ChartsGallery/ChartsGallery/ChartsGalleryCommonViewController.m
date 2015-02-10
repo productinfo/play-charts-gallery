@@ -69,6 +69,7 @@
     style.majorTickStyle.labelFont = [UIFont shinobiFontOfSize:14];
   }
   style.majorTickStyle.labelColor = style.titleStyle.textColor;
+  style.majorTickStyle.lineColor = style.titleStyle.textColor;
   style.lineColor = style.titleStyle.textColor;
 }
 

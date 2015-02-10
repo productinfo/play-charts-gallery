@@ -32,13 +32,7 @@
   series.baseline = @0;
   series.style.dataPointLabelStyle.showLabels = YES;
   series.style.dataPointLabelStyle.font = [UIFont boldShinobiFontOfSize:16];
-  series.style.dataPointLabelStyle.textColor = [UIColor shinobiDarkGrayColor];
-  if (index == 0) {
-    // Change the colour as the data labels don't show up well on the default color for
-    // series 0 (blue)
-    series.style.areaColor = [UIColor shinobiPlayRedColor];
-    series.style.areaColorGradient = [UIColor shinobiPlayRedColor];
-  }
+  series.style.dataPointLabelStyle.textColor = [UIColor whiteColor];
   return series;
 }
 

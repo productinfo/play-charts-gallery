@@ -21,6 +21,7 @@
 
 #import "ChartsGalleryCustomCrosshair.h"
 #import <ShinobiCharts/SChartCanvas.h>
+#import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 @interface ChartsGalleryCustomCrosshair ()
 
@@ -39,11 +40,11 @@
     
     SChartCanvas *canvas = self.chart.canvas;
     UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(0, 52)];
-    [path addLineToPoint:CGPointMake(0, canvas.glView.bounds.size.height - 52)];
+    [path moveToPoint:CGPointMake(0, 54)];
+    [path addLineToPoint:CGPointMake(0, canvas.glView.bounds.size.height - 54)];
     self.line = [CAShapeLayer layer];
     self.line.path = path.CGPath;
-    self.line.strokeColor = [ShinobiCharts theme].xAxisStyle.lineColor.CGColor;
+    self.line.strokeColor = [UIColor shinobiDarkGrayColor].CGColor;
     self.line.lineWidth = (self.style.lineWidth) ? self.style.lineWidth.floatValue : 0;
     [self.layer addSublayer:self.line];
   }
@@ -54,7 +55,7 @@
 - (void)drawCrosshairLines {
   [CATransaction begin];
   [CATransaction setDisableActions:YES];
-  self.line.strokeColor = [ShinobiCharts theme].xAxisStyle.lineColor.CGColor;
+  self.line.strokeColor = [UIColor shinobiDarkGrayColor].CGColor;
   self.line.lineWidth = (self.style.lineWidth) ? self.style.lineWidth.floatValue : 0;
   self.line.position = CGPointMake(self.crosshairCenter.x, self.line.position.y);
   [CATransaction commit];
