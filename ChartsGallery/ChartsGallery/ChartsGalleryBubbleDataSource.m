@@ -49,6 +49,7 @@
     case 4:
       bubbleSeries.style.pointStyle.texture = [UIImage imageNamed:@"BubbleChartPurpleBubble"];
       break;
+    case 5:
     default:
       bubbleSeries.style.pointStyle.texture = [UIImage imageNamed:@"BubbleChartSilverBubble"];
       break;
@@ -57,7 +58,7 @@
 }
 
 - (NSInteger)numberOfSeriesInSChart:(ShinobiChart *)chart {
-  return 6;
+  return self.dataCollection.count;
 }
 
 - (NSInteger)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(NSInteger)seriesIndex {
