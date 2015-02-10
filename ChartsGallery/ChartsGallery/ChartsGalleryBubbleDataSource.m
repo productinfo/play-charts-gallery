@@ -20,7 +20,6 @@
 //
 
 #import "ChartsGalleryBubbleDataSource.h"
-#import "ChartsGalleryBubbleSeries.h"
 #import "ShinobiPlayUtils/UIFont+SPUFont.h"
 
 @implementation ChartsGalleryBubbleDataSource
@@ -31,30 +30,55 @@
 }
 
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
-  return [ChartsGalleryBubbleSeries new];
+  SChartBubbleSeries *bubbleSeries = [SChartBubbleSeries new];
+  bubbleSeries.scale = @0.008;
+  bubbleSeries.style.dataPointLabelStyle.showLabels = YES;
+  switch (index) {
+    case 0:
+      bubbleSeries.style.pointStyle.texture = [UIImage imageNamed:@"BubbleChartBlueBubble"];
+      break;
+    case 1:
+      bubbleSeries.style.pointStyle.texture = [UIImage imageNamed:@"BubbleChartGreenBubble"];
+      break;
+    case 2:
+      bubbleSeries.style.pointStyle.texture = [UIImage imageNamed:@"BubbleChartOrangeBubble"];
+      break;
+    case 3:
+      bubbleSeries.style.pointStyle.texture = [UIImage imageNamed:@"BubbleChartRedBubble"];
+      break;
+    case 4:
+      bubbleSeries.style.pointStyle.texture = [UIImage imageNamed:@"BubbleChartPurpleBubble"];
+      break;
+    default:
+      bubbleSeries.style.pointStyle.texture = [UIImage imageNamed:@"BubbleChartSilverBubble"];
+      break;
+  }
+  return bubbleSeries;
 }
 
 - (NSInteger)numberOfSeriesInSChart:(ShinobiChart *)chart {
-  return 1;
+  return 6;
 }
 
 - (NSInteger)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(NSInteger)seriesIndex {
-  return self.dataCollection.count;
+  return [self.dataCollection[seriesIndex] count];
 }
 
 - (id<SChartData>)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
   SChartBubbleDataPoint *dp = [SChartBubbleDataPoint new];
-  dp.xValue = self.dataCollection[dataIndex][@"longitude"];
-  dp.yValue = self.dataCollection[dataIndex][@"latitude"];
-  dp.area = [self.dataCollection[dataIndex][@"population"] floatValue];
+  dp.xValue = self.dataCollection[seriesIndex][dataIndex][@"longitude"];
+  dp.yValue = self.dataCollection[seriesIndex][dataIndex][@"latitude"];
+  dp.area = [self.dataCollection[seriesIndex][dataIndex][@"population"] floatValue];
   return dp;
 }
 
 - (void)sChart:(ShinobiChart *)chart alterDataPointLabel:(SChartDataPointLabel *)label
   forDataPoint:(SChartDataPoint *)dataPoint inSeries:(SChartSeries *)series {
   CGPoint center = label.center;
-  label.text = [self.dataCollection[dataPoint.index][@"country"] capitalizedString];
-  label.font = [UIFont shinobiFontOfSize:10];
+  
+  NSInteger seriesIndex = [chart.series indexOfObject:series];
+  label.text = [self.dataCollection[seriesIndex][dataPoint.index][@"country"] capitalizedString];
+  label.font = [UIFont boldShinobiFontOfSize:10];
   [label sizeToFit];
   label.center = center;
 }
