@@ -58,14 +58,15 @@
   
   self.dateComponents = [NSDateComponents new];
   self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    
-  self.chart.crosshair = [[ChartsGalleryCustomCrosshair alloc] initWithChart:self.chart];
-  self.chart.crosshair.tooltip = [ChartsGalleryCustomCrosshairTooltip new];
-  self.chart.crosshair.style.defaultBackgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.95];
-  self.chart.crosshair.style.defaultCornerRadius = 0;
-  self.chart.crosshair.enableCrosshairLines = YES;
-  self.chart.crosshair.interpolatePoints = NO;
-  self.chart.crosshair.outOfRangeBehavior = SChartCrosshairOutOfRangeBehaviorKeepAtEdge;
+  
+  ChartsGalleryCustomCrosshair *customCrosshair = [[ChartsGalleryCustomCrosshair alloc] initWithChart:self.chart];
+  customCrosshair.tooltip = [ChartsGalleryCustomCrosshairTooltip new];
+  customCrosshair.style.defaultBackgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.95];
+  customCrosshair.style.defaultCornerRadius = 0;
+  customCrosshair.enableCrosshairLines = YES;
+  customCrosshair.interpolatePoints = NO;
+  customCrosshair.outOfRangeBehavior = SChartCrosshairOutOfRangeBehaviorKeepAtEdge;
+  self.chart.crosshair = customCrosshair;
 }
 
 @end

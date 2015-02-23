@@ -21,6 +21,7 @@
 
 #import "ChartsGalleryCustomCrosshairTooltip.h"
 #import <ShinobiCharts/SChartCanvas.h>
+#import <ShinobiCharts/SChartGLView.h>
 #import "ChartsGalleryCrosshairDataSource.h"
 #import "ShinobiPlayUtils/UIFont+SPUFont.h"
 #import "ShinobiPlayUtils/UIColor+SPUColor.h"
