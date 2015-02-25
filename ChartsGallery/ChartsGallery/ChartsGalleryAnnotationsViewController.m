@@ -85,14 +85,12 @@
 
 - (void)updateMaxHeartRatePosition {
   ChartsGalleryAnnotationsDataSource *dataSource = self.chart.datasource;
-  SChartDataPoint *dataPointWithHighestValue = [dataSource findDataPointWithHighestYValueForSeries:self.chart.series[0]];
+  id<SChartData> dataPointWithHighestValue = [dataSource findDataPointWithHighestYValueForSeries:self.chart.series[0]];
   
-  self.dateComponents.second = [dataPointWithHighestValue.xValue floatValue];
-  NSDate *xdate = [self.calendar dateFromComponents:self.dateComponents];
-  self.textAnnotationMaxHeartRate.xValue = @([xdate timeIntervalSince1970]);
-  
-  self.textAnnotationMaxHeartRate.label.text = [NSString stringWithFormat:@"Max: %@\n\u25bc", dataPointWithHighestValue.yValue];
-  self.textAnnotationMaxHeartRate.yValue = dataPointWithHighestValue.yValue;
+  self.textAnnotationMaxHeartRate.xValue = [dataPointWithHighestValue sChartXValue];
+  self.textAnnotationMaxHeartRate.label.text = [NSString stringWithFormat:@"Max: %@\n\u25bc",
+                                                [dataPointWithHighestValue sChartYValue]];
+  self.textAnnotationMaxHeartRate.yValue = [dataPointWithHighestValue sChartYValue];
 }
 
 - (void)sChartIsPanning:(ShinobiChart *)chart withChartMovementInformation:(const SChartMovementInformation *)information {

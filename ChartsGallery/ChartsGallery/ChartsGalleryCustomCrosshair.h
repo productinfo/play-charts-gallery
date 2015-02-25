@@ -21,6 +21,25 @@
 
 #import <ShinobiCharts/ShinobiCharts.h>
 
-@interface ChartsGalleryCustomCrosshair : SChartCrosshair
+/**
+ * Protocol used by the custom crosshair for its tooltip
+ */
+@protocol ChartsGalleryCrosshairTooltip
+
+/**
+ * This method should update the tooltip with the given data, and resize if necessary
+ */
+- (void)updateWithDataPoint:(SChartDataPoint *)dataPoint;
+
+@end
+
+
+/**
+ * A crosshair consisting of a vertical line, with a tooltip placed at the top of the chart
+ */
+@interface ChartsGalleryCustomCrosshair : UIView<SChartCrosshair>
+
+- (instancetype)initWithFrame:(CGRect)frame lineColor:(UIColor *)lineColor lineWidth:(CGFloat)lineWidth
+                      tooltip:(UIView<ChartsGalleryCrosshairTooltip> *)crosshairTooltip;
 
 @end

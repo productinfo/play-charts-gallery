@@ -21,72 +21,109 @@
 
 #import "ChartsGalleryCustomCrosshair.h"
 #import <ShinobiCharts/SChartCanvas.h>
+#import <ShinobiCharts/SChartCanvasOverlay.h>
+#import <ShinobiCharts/SChartGLView.h>
+#import <ShinobiCharts/SChartPixelToPointMapper.h>
+#import <ShinobiCharts/SChartPixelToPointMapping.h>
 #import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 @interface ChartsGalleryCustomCrosshair ()
 
-@property (assign, nonatomic) BOOL clippingMaskSet;
-@property (assign, nonatomic) CGPoint crosshairCenter;
 @property (strong, nonatomic) CAShapeLayer *line;
+@property (strong, nonatomic) UIView<ChartsGalleryCrosshairTooltip> *crosshairTooltip;
 
 @end
 
 @implementation ChartsGalleryCustomCrosshair
 
-- (instancetype)initWithChart:(ShinobiChart *)parentChart {
-  self = [super initWithChart:parentChart];
+@synthesize style;
+@synthesize tooltip;
+
+- (instancetype)initWithFrame:(CGRect)frame lineColor:(UIColor *)lineColor lineWidth:(CGFloat)lineWidth
+                      tooltip:(UIView<ChartsGalleryCrosshairTooltip> *)crosshairTooltip {
+  self = [super initWithFrame:frame];
   if (self) {
-    self.clippingMaskSet = NO;
+    self.clipsToBounds = YES;
     
-    SChartCanvas *canvas = self.chart.canvas;
     UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(0, 54)];
-    [path addLineToPoint:CGPointMake(0, canvas.glView.bounds.size.height - 54)];
+    [path moveToPoint:CGPointMake(0, frame.origin.y)];
+    [path addLineToPoint:CGPointMake(0, frame.origin.y + frame.size.height)];
     self.line = [CAShapeLayer layer];
     self.line.path = path.CGPath;
-    self.line.strokeColor = [UIColor shinobiDarkGrayColor].CGColor;
-    self.line.lineWidth = (self.style.lineWidth) ? self.style.lineWidth.floatValue : 0;
+    self.line.strokeColor = lineColor.CGColor;
+    self.line.lineWidth = lineWidth;
     [self.layer addSublayer:self.line];
+    
+    self.crosshairTooltip = crosshairTooltip;
+    [self addSubview:self.crosshairTooltip];
   }
   
   return self;
 }
 
-- (void)drawCrosshairLines {
-  [CATransaction begin];
-  [CATransaction setDisableActions:YES];
-  self.line.strokeColor = [UIColor shinobiDarkGrayColor].CGColor;
-  self.line.lineWidth = (self.style.lineWidth) ? self.style.lineWidth.floatValue : 0;
-  self.line.position = CGPointMake(self.crosshairCenter.x, self.line.position.y);
-  [CATransaction commit];
+- (void)showAtPoint:(CGPoint)pointInChart inChart:(ShinobiChart *)chart {
+  self.frame = [chart getPlotAreaFrame];
+  [self moveToPoint:pointInChart inChart:chart];
+  [self showInChart:chart];
 }
 
-- (void)moveToPosition:(SChartPoint)coords andDisplayDataPoint:(SChartPoint)dataPoint
-            fromSeries:(SChartCartesianSeries *)series andSeriesDataPoint:(id<SChartData>)dataseriesPoint {
-  // The first time we move the crosshair to a position, we set the clipping mask on the
-  // crosshair's layer.  This is a good time to do it, as we know that the chart canvas
-  // will have been rendered by this point.
-  if (!self.clippingMaskSet)   {
-    double clippingAreaWidth = self.chart.canvas.glView.frame.size.width + [self.chart.yAxis.style.lineWidth doubleValue];
+- (void)showInChart:(ShinobiChart *)chart {
+  [chart.canvas.overlay addSubview:self];
+  [chart redrawChart];
+}
+
+- (void)moveToPoint:(CGPoint)pointInChart inChart:(ShinobiChart *)chart {
+  CGFloat xPosition = pointInChart.x;
+  
+  // Get the nearest data point to pointInChart so we know where to move the crosshair to.
+  SChartMappedSeries *series = chart.series[0];
+  SChartPixelToPointMapper *mapper = [SChartPixelToPointMapper new];
+  SChartPixelToPointMapping *mapping = [mapper mappingForPoint:pointInChart
+                                                          onSeries:series
+                                                           onChart:chart];
+  
+  // The mapper interpolates data between points on a line series, but we want the crosshair
+  // to always be on a real data point, so we use the mapping's data point's index and
+  // go back to the data source to get the actual data point
+  NSInteger dataPointIndex = [mapping.dataPoint sChartDataPointIndex];
+  SChartDataPoint *dp = [chart.datasource sChart:chart dataPointAtIndex:dataPointIndex forSeriesAtIndex:0];
+  // Convert the data point back to a pixel point
+  xPosition = [chart.xAxis pixelValueForDataValue:dp.xValue];
+  
+  // Hide crosshair if out of range of chart (leaving some leeway for gestures)
+  if (xPosition > self.frame.size.width + 10 || xPosition < -10) {
+    [self hide];
+  } else {
+    if (!self.superview) {
+      [self showInChart:chart];
+    }
     
-    CGRect clippingRect = self.chart.canvas.glView.frame;
-    clippingRect.size.width = clippingAreaWidth;
+    // Update the tooltip
+    [self.crosshairTooltip updateWithDataPoint:dp];
     
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRect:clippingRect];
+    // Position it on top of the crosshair
+    CGFloat tooltipHalfWidth = self.crosshairTooltip.frame.size.width/2;
+    CGFloat tooltipXPosition = xPosition;
+    // Fix tooltipXPosition so the tooltip doesn't sit off the screen
+    if (tooltipXPosition < tooltipHalfWidth) {
+      tooltipXPosition = tooltipHalfWidth;
+    } else if (tooltipXPosition > self.frame.size.width - tooltipHalfWidth) {
+      tooltipXPosition = self.frame.size.width - tooltipHalfWidth;
+    }
+    self.crosshairTooltip.center = CGPointMake(tooltipXPosition,
+                                               self.crosshairTooltip.frame.size.height/2);
     
-    // Create a shape layer
-    CAShapeLayer *maskLayer = [CAShapeLayer layer];
-    maskLayer.frame = self.frame;
-    maskLayer.path = maskPath.CGPath;
-    
-    self.layer.mask = maskLayer;
-    self.clippingMaskSet = YES;
+    // Move the crosshair line
+    [CATransaction begin];
+    [CATransaction setDisableActions:YES];
+    [CATransaction setAnimationDuration:0];
+    self.line.position = CGPointMake(xPosition, self.line.position.y);
+    [CATransaction commit];
   }
-  
-  // Save the crosshair center so we can use it to draw the lines
-  self.crosshairCenter = CGPointMake(coords.x, coords.y);
-  
-  [super moveToPosition:coords andDisplayDataPoint:dataPoint fromSeries:series andSeriesDataPoint:dataseriesPoint];
+}
+
+- (void)hide {
+  [self removeFromSuperview];
 }
 
 @end

@@ -23,6 +23,6 @@
 
 @interface ChartsGalleryAnnotationsDataSource : ChartsGalleryCrosshairDataSource
 
-- (SChartDataPoint*)findDataPointWithHighestYValueForSeries:(SChartSeries*)chartSeries;
+- (id<SChartData>)findDataPointWithHighestYValueForSeries:(SChartSeries*)chartSeries;
 
 @end

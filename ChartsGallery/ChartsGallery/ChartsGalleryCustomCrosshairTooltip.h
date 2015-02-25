@@ -20,7 +20,11 @@
 //
 
 #import <ShinobiCharts/ShinobiCharts.h>
+#import "ChartsGalleryCustomCrosshair.h"
+#import "ChartsGalleryCrosshairDataSource.h"
 
-@interface ChartsGalleryCustomCrosshairTooltip : SChartCrosshairTooltip
+@interface ChartsGalleryCustomCrosshairTooltip : UIView<ChartsGalleryCrosshairTooltip>
+
+- (instancetype)initWithDataSource:(ChartsGalleryCrosshairDataSource *)dataSource;
 
 @end

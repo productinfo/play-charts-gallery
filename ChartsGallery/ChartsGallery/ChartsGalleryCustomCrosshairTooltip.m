@@ -21,6 +21,7 @@
 
 #import "ChartsGalleryCustomCrosshairTooltip.h"
 #import <ShinobiCharts/SChartCanvas.h>
+#import <ShinobiCharts/SChartGLView.h>
 #import "ChartsGalleryCrosshairDataSource.h"
 #import "ShinobiPlayUtils/UIFont+SPUFont.h"
 #import "ShinobiPlayUtils/UIColor+SPUColor.h"
@@ -29,8 +30,11 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
 
 @interface ChartsGalleryCustomCrosshairTooltip ()
 
+@property (strong, nonatomic) ChartsGalleryCrosshairDataSource *dataSource;
+
 @property (strong, nonatomic) NSDateFormatter *dateFormatter;
 
+@property (strong, nonatomic) UILabel *dateLabel;
 @property (strong, nonatomic) UILabel *heartRate;
 @property (strong, nonatomic) UILabel *pace;
 
@@ -40,12 +44,18 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
 
 @implementation ChartsGalleryCustomCrosshairTooltip
 
-- (instancetype)init {
+- (instancetype)initWithDataSource:(ChartsGalleryCrosshairDataSource *)dataSource {
   self = [super init];
   if (self) {
+    self.dataSource = dataSource;
+    
     self.dateFormatter = [NSDateFormatter new];
-    [self.dateFormatter setDateStyle:NSDateFormatterNoStyle];
-    [self.dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    [self.dateFormatter setDateFormat:@"HH:mm"];
+    
+    self.dateLabel = [self createTooltipLabel];
+    self.dateLabel.font = [UIFont shinobiFontOfSize:13];
+    self.dateLabel.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:self.dateLabel];
     
     self.heartRate = [self createTooltipLabel];
     [self addSubview:self.heartRate];
@@ -53,7 +63,12 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
     self.pace = [self createTooltipLabel];
     [self addSubview:self.pace];
     
-    self.allLabels = @[self.label, self.heartRate, self.pace];
+    self.allLabels = @[self.dateLabel, self.heartRate, self.pace];
+    
+    self.backgroundColor = [UIColor whiteColor];
+    self.layer.borderColor = [UIColor shinobiDarkGrayColor].CGColor;
+    self.layer.borderWidth = 1;
+    self.layer.cornerRadius = 3;
   }
   return self;
 }
@@ -67,21 +82,15 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
   return newLabel;
 }
 
-- (void)setDataPoint:(id<SChartData>)dataPoint fromSeries:(SChartSeries *)series fromChart:(ShinobiChart *)chart {
-  SChartDataPoint *chartDataPoint = (SChartDataPoint*)dataPoint;
+- (void)updateWithDataPoint:(SChartDataPoint *)dataPoint {
+  // Get a date and heart rate from the data point and display as label text
+  self.dateLabel.text = [self.dateFormatter stringFromDate:dataPoint.xValue];
+  self.heartRate.text = [NSString stringWithFormat:@"Heart Rate: %@ bpm", dataPoint.yValue];
   
-  // Get a date string from the data point and display as label text
-  self.label.text = [self.dateFormatter stringFromDate:chartDataPoint.xValue];
-  
-  NSInteger dataPointIndex = chartDataPoint.index;
-  ChartsGalleryCrosshairDataSource *dataSource = chart.datasource;
-  NSDictionary *dataCollection = dataSource.dataCollection[dataPointIndex];
-  self.heartRate.text = [NSString stringWithFormat:@"Heart Rate: %@ bpm", dataCollection[@"Heart Rate"]];
+  // We want to also show the pace data, that's not shown on the chart, so we'll have to get
+  // it from the data source
+  NSDictionary *dataCollection = self.dataSource.dataCollection[dataPoint.index];
   self.pace.text = [NSString stringWithFormat:@"Pace: %@ kph", dataCollection[@"Pace"]];
-}
-
-- (void)setPosition:(struct SChartPoint)position onCanvas:(SChartCanvas*)canvas {
-  [super setPosition:position onCanvas:canvas];
   
   // Lay out the labels, keeping track of the maximum width
   CGFloat maxLabelWidth = 0;
@@ -100,20 +109,14 @@ static const CGFloat CustomCrosshairChartTooltipLabelPadding = 5.f;
   
   // Further customize top most label in crosshair tooltip
   // To center the top most label after we have deduced the maximum label width of all the labels.
-  UILabel *topMostLabel = self.allLabels[0];
-  CGRect labelFrame = topMostLabel.frame;
+  CGRect labelFrame = self.dateLabel.frame;
   labelFrame.size.width = maxLabelWidth;
-  topMostLabel.frame = labelFrame;
+  self.dateLabel.frame = labelFrame;
   
   // Resize tooltip frame
   CGRect frame = self.frame;
   frame.size.width = maxLabelWidth + (2 * CustomCrosshairChartTooltipLabelPadding);
   frame.size.height = currentMaxHeight + CustomCrosshairChartTooltipLabelPadding;
-  frame.origin.y = canvas.glView.frame.origin.y;
-  CGFloat width = CGRectGetWidth(frame);
-  frame.origin.x = position.x - (width / 2);
-  frame.origin.x = MAX(frame.origin.x, CGRectGetMinX(canvas.glView.frame));
-  frame.origin.x = MIN(frame.origin.x, CGRectGetMaxX(canvas.glView.frame) - width);
   self.frame = frame;
 }
 
