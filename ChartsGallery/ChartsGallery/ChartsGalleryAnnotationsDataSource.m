@@ -23,11 +23,12 @@
 
 @implementation ChartsGalleryAnnotationsDataSource
 
-- (SChartDataPoint*)findDataPointWithHighestYValueForSeries:(SChartSeries*)chartSeries {
-  SChartDataPoint *dataPointWithHighestYValue;
+- (id<SChartData>)findDataPointWithHighestYValueForSeries:(SChartSeries*)chartSeries {
+  id<SChartData> dataPointWithHighestYValue;
   SChartDataSeries *chartDataSeries = chartSeries.dataSeries;
-  for (SChartDataPoint *dataPoint in chartDataSeries.dataPoints) {
-    if ([dataPoint.yValue floatValue] > [dataPointWithHighestYValue.yValue floatValue]) {
+  for (id<SChartData> dataPoint in chartDataSeries.dataPoints) {
+    if (!dataPointWithHighestYValue ||
+        [[dataPoint sChartYValue] floatValue] > [[dataPointWithHighestYValue sChartYValue] floatValue]) {
       dataPointWithHighestYValue = dataPoint;
     }
   }
