@@ -23,6 +23,7 @@
 #import "ChartsGalleryCrosshairDataSource.h"
 #import "ChartsGalleryCustomCrosshair.h"
 #import "ChartsGalleryCustomCrosshairTooltip.h"
+#import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 @interface ChartsGalleryCrosshairViewController ()
 
@@ -59,13 +60,12 @@
   self.dateComponents = [NSDateComponents new];
   self.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
   
-  ChartsGalleryCustomCrosshair *customCrosshair = [[ChartsGalleryCustomCrosshair alloc] initWithChart:self.chart];
-  customCrosshair.tooltip = [ChartsGalleryCustomCrosshairTooltip new];
-  customCrosshair.style.defaultBackgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.95];
-  customCrosshair.style.defaultCornerRadius = 0;
-  customCrosshair.enableCrosshairLines = YES;
-  customCrosshair.interpolatePoints = NO;
-  customCrosshair.outOfRangeBehavior = SChartCrosshairOutOfRangeBehaviorKeepAtEdge;
+  ChartsGalleryCustomCrosshairTooltip *tooltip = [[ChartsGalleryCustomCrosshairTooltip alloc]
+                                                  initWithDataSource:(ChartsGalleryCrosshairDataSource *)self.dataSource];
+  ChartsGalleryCustomCrosshair *customCrosshair = [[ChartsGalleryCustomCrosshair alloc] initWithFrame:[self.chart getPlotAreaFrame]
+                                                                                            lineColor:[UIColor shinobiDarkGrayColor]
+                                                                                            lineWidth:1
+                                                                                              tooltip:tooltip];
   self.chart.crosshair = customCrosshair;
 }
 
