@@ -32,7 +32,6 @@
   series.title = [NSString stringWithFormat:@"Series %ld", (long)index];
   series.style.showFlavour = YES;
   series.style.showLabels = YES;
-  series.selectedPosition = @0;
   series.labelFormatString = @"%.0f%%";
   series.gesturePanningEnabled = YES;
   // Set the initial rotation to be at the middle of the first slice, which is 22% of the

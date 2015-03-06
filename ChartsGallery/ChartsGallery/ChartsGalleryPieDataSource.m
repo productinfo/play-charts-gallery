@@ -26,11 +26,9 @@
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
   SChartPieSeries *series = [SChartPieSeries new];
   series.title = [NSString stringWithFormat:@"Series %ld", (long)index];
-  series.selectedPosition = @0;
   series.innerRadius = 0.f;
   series.labelFormatString = @"%.0f%%";
   series.gesturePanningEnabled = YES;
-  series.selectedPosition = 0;
   // Set the initial rotation to be at the middle of the first slice, which is 22% of the
   // full circle
   series.style.initialRotation = @(-0.22 * M_PI);
