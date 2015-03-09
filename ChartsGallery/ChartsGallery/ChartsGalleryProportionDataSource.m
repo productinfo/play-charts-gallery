@@ -40,7 +40,6 @@
       dp.value = data[i];
       [self.datapoints addObject:dp];
     }
-//    ((SChartRadialDataPoint *)self.datapoints[0]).selected = YES;
   }
   return self;
 }

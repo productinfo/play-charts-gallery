@@ -20,6 +20,7 @@
 //
 
 #import "ChartsGalleryDonutDataSource.h"
+#import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
 @interface ChartsGalleryDonutDataSource ()
 
@@ -40,14 +41,11 @@
   series.style.protrusion = 0;
   series.selectedStyle.protrusion = 20;
   
-  CGFloat brightness = 0.1;
-  NSArray *selectedSegmentColours= @[[UIColor colorWithHue:211.0f/360 saturation:100.0f/100 brightness:(80.0f/100) + brightness alpha:1],
-                                     [UIColor colorWithHue:130.0f/360 saturation:65.0f/100 brightness:(68.0f/100) + brightness alpha:1],
-                                     [UIColor colorWithHue:35.0f/360 saturation:100.0f/100 brightness:(90.0f/100) + brightness alpha:1],
-                                     [UIColor colorWithHue:349.0f/360 saturation:82.0f/100 brightness:(90.0f/100) + brightness alpha:1],
-                                     [UIColor colorWithHue:241.0f/360 saturation:60.0f/100 brightness:(67.0f/100) + brightness alpha:1],
-                                     [UIColor colorWithHue:240.0f/360 saturation:3.0f/100 brightness:(58.0f/100) + brightness alpha:1]];
-  series.selectedStyle.flavourColors = [selectedSegmentColours mutableCopy];
+  NSMutableArray *selectedSegmentColours = [NSMutableArray new];
+  for (UIColor *color in [UIColor shinobiPlayColorArray]) {
+    [selectedSegmentColours addObject:[color  shinobiSelectedColor]];
+  }
+  series.selectedStyle.flavourColors = selectedSegmentColours;
   return series;
 }
 
