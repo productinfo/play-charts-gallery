@@ -35,10 +35,9 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  self.selectedDonutIndices[@0] = [NSMutableArray new];
-  [self.selectedDonutIndices[@0] addObject:@(0)];
-  
-  self.rotations[@(0)] = @(5.5841);
+  // Set the first slice as selected when the demo is opened for the first time
+  self.selectedDonutIndices[@0] = @[@0];
+  self.rotations[@(0)] = @5.5841;
 }
 
 - (void)createDataSource {
