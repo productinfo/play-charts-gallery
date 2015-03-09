@@ -32,6 +32,15 @@
 
 @implementation ChartsGalleryPieViewController
 
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  
+  self.selectedDonutIndices[@0] = [NSMutableArray new];
+  [self.selectedDonutIndices[@0] addObject:@(0)];
+  
+  self.rotations[@(0)] = @(5.5841);
+}
+
 - (void)createDataSource {
   self.dataSource = [ChartsGalleryPieDataSource new];
 }

@@ -38,7 +38,7 @@
   
   NSMutableArray *selectedSegmentColours = [NSMutableArray new];
   for (UIColor *color in [UIColor shinobiPlayColorArray]) {
-    [selectedSegmentColours addObject:[color shinobiSelectedColor]];
+    [selectedSegmentColours addObject:[color shinobiBrightColor]];
   }
   series.selectedStyle.flavourColors = selectedSegmentColours;
   return series;

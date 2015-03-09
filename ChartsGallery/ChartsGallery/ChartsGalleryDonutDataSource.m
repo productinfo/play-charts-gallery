@@ -22,10 +22,6 @@
 #import "ChartsGalleryDonutDataSource.h"
 #import "ShinobiPlayUtils/UIColor+SPUColor.h"
 
-@interface ChartsGalleryDonutDataSource ()
-
-@end
-
 @implementation ChartsGalleryDonutDataSource
 
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
@@ -43,7 +39,7 @@
   
   NSMutableArray *selectedSegmentColours = [NSMutableArray new];
   for (UIColor *color in [UIColor shinobiPlayColorArray]) {
-    [selectedSegmentColours addObject:[color  shinobiSelectedColor]];
+    [selectedSegmentColours addObject:[color shinobiBrightColor]];
   }
   series.selectedStyle.flavourColors = selectedSegmentColours;
   return series;
