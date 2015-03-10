@@ -716,10 +716,10 @@
 		68C6319019B5AAF5009BFDC0 /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
-				68C6319419B5AD8F009BFDC0 /* ChartsGalleryPieDataSource.h */,
-				68C6319519B5AD8F009BFDC0 /* ChartsGalleryPieDataSource.m */,
 				68C6319119B5AB44009BFDC0 /* ChartsGalleryPieViewController.h */,
 				68C6319219B5AB44009BFDC0 /* ChartsGalleryPieViewController.m */,
+				68C6319419B5AD8F009BFDC0 /* ChartsGalleryPieDataSource.h */,
+				68C6319519B5AD8F009BFDC0 /* ChartsGalleryPieDataSource.m */,
 			);
 			name = PieChart;
 			sourceTree = "<group>";

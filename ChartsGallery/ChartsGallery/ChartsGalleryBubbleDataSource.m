@@ -78,7 +78,7 @@
   CGPoint center = label.center;
   
   NSInteger seriesIndex = [chart.series indexOfObject:series];
-  label.text = [self.dataCollection[seriesIndex][dataPoint.index][@"country"] capitalizedString];
+  label.text = self.dataCollection[seriesIndex][dataPoint.index][@"country"];
   label.font = [UIFont boldShinobiFontOfSize:10];
   [label sizeToFit];
   label.center = center;

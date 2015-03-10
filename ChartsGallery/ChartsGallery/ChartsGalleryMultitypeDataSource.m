@@ -85,7 +85,6 @@
     series = bandSeries;
   }
   
-  series.crosshairEnabled = YES;
   series.title = self.seriesTitles[index];
   return series;
 }
