@@ -30,8 +30,6 @@
   series.innerRadius = 0.f;
   series.labelFormatString = @"%.0f%%";
   series.gesturePanningEnabled = YES;
-  // Set the initial rotation to be at the middle of the first slice, which is 22% of the
-  // full circle
   series.style.protrusion = 0;
   series.selectedStyle.protrusion = 20;
   
