@@ -36,7 +36,7 @@
   [super viewDidLoad];
   
   // Set the first slice as selected when the demo is opened for the first time
-  self.selectedDonutIndices[@0] = @[@0];
+  self.selectedDonutIndices[@0] = [NSMutableArray arrayWithObject:@0];
   // Set the initial rotation to be at the middle of the first slice, which is 22% of the
   // full circle
   self.rotations[@(0)] = @(-0.22 * M_PI);
