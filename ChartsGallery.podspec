@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
   s.source_files = 'ChartsGallery/ChartsGallery/**/*.{h,m}'
   s.dependency 'ShinobiPlayChartsUtils'
   s.resources = ['ChartsGallery/**/ChartsGallery*data.plist', 'ChartsGallery/**/*.storyboard', 'ChartsGallery/**/*.xib', 'ChartsGallery/**/*.xcassets']
-  s.frameworks = 'QuartzCore', 'ShinobiCharts'
+  s.frameworks = 'QuartzCore', 'ShinobiCharts', 'OpenGLES', 'CoreText'
+  s.libraries = 'c++'
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(DEVELOPER_FRAMEWORKS_DIR)" "$(PROJECT_DIR)/../"' }
 end
