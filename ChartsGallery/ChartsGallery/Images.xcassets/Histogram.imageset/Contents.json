@@ -3,16 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "histogram.png"
+      "filename" : "Histogram.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "histogram@2x.png"
+      "filename" : "Histogram@2x.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "Histogram@3x.png"
     }
   ],
   "info" : {

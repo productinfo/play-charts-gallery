@@ -3,16 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Crosshair_Chart@1x.png"
+      "filename" : "CrosshairChart.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "Crosshair_Chart@2x.png"
+      "filename" : "CrosshairChart@2x.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "CrosshairChart@3x.png"
     }
   ],
   "info" : {
