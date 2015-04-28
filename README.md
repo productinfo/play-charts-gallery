@@ -5,18 +5,40 @@ An app which demonstrates the different chart types which can be created using S
 
 ![Screenshot](screenshot.png?raw=true)
 
+Cloning or downloading the project
+------------------
+This project uses git submodules to include some code common to various **shinobiplay** projects.
+
+If you clone this project using GitHub Desktop, the submodules should be checked out automatically for you. Otherwise you can fetch the submodules on the command line using:
+
+    $ git submodule update --init --recursive
+    
+If you [download the zip](../../archive/master.zip) rather than cloning the project, you'll also have to download the submodule zips:
+
+1. Download [play-charts-utils](https://github.com/ShinobiControls/play-charts-utils/archive/master.zip) and extract its contents into the **ChartsGallery/ShinobiPlayChartsUtils** directory.
+2. Download [play-utils](https://github.com/ShinobiControls/play-utils/archive/master.zip) and extract its contents into the **ChartsGallery/ShinobiPlayChartsUtils/ShinobiPlayChartsUtils/ShinobiPlayUtils** directory.
+
+Your directory structure should end up looking something like this:
+
+    .
+    └── ChartsGallery
+        ├── ChartsGallery
+        ├── ChartsGallery.xcodeproj
+        └── ShinobiPlayChartsUtils
+            └── ShinobiPlayChartsUtils
+                ├── ShinobiPlayChartsUtils
+                ├── ShinobiPlayChartsUtils.xcodeproj
+                └── ShinobiPlayUtils
+                    └── ShinobiPlayUtils
+                        ├── ShinobiPlayUtils
+                        └── ShinobiPlayUtils.xcodeproj
+
 Building the project
 ------------------
 
-In order to build this project you'll need a copy of ShinobiCharts. If you don't have it yet, you can download a free trial from the [ShinobiControls website](http://www.shinobicontrols.com/ios/shinobisuite/price-plans/shinobicontrols-product-bundle/shinobicontrols-free-trial-form).
+In order to build this project you'll need a copy of ShinobiCharts. If you don't have it yet, you can download a free trial from the [**shinobicontrols** website](https://www.shinobicontrols.com).
 
-The project also uses a utility project as a git submodule, so after cloning it you'll need to initialize the submodules:
-
-    $ git submodule update --init
-
-Alternatively if you downloaded the project as a zip, you'll need to [download the utils project as a zip](https://bitbucket.org/shinobicontrols/shinobi-play-utils/get/bbc72dbdb493.zip) into the **ShinobiPlayUtils** directory.
-
-If you've used the installer to install ShinobiCharts, the project should just work. If you haven't, then once you've downloaded and unzipped ShinobiCharts, open up the project in Xcode, and drag ShinobiCharts.framework from the finder into Xcode's 'frameworks' group, and Xcode will sort out all the header and linker paths for you.
+If you've used the installer to install **shinobicharts**, the project should just work. If you haven't, then once you've downloaded and unzipped **shinobicharts**, open up the project in Xcode, and drag ShinobiCharts.framework from the finder into Xcode's 'frameworks' group, and Xcode will sort out all the header and linker paths for you.
 
 If you're using the trial version you'll need to add your license key. To do so, open up **ChartsGalleryViewController.m** and add the following line inside `viewDidLoad`:
 
@@ -28,7 +50,7 @@ Each chart has its own group with the specific files for that chart, but there a
 
 **`ChartsGalleryCommonViewController`** is the base for all the chart view controllers, contains some basic chart setup code that is applied to each chart, which sets its datasource and background color, makes the legend visible, and enables panning and zooming. It is a subclass of `SPUGalleryManagedChartViewController`.
 
-**`SPUGalleryManagedChartViewController`** is a class which manages a ShinobiChart, tearing it down when the view is removed from the view hierarchy, and restoring it when it reappears. (We do this because of the large number of charts in this project; if you've only got one or two charts in your app you should be able to leave your chart in memory.)
+**`SPUGalleryManagedChartViewController`** is a class which manages a ShinobiChart, tearing it down when the view controller is removed from its parent, and restoring it when it reappears. (We do this because of the large number of charts in **shinobiplay**; if you've only got one or two charts in your app you should be able to leave your chart in memory.)
  
 The group **DataSources** contains several base classes for data sources:
 
@@ -63,5 +85,4 @@ We'd love to see your contributions to this project - please go ahead and fork i
 License
 -------
 
-The [Apache License, Version 2.0](license.txt) applies to everything in this repository, and will apply to any user contributions.
-
+The [Apache License, Version 2.0](LICENSE) applies to everything in this repository, and will apply to any user contributions.
