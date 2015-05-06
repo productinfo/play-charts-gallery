@@ -36,8 +36,11 @@
 - (SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
   SChartLineSeries *series = [SChartLineSeries new];
   series.title = self.seriesNames[index];
-  series.style.lineWidth = @2;
+  series.style.lineWidth = @5;
   series.style.pointStyle.showPoints = YES;
+  series.style.pointStyle.radius = @20;
+  series.style.pointStyle.innerRadius = @10;
+  series.style.pointStyle.innerColor = [UIColor whiteColor];
   return series;
 }
 

@@ -1,7 +1,7 @@
-ShinobiPlay: Charts Gallery (Objective-C)
+shinobiplay: Charts Gallery (Objective-C)
 =====================
 
-An app which demonstrates the different chart types which can be created using ShinobiCharts.
+An app which demonstrates the different chart types which can be created using **shinobicharts**.
 
 ![Screenshot](screenshot.png?raw=true)
 
@@ -36,7 +36,7 @@ Your directory structure should end up looking something like this:
 Building the project
 ------------------
 
-In order to build this project you'll need a copy of ShinobiCharts. If you don't have it yet, you can download a free trial from the [**shinobicontrols** website](https://www.shinobicontrols.com).
+In order to build this project you'll need a copy of **shinobicharts**. If you don't have it yet, you can download a free trial from the [**shinobicontrols** website](https://www.shinobicontrols.com).
 
 If you've used the installer to install **shinobicharts**, the project should just work. If you haven't, then once you've downloaded and unzipped **shinobicharts**, open up the project in Xcode, and drag ShinobiCharts.framework from the finder into Xcode's 'frameworks' group, and Xcode will sort out all the header and linker paths for you.
 
@@ -65,7 +65,7 @@ The group **DataSources** contains several base classes for data sources:
 
 Creating your own chart
 -----------------------
-If you want to recreate any of the samples in your own app, the easiest way is probably to follow the [ShinobiCharts Quick Start Guide](http://www.shinobicontrols.com/ios/shinobicharts/quickstartguide/introduction) but with a few changes as detailed below. You'll need to copy some code from the view controller and data source associated with your chart type.
+If you want to recreate any of the samples in your own app, the easiest way is probably to follow the [**shinobicharts** Quick Start Guide](http://www.shinobicontrols.com/ios/shinobicharts/quickstartguide/introduction) but with a few changes as detailed below. You'll need to copy some code from the view controller and data source associated with your chart type.
 
 * In **Drawing a Simple Chart**, when creating the axes, instead of copying the lines from the guide, copy any lines containing `chart.xAxis` or `chart.yAxis` from the `setupChart` method in the relevant view controller.
 * In **Adding A Data Source**:

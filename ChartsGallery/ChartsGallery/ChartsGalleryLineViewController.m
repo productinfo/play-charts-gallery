@@ -31,8 +31,7 @@
 - (void)setupChart {
   self.chart.xAxis = [SChartDateTimeAxis new];
   self.chart.xAxis.title = @"Date";
-  self.chart.xAxis.labelFormatString = @"MMM yyyy";
-  self.chart.xAxis.majorTickFrequency = [SChartDateFrequency dateFrequencyWithMonth:1];
+  self.chart.xAxis.labelFormatter.dateFormatter.dateStyle = NSDateFormatterMediumStyle;
   
   self.chart.yAxis = [SChartNumberAxis new];
   self.chart.yAxis.title = @"Average Temperature (°F)";
