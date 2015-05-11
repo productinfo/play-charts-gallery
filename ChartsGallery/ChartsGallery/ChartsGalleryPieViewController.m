@@ -23,13 +23,6 @@
 #import <ShinobiCharts/ShinobiCharts.h>
 #import "ChartsGalleryPieDataSource.h"
 
-@interface ChartsGalleryPieViewController ()
-
-@property (strong, nonatomic) IBOutlet ShinobiChart *chart;
-@property (strong, nonatomic) ChartsGalleryPieDataSource *dataSource;
-
-@end
-
 @implementation ChartsGalleryPieViewController
 
 - (void)viewDidLoad {

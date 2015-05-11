@@ -23,13 +23,6 @@
 #import <ShinobiCharts/ShinobiCharts.h>
 #import "ChartsGalleryDonutDataSource.h"
 
-@interface ChartsGalleryDonutViewController ()
-
-@property (strong, nonatomic) IBOutlet ShinobiChart *chart;
-@property (strong, nonatomic) ChartsGalleryDonutDataSource *dataSource;
-
-@end
-
 @implementation ChartsGalleryDonutViewController
 
 - (void)viewDidLoad {
