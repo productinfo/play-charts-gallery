@@ -46,7 +46,7 @@
   secondAxis.title = @"Rainfall (mm)";
   [self.chart addYAxis:secondAxis];
   
-  self.chart.title = @"Multitype chart";
+  self.chart.title = @"Multi-axis chart";
   
   [super setupChart];
   
