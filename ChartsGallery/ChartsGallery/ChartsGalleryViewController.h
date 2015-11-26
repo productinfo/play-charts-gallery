@@ -20,6 +20,7 @@
 //
 
 @import UIKit;
+#import <ShinobiCharts/ShinobiCharts.h>
 
 @interface ChartsGalleryViewController : UIViewController
 
