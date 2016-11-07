@@ -98,7 +98,6 @@
 		6853D95B19B5EB2400735962 /* ChartsGalleryMultitypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6853D95819B5EB2400735962 /* ChartsGalleryMultitypeViewController.m */; };
 		6853D95C19B5EB2400735962 /* ChartsGalleryMultitypeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6853D95A19B5EB2400735962 /* ChartsGalleryMultitypeDataSource.m */; };
 		68C6318C19B5A7A2009BFDC0 /* ShinobiCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C6318B19B5A7A2009BFDC0 /* ShinobiCharts.framework */; };
-		68C6318F19B5A7A9009BFDC0 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 68C6318E19B5A7A9009BFDC0 /* libstdc++.dylib */; };
 		68C6319319B5AB44009BFDC0 /* ChartsGalleryPieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C6319219B5AB44009BFDC0 /* ChartsGalleryPieViewController.m */; };
 		68C6319619B5AD8F009BFDC0 /* ChartsGalleryPieDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C6319519B5AD8F009BFDC0 /* ChartsGalleryPieDataSource.m */; };
 		68C6319C19B5AE30009BFDC0 /* ChartsGalleryCommonDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C6319919B5AE30009BFDC0 /* ChartsGalleryCommonDataSource.m */; };
@@ -114,6 +113,7 @@
 		68D470A019C0355C001B1D0D /* ChartsGalleryHistogramDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D4709D19C0355C001B1D0D /* ChartsGalleryHistogramDataSource.m */; };
 		68D470A119C0355C001B1D0D /* ChartsGalleryHistogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D4709F19C0355C001B1D0D /* ChartsGalleryHistogramViewController.m */; };
 		68D470A319C0369A001B1D0D /* ChartsGallery-histogram-data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68D470A219C0369A001B1D0D /* ChartsGallery-histogram-data.plist */; };
+		9B14E75F1DD09166009599AC /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B14E75E1DD09166009599AC /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,7 +286,6 @@
 		6853D95919B5EB2400735962 /* ChartsGalleryMultitypeDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryMultitypeDataSource.h; sourceTree = "<group>"; };
 		6853D95A19B5EB2400735962 /* ChartsGalleryMultitypeDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsGalleryMultitypeDataSource.m; sourceTree = "<group>"; };
 		68C6318B19B5A7A2009BFDC0 /* ShinobiCharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShinobiCharts.framework; path = Library/Frameworks/ShinobiCharts.framework; sourceTree = DEVELOPER_DIR; };
-		68C6318E19B5A7A9009BFDC0 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		68C6319119B5AB44009BFDC0 /* ChartsGalleryPieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryPieViewController.h; sourceTree = "<group>"; };
 		68C6319219B5AB44009BFDC0 /* ChartsGalleryPieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryPieViewController.m; sourceTree = "<group>"; };
 		68C6319419B5AD8F009BFDC0 /* ChartsGalleryPieDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryPieDataSource.h; sourceTree = "<group>"; };
@@ -313,6 +312,7 @@
 		68D4709E19C0355C001B1D0D /* ChartsGalleryHistogramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsGalleryHistogramViewController.h; sourceTree = "<group>"; };
 		68D4709F19C0355C001B1D0D /* ChartsGalleryHistogramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ChartsGalleryHistogramViewController.m; sourceTree = "<group>"; };
 		68D470A219C0369A001B1D0D /* ChartsGallery-histogram-data.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "ChartsGallery-histogram-data.plist"; sourceTree = "<group>"; };
+		9B14E75E1DD09166009599AC /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,9 +320,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B14E75F1DD09166009599AC /* libc++.tbd in Frameworks */,
 				682C3EFB1A6D024A00EF95D0 /* libShinobiPlayChartsUtils.a in Frameworks */,
 				68C6318C19B5A7A2009BFDC0 /* ShinobiCharts.framework in Frameworks */,
-				68C6318F19B5A7A9009BFDC0 /* libstdc++.dylib in Frameworks */,
 				68171C1619ADDC04000AFEEB /* QuartzCore.framework in Frameworks */,
 				68171BE319ADDBC5000AFEEB /* CoreGraphics.framework in Frameworks */,
 				68171BE519ADDBC5000AFEEB /* UIKit.framework in Frameworks */,
@@ -442,8 +442,8 @@
 		68171BDF19ADDBC5000AFEEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				68C6318E19B5A7A9009BFDC0 /* libstdc++.dylib */,
 				68C6318B19B5A7A2009BFDC0 /* ShinobiCharts.framework */,
+				9B14E75E1DD09166009599AC /* libc++.tbd */,
 				68171C1519ADDC04000AFEEB /* QuartzCore.framework */,
 				68171BE019ADDBC5000AFEEB /* Foundation.framework */,
 				68171BE219ADDBC5000AFEEB /* CoreGraphics.framework */,
@@ -803,13 +803,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ChartsGallery;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Alison Clarke";
-				TargetAttributes = {
-					68171BDC19ADDBC5000AFEEB = {
-						DevelopmentTeam = XJ74287KY8;
-					};
-				};
 			};
 			buildConfigurationList = 68171BD819ADDBC5000AFEEB /* Build configuration list for PBXProject "ChartsGallery" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1005,13 +1000,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1024,7 +1025,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -1044,20 +1045,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -1069,14 +1075,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChartsGallery/ChartsGallery-Prefix.pch";
 				INFOPLIST_FILE = "ChartsGallery/ChartsGallery-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scottlogic.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ChartsGallery;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1087,14 +1097,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChartsGallery/ChartsGallery-Prefix.pch";
 				INFOPLIST_FILE = "ChartsGallery/ChartsGallery-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scottlogic.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ChartsGallery;
 				WRAPPER_EXTENSION = app;
 			};
