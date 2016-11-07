@@ -65,8 +65,24 @@
 }
 
 - (void)switchToggled:(UISwitch *)sender {
-  [self.series setHidden:!self.series.hidden];
-  [self.chart redrawChart];
+    
+    SChartAnimation *animation = [self animationForSeries];
+    
+    if(!self.series.hidden){
+        [self.chart.animationTracker hideSeries:self.series animation:animation duration:1 completion:nil];
+    } else {
+        [self.chart.animationTracker showSeries:self.series animation:animation duration:1 completion:nil];
+    }
+    
+    [self.chart redrawChart];
+}
+
+-(SChartAnimation*)animationForSeries {
+    if([self.series isKindOfClass:[SChartColumnSeries class]]) {
+        return [SChartAnimation growVerticalAnimation];
+    }
+    
+    return [SChartAnimation televisionAnimation];
 }
 
 @end

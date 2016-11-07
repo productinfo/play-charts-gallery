@@ -77,8 +77,8 @@
 - (void)sChartRenderFinished:(ShinobiChart *)chart {
   if (!self.initialSetup) {
     [self updateMaxHeartRatePosition];
-    [self.annotationManager updateValueAnnotationForXAxisRange:self.chart.xAxis.axisRange
-                                                    yAxisRange:self.chart.yAxis.axisRange];
+    [self.annotationManager updateValueAnnotationForXAxisRange:self.chart.xAxis.range
+                                                    yAxisRange:self.chart.yAxis.range];
     self.initialSetup = YES;
   }
 }
@@ -94,13 +94,13 @@
 }
 
 - (void)sChartIsPanning:(ShinobiChart *)chart withChartMovementInformation:(const SChartMovementInformation *)information {
-  [self.annotationManager updateValueAnnotationForXAxisRange:self.chart.xAxis.axisRange
-                                                  yAxisRange:self.chart.yAxis.axisRange];
+  [self.annotationManager updateValueAnnotationForXAxisRange:self.chart.xAxis.range
+                                                  yAxisRange:self.chart.yAxis.range];
 }
 
 - (void)sChartIsZooming:(ShinobiChart *)chart withChartMovementInformation:(const SChartMovementInformation *)information {
-  [self.annotationManager updateValueAnnotationForXAxisRange:self.chart.xAxis.axisRange
-                                                  yAxisRange:self.chart.yAxis.axisRange];
+  [self.annotationManager updateValueAnnotationForXAxisRange:self.chart.xAxis.range
+                                                  yAxisRange:self.chart.yAxis.range];
 }
 
 @end

@@ -62,7 +62,7 @@
   
   ChartsGalleryCustomCrosshairTooltip *tooltip = [[ChartsGalleryCustomCrosshairTooltip alloc]
                                                   initWithDataSource:(ChartsGalleryCrosshairDataSource *)self.dataSource];
-  ChartsGalleryCustomCrosshair *customCrosshair = [[ChartsGalleryCustomCrosshair alloc] initWithFrame:[self.chart getPlotAreaFrame]
+  ChartsGalleryCustomCrosshair *customCrosshair = [[ChartsGalleryCustomCrosshair alloc] initWithFrame:[self.chart plotAreaFrame]
                                                                                             lineColor:[UIColor shinobiDarkGrayColor]
                                                                                             lineWidth:1
                                                                                               tooltip:tooltip];
