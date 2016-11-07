@@ -36,13 +36,13 @@
   
   // Add first y-axis: temperature
   self.chart.yAxis = [SChartNumberAxis new];
-  self.chart.yAxis.defaultRange = [[SChartRange alloc] initWithMinimum:0 andMaximum:@28];
+  self.chart.yAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@0 andMaximum:@28];
   self.chart.yAxis.title = @"Temperature (°C)";
   
   // Add second y-axis: rainfall, in reverse position (i.e. on right hand side)
   SChartNumberAxis *secondAxis = [SChartNumberAxis new];
   secondAxis.axisPosition = SChartAxisPositionReverse;
-  secondAxis.defaultRange = [[SChartRange alloc] initWithMinimum:0 andMaximum:@160];
+  secondAxis.defaultRange = [[SChartNumberRange alloc] initWithMinimum:@0 andMaximum:@160];
   secondAxis.title = @"Rainfall (mm)";
   [self.chart addYAxis:secondAxis];
   

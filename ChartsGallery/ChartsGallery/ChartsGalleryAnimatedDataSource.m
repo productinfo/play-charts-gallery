@@ -55,9 +55,6 @@
     series = bandSeries;
   }
   series.title = self.seriesTitles[index];
-  series.animationEnabled = YES;
-  series.entryAnimation.duration = @1;
-  series.exitAnimation = [series.entryAnimation copy];
   return series;
 }
 

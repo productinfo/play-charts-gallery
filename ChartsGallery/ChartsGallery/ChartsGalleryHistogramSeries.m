@@ -32,7 +32,7 @@ static NSArray *histogramColors;
 
 - (SChartColumnSeriesStyle *)styleForPoint:(id<SChartData>)point {
   
-  SChartColumnSeriesStyle *newStyle = [super styleForPoint:point];
+  SChartColumnSeriesStyle *newStyle = (SChartColumnSeriesStyle *)[super styleForPoint:point];
   
   int xValue = [[point sChartXValue] intValue];
   newStyle.showAreaWithGradient = NO;

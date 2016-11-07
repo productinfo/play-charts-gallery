@@ -62,7 +62,7 @@
 }
 
 - (void)showAtPoint:(CGPoint)pointInChart inChart:(ShinobiChart *)chart {
-  self.frame = [chart getPlotAreaFrame];
+  self.frame = [chart plotAreaFrame];
   [self moveToPoint:pointInChart inChart:chart];
   [self showInChart:chart];
 }
@@ -76,11 +76,11 @@
   CGFloat xPosition = pointInChart.x;
   
   // Get the nearest data point to pointInChart so we know where to move the crosshair to.
-  SChartMappedSeries *series = chart.series[0];
+  SChartMappedSeries *series = (SChartMappedSeries *)chart.series[0];
   SChartPixelToPointMapper *mapper = [SChartPixelToPointMapper new];
   SChartPixelToPointMapping *mapping = [mapper mappingForPoint:pointInChart
-                                                          onSeries:series
-                                                           onChart:chart];
+                                                seriesToSearch:@[series]
+                                                       onChart:chart];
   
   // The mapper interpolates data between points on a line series, but we want the crosshair
   // to always be on a real data point, so we use the mapping's data point's index and
