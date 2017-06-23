@@ -40,9 +40,9 @@ In order to build this project you'll need a copy of **shinobicharts**. If you d
 
 If you've used the installer to install **shinobicharts**, the project should just work. If you haven't, then once you've downloaded and unzipped **shinobicharts**, open up the project in Xcode, and drag ShinobiCharts.framework from the finder into Xcode's 'frameworks' group, and Xcode will sort out all the header and linker paths for you.
 
-If you're using the trial version you'll need to add your license key. To do so, open up **ChartsGalleryViewController.m** and add the following line inside `viewDidLoad`:
+If you're using the trial version you'll need to add your trial key. To do so, open up **ChartsGalleryViewController.m** and add the following line inside `viewDidLoad`:
 
-    [ShinobiCharts setLicenseKey:@"your license key"];
+    [ShinobiCharts setTrialKey:@"your trial key"];
 
 About the project
 -----------------
