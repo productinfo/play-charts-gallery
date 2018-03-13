@@ -126,4 +126,8 @@
   [self removeFromSuperview];
 }
 
+- (BOOL)isHidden {
+  return self.superview == nil;
+}
+
 @end
