@@ -93,12 +93,8 @@
   self.textAnnotationMaxHeartRate.yValue = [dataPointWithHighestValue sChartYValue];
 }
 
-- (void)sChartIsPanning:(ShinobiChart *)chart withChartMovementInformation:(const SChartMovementInformation *)information {
-  [self.annotationManager updateValueAnnotationForXAxisRange:self.chart.xAxis.range
-                                                  yAxisRange:self.chart.yAxis.range];
-}
 
-- (void)sChartIsZooming:(ShinobiChart *)chart withChartMovementInformation:(const SChartMovementInformation *)information {
+- (void)sChart:(ShinobiChart *)chart didAlterRangeOnAxis:(SChartAxis *)axis {
   [self.annotationManager updateValueAnnotationForXAxisRange:self.chart.xAxis.range
                                                   yAxisRange:self.chart.yAxis.range];
 }
